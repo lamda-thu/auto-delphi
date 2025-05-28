@@ -1,0 +1,34 @@
+[
+    {
+        "cause": "cost to develop product",
+        "effect": "likelihood of product success"
+    },
+    {
+        "cause": "team productivity",
+        "effect": "likelihood of product success"
+    },
+    {
+        "cause": "demand for similar products",
+        "effect": "sales of the product"
+    },
+    {
+        "cause": "likelihood of product success",
+        "effect": "sales of the product"
+    },
+    {
+        "cause": "cost to develop product",
+        "effect": "investment decision"
+    },
+    {
+        "cause": "demand for similar products",
+        "effect": "investment decision"
+    },
+    {
+        "cause": "team productivity",
+        "effect": "investment decision"
+    },
+    {
+        "cause": "likelihood of product success",
+        "effect": "investment decision"
+    }
+]

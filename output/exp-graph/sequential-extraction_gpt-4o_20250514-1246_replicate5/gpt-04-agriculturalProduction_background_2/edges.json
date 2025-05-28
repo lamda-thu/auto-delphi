@@ -1,0 +1,54 @@
+[
+    {
+        "cause": "weather conditions",
+        "effect": "crop yield"
+    },
+    {
+        "cause": "crop yield",
+        "effect": "profit potential"
+    },
+    {
+        "cause": "market price of crops",
+        "effect": "profit potential"
+    },
+    {
+        "cause": "cost of planting",
+        "effect": "profit potential"
+    },
+    {
+        "cause": "crop yield",
+        "effect": "revenue generation"
+    },
+    {
+        "cause": "market price of crops",
+        "effect": "revenue generation"
+    },
+    {
+        "cause": "cost of planting",
+        "effect": "revenue generation"
+    },
+    {
+        "cause": "weather conditions",
+        "effect": "land expansion decision"
+    },
+    {
+        "cause": "crop yield",
+        "effect": "land expansion decision"
+    },
+    {
+        "cause": "market price of crops",
+        "effect": "land expansion decision"
+    },
+    {
+        "cause": "cost of planting",
+        "effect": "land expansion decision"
+    },
+    {
+        "cause": "profit potential",
+        "effect": "land expansion decision"
+    },
+    {
+        "cause": "revenue generation",
+        "effect": "land expansion decision"
+    }
+]

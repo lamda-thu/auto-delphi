@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "infection_rate",
+        "effect": "exposure_likelihood"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "exposure_likelihood"
+    },
+    {
+        "cause": "exposure_likelihood",
+        "effect": "health_consequences"
+    },
+    {
+        "cause": "exposure_likelihood",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "hospitalization_days",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "income_loss"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "home_stay_cost"
+    }
+]

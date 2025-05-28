@@ -1,0 +1,86 @@
+[
+    {
+        "variable_name": "usage decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "ban",
+            "restrict",
+            "permit"
+        ]
+    },
+    {
+        "variable_name": "economic value",
+        "variable_type": "chance",
+        "variable_values": [
+            0.0,
+            10.0,
+            20.0
+        ]
+    },
+    {
+        "variable_name": "cancer cost",
+        "variable_type": "chance",
+        "variable_values": [
+            -1000,
+            -100.0,
+            -50.0,
+            -10.0,
+            -5.0,
+            -1.0,
+            -0.5,
+            -0.05,
+            0
+        ]
+    },
+    {
+        "variable_name": "net value",
+        "variable_type": "utility",
+        "variable_values": [
+            0.0,
+            -0.05,
+            -0.5,
+            -1.0,
+            -5.0,
+            -10.0,
+            -50.0,
+            -100.0,
+            -1000.0,
+            10.0,
+            9.95,
+            9.5,
+            9.0,
+            5.0,
+            0.0,
+            -40.0,
+            -90.0,
+            -990.0,
+            20.0,
+            19.95,
+            19.5,
+            19.0,
+            15.0,
+            10.0,
+            -30.0,
+            -80.0,
+            -980.0
+        ]
+    },
+    {
+        "variable_name": "human exposure",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "carcinogenic activity",
+        "variable_type": "chance",
+        "variable_values": [
+            "inactive",
+            "moderate",
+            "very active"
+        ]
+    }
+]

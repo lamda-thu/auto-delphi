@@ -1,0 +1,46 @@
+{
+    "da-02-carryUmbrella": {
+        "avg": 0.5,
+        "std": -1
+    },
+    "da-05-chemicalUsage": {
+        "avg": 0.65,
+        "std": -1
+    },
+    "gpt-01-disasterManagement": {
+        "avg": 0.047,
+        "std": 0.06648308055437865
+    },
+    "gpt-03-electricVehicleMarketing": {
+        "avg": 0.4471428571428571,
+        "std": 0.22477928857309912
+    },
+    "gpt-04-agriculturalProduction": {
+        "avg": 0.40700000000000003,
+        "std": 0.04101219330881975
+    },
+    "gpt-06-examPreparation": {
+        "avg": 0.904,
+        "std": 0.27152900397563423
+    },
+    "gpt-08-financialManagement": {
+        "avg": 1.0,
+        "std": 0.0
+    },
+    "gpt-09-productDevelopment": {
+        "avg": 0.12730769230769232,
+        "std": 0.10104238765272772
+    },
+    "gpt-10-healthManagement": {
+        "avg": 0.41333333333333333,
+        "std": 0.06791072571153003
+    },
+    "macro": {
+        "avg": 0.4995315425315425,
+        "std": 0.3159858718763292
+    },
+    "micro": {
+        "avg": 0.4680625,
+        "std": 0.3486315595090529
+    }
+}

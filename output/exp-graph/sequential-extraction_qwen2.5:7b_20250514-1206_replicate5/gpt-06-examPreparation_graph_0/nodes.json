@@ -1,0 +1,46 @@
+[
+    {
+        "variable_name": "study_more",
+        "variable_type": "decision",
+        "variable_values": [
+            "yes",
+            "no"
+        ]
+    },
+    {
+        "variable_name": "knowledge_gain",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            1
+        ]
+    },
+    {
+        "variable_name": "health_impact",
+        "variable_type": "utility",
+        "variable_values": [
+            -1,
+            0,
+            1
+        ]
+    },
+    {
+        "variable_name": "exam_difficulty",
+        "variable_type": "chance",
+        "variable_values": [
+            0.3,
+            0.5,
+            0.7
+        ]
+    },
+    {
+        "variable_name": "exam_score",
+        "variable_type": "utility",
+        "variable_values": [
+            40,
+            60,
+            80,
+            100
+        ]
+    }
+]

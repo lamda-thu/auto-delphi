@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "exercise_time",
+        "effect": "weight"
+    },
+    {
+        "cause": "diet_quality",
+        "effect": "health_status"
+    },
+    {
+        "cause": "weight",
+        "effect": "health_status"
+    }
+]

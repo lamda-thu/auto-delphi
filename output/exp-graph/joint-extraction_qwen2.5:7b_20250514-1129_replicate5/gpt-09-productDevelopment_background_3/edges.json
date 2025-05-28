@@ -1,0 +1,10 @@
+[
+    {
+        "cause": "investment_decision",
+        "effect": "product_success"
+    },
+    {
+        "cause": "product_success",
+        "effect": "sales"
+    }
+]

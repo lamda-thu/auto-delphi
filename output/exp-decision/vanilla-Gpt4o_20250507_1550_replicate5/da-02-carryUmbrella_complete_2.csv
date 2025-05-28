@@ -1,0 +1,33 @@
+instance,context,carry umbrella decision
+cpd3,2,not carry
+cpd3,1,carry
+cpd2,2,not carry
+cpd2,1,carry
+cpd11,2,not carry
+cpd11,1,carry
+cpd13,2,not carry
+cpd13,1,carry
+cpd7,2,carry
+cpd7,1,carry
+cpd6,2,carry
+cpd6,1,carry
+cpd10,2,carry
+cpd10,1,carry
+cpd14,2,not carry
+cpd14,1,carry
+cpd15,2,carry
+cpd15,1,carry
+cpd1,2,not carry
+cpd1,1,carry
+cpd12,2,not carry
+cpd12,1,carry
+cpd8,2,not carry
+cpd8,1,carry
+cpd9,2,carry
+cpd9,1,carry
+cpd5,2,not carry
+cpd5,1,carry
+cpd4,2,not carry
+cpd4,1,carry
+cpd16,2,not carry
+cpd16,1,carry

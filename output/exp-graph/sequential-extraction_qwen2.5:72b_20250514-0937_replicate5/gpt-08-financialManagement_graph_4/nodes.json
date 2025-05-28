@@ -1,0 +1,47 @@
+[
+    {
+        "variable_name": "investment decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "invest",
+            "do not invest"
+        ]
+    },
+    {
+        "variable_name": "current savings",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "market risk",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "economic conditions",
+        "variable_type": "chance",
+        "variable_values": [
+            "recession",
+            "stable",
+            "growth"
+        ]
+    },
+    {
+        "variable_name": "wealth",
+        "variable_type": "utility",
+        "variable_values": [
+            -1000,
+            0,
+            1000,
+            5000
+        ]
+    }
+]

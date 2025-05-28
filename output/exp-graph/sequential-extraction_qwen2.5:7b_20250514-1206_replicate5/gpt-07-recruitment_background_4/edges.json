@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "workload",
+        "effect": "recruitment_decision"
+    },
+    {
+        "cause": "productivity_of_employees",
+        "effect": "recruitment_decision"
+    },
+    {
+        "cause": "market_salaries",
+        "effect": "productivity_of_employees"
+    },
+    {
+        "cause": "company_culture",
+        "effect": "productivity_of_employees"
+    },
+    {
+        "cause": "recruitment_decision",
+        "effect": "team_efficiency"
+    }
+]

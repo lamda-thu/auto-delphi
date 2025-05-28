@@ -1,0 +1,18 @@
+Background:
+The decision-making problem revolves around determining an appropriate emergency response level in light of a potential disaster, the severity of which is unknown. This decision aims to ensure social wellbeing. The chosen level of emergency response can influence the public’s reaction to the disaster, which in turn also affects social wellbeing. In summary, the main goal is to make a decision on how to respond to a disaster to maximize social wellbeing, taking into account how severe the disaster can be and how the public might respond to the chosen reaction level.
+
+
+Factors to be considered:
+In a decision-making problem regarding safety during a crisis, one must consider several factors:
+
+1. **Emergency Response Level**: This indicates the intensity or extent of measures taken by authorities or organizations to respond to a crisis. It involves deciding on the actions that need to be taken to manage the situation.
+
+2. **Disaster Severity**: This refers to the magnitude or seriousness of the crisis or disaster in question. It could range from a minor incident to a severe catastrophe.
+
+3. **Public Reaction**: This captures how the public or community reacts or is likely to react to both the crisis itself and the measures implemented by authorities. Public reaction can vary widely and can affect the overall situation.
+
+4. **Social wellbeing**: This is a measure of the wellbeing and security of the community or society in the wake of a crisis, considering how safe and secure individuals feel.
+
+
+Decision:'emergency response level'
+Alternatives:['elevated', 'normal']

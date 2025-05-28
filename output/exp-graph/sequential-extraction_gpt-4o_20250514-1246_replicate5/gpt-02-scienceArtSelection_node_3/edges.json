@@ -1,0 +1,38 @@
+[
+    {
+        "cause": "skills",
+        "effect": "field choice"
+    },
+    {
+        "cause": "personal interests",
+        "effect": "field choice"
+    },
+    {
+        "cause": "market demand",
+        "effect": "field choice"
+    },
+    {
+        "cause": "field choice",
+        "effect": "exam performance"
+    },
+    {
+        "cause": "field choice",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "exam performance",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "job prospects",
+        "effect": "career earnings"
+    },
+    {
+        "cause": "sector income potential",
+        "effect": "career earnings"
+    },
+    {
+        "cause": "geographical location",
+        "effect": "career earnings"
+    }
+]

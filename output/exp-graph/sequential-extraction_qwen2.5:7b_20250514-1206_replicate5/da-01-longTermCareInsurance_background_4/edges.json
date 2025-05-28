@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "age",
+        "effect": "life_expectancy"
+    },
+    {
+        "cause": "gender",
+        "effect": "life_expectancy"
+    },
+    {
+        "cause": "daily_coverage_amount",
+        "effect": "insurance_premium"
+    },
+    {
+        "cause": "daily_coverage_amount",
+        "effect": "long_term_care_expenses"
+    }
+]

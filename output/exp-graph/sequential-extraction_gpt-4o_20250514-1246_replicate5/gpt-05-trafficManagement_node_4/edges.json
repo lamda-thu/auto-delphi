@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "weather conditions",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "public transport efficiency",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "traffic control decision",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "traffic volume",
+        "effect": "traffic efficiency"
+    },
+    {
+        "cause": "weather conditions",
+        "effect": "traffic efficiency"
+    },
+    {
+        "cause": "public transport efficiency",
+        "effect": "traffic efficiency"
+    },
+    {
+        "cause": "traffic control decision",
+        "effect": "traffic efficiency"
+    }
+]

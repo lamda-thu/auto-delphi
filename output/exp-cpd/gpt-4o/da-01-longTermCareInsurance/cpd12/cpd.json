@@ -1,0 +1,47 @@
+[
+    {
+        "stochastic_function": "lambda: {65: 1.0, 75: 0.0}",
+        "variable": "age",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'male': 0.0, 'female': 1.0}",
+        "variable": "gender",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda age, gender: {0.0: 1 - 0.0005 * 42, 180.8: 0.0005 * 42} if age == 65 and gender == 'female' else {0.0: 1 - 0.0005 * 42 ** 2, 180.8: 0.0005 * 42 ** 2} if age == 75 and gender == 'female' else {0.0: 1 - 0.0005 * 42, 226.0: 0.0005 * 42} if age == 65 and gender == 'male' else {0.0: 1 - 0.0005 * 42 ** 2, 226.0: 0.0005 * 42 ** 2}",
+        "variable": "long term care expense per day",
+        "evidence": [
+            "age",
+            "gender"
+        ]
+    },
+    {
+        "stochastic_function": "lambda gender: {85.2: 1.0} if gender == 'female' else {82.5: 1.0}",
+        "variable": "life expectancy",
+        "evidence": [
+            "gender"
+        ]
+    },
+    {
+        "stochastic_function": "lambda age, gender, maximum_coverage_per_day: {0: 1.0} if maximum_coverage_per_day == 0 else {2669.68: 1.0} if age == 65 and gender == 'male' and maximum_coverage_per_day == 100 else {3981.47: 1.0} if age == 65 and gender == 'male' and maximum_coverage_per_day == 150 else {5339.36: 1.0} if age == 65 and gender == 'male' and maximum_coverage_per_day == 200 else {6674.20: 1.0} if age == 65 and gender == 'male' and maximum_coverage_per_day == 250 else {3764.89: 1.0} if age == 75 and gender == 'male' and maximum_coverage_per_day == 100 else {5647.33: 1.0} if age == 75 and gender == 'male' and maximum_coverage_per_day == 150 else {7529.77: 1.0} if age == 75 and gender == 'male' and maximum_coverage_per_day == 200 else {9412.22: 1.0} if age == 75 and gender == 'male' and maximum_coverage_per_day == 250 else {2959.19: 1.0} if age == 65 and gender == 'female' and maximum_coverage_per_day == 100 else {4438.79: 1.0} if age == 65 and gender == 'female' and maximum_coverage_per_day == 150 else {5918.38: 1.0} if age == 65 and gender == 'female' and maximum_coverage_per_day == 200 else {7397.98: 1.0} if age == 65 and gender == 'female' and maximum_coverage_per_day == 250 else {4959.45: 1.0} if age == 75 and gender == 'female' and maximum_coverage_per_day == 100 else {7439.18: 1.0} if age == 75 and gender == 'female' and maximum_coverage_per_day == 150 else {9918.90: 1.0} if age == 75 and gender == 'female' and maximum_coverage_per_day == 200 else {12398.63: 1.0} if age == 75 and gender == 'female' and maximum_coverage_per_day == 250 else {}",
+        "variable": "insurance premium per year",
+        "evidence": [
+            "age",
+            "gender",
+            "maximum coverage per day"
+        ]
+    },
+    {
+        "stochastic_function": "lambda age, maximum_coverage_per_day, insurance_premium_per_year, long_term_care_expense_per_day, life_expectancy: {-(life_expectancy - age) * (365 * long_term_care_expense_per_day + insurance_premium_per_year - 365 * maximum_coverage_per_day): 1} if long_term_care_expense_per_day > maximum_coverage_per_day else {-(life_expectancy - age) * insurance_premium_per_year: 1}",
+        "variable": "total cost",
+        "evidence": [
+            "age",
+            "maximum coverage per day",
+            "insurance premium per year",
+            "long term care expense per day",
+            "life expectancy"
+        ]
+    }
+]

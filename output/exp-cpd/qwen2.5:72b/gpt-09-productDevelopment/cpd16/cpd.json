@@ -1,0 +1,34 @@
+[
+    {
+        "stochastic_function": "lambda: {'high': 0.7, 'medium': 0.2, 'low': 0.1}",
+        "variable": "development challenge",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'high': 0.4, 'moderate': 0.4, 'low': 0.2}",
+        "variable": "market demand",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'high': 0.6, 'neutral': 0.3, 'low': 0.1}",
+        "variable": "team productivity",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda team_productivity: {'huge success': 0.7, 'moderate success': 0.3, 'small success': 0.0} if team_productivity == 'high' else ({'huge success': 0.4, 'moderate success': 0.4, 'small success': 0.2} if team_productivity == 'neutral' else {'huge success': 0.1, 'moderate success': 0.5, 'small success': 0.4})",
+        "variable": "product success",
+        "evidence": [
+            "team productivity"
+        ]
+    },
+    {
+        "stochastic_function": "lambda investment_decision, development_challenge, market_demand, product_success: {1: 0.7, 0: 0.2, -1: 0.1} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'high' and product_success == 'huge success' else {1: 0.5, 0: 0.3, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.3, 0: 0.4, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'high' and product_success == 'small success' else {1: 0.6, 0: 0.3, -1: 0.1} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.4, 0: 0.4, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.2, 0: 0.5, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.5, 0: 0.3, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'low' and product_success == 'huge success' else {1: 0.3, 0: 0.4, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.1, 0: 0.5, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'low' and market_demand == 'low' and product_success == 'small success' else {1: 0.4, 0: 0.4, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'high' and product_success == 'huge success' else {1: 0.2, 0: 0.5, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'high' and product_success == 'small success' else {1: 0.3, 0: 0.4, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.1, 0: 0.5, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.1, 0: 0.5, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'low' and product_success == 'huge success' else {1: 0.0, 0: 0.6, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.0, 0: 0.7, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'medium' and market_demand == 'low' and product_success == 'small success' else {1: 0.2, 0: 0.5, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'high' and product_success == 'huge success' else {1: 0.0, 0: 0.8, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.0, 0: 0.7, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'high' and product_success == 'small success' else {1: 0.0, 0: 0.8, -1: 0.2} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.0, 0: 0.7, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.0, 0: 0.7, -1: 0.3} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'low' and product_success == 'huge success' else {1: 0.0, 0: 0.6, -1: 0.4} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.0, 0: 0.5, -1: 0.5} if investment_decision == 'invest' and development_challenge == 'high' and market_demand == 'low' and product_success == 'small success' else {1: 0, 0: 1, -1: 0}",
+        "variable": "market sales",
+        "evidence": [
+            "investment decision",
+            "development challenge",
+            "market demand",
+            "product success"
+        ]
+    }
+]

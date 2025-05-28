@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "age",
+        "effect": "insurance premium per year"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurance premium per year"
+    },
+    {
+        "cause": "age",
+        "effect": "daily expenses for long-term care"
+    },
+    {
+        "cause": "gender",
+        "effect": "daily expenses for long-term care"
+    },
+    {
+        "cause": "gender",
+        "effect": "life expectancy"
+    },
+    {
+        "cause": "daily coverage amount",
+        "effect": "total cost"
+    },
+    {
+        "cause": "insurance premium per year",
+        "effect": "total cost"
+    },
+    {
+        "cause": "daily expenses for long-term care",
+        "effect": "total cost"
+    },
+    {
+        "cause": "age",
+        "effect": "daily coverage amount"
+    },
+    {
+        "cause": "gender",
+        "effect": "daily coverage amount"
+    }
+]

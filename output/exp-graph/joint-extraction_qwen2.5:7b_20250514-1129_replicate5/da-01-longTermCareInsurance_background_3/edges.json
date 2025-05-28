@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "age",
+        "effect": "lifeexpectancy"
+    },
+    {
+        "cause": "gender",
+        "effect": "lifeexpectancy"
+    },
+    {
+        "cause": "age",
+        "effect": "insurancepremium"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurancepremium"
+    },
+    {
+        "cause": "lifeexpectancy",
+        "effect": "insurancepremium"
+    },
+    {
+        "cause": "maximumcoverageperday",
+        "effect": "dailyexpenses"
+    },
+    {
+        "cause": "dailyexpenses",
+        "effect": "insurancepremium"
+    }
+]

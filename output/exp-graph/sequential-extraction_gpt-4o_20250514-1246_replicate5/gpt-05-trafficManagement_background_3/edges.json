@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "current weather conditions",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "public transportation efficiency",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "traffic control decision",
+        "effect": "traffic volume"
+    },
+    {
+        "cause": "traffic volume",
+        "effect": "smooth traffic flow"
+    },
+    {
+        "cause": "traffic volume",
+        "effect": "traffic congestion reduction"
+    },
+    {
+        "cause": "current weather conditions",
+        "effect": "traffic control decision"
+    },
+    {
+        "cause": "public transportation efficiency",
+        "effect": "traffic control decision"
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "variable": "team efficiency",
+        "variable_card": 3,
+        "evidence": [
+            "recruitment decision",
+            "workload",
+            "employee productivity"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3
+        ],
+        "state_names": {
+            "team efficiency": [
+                1,
+                0,
+                -1
+            ],
+            "recruitment decision": [
+                "hire",
+                "do not hire"
+            ],
+            "workload": [
+                1,
+                0,
+                -1
+            ],
+            "employee productivity": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda recruitment_decision, workload, employee_productivity: {1: 0.8, 0: 0.15, -1: 0.05} if recruitment_decision == 'hire' and workload == 1 and employee_productivity == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if recruitment_decision == 'hire' and workload == 1 and employee_productivity == 0 else {1: 0.2, 0: 0.6, -1: 0.2} if recruitment_decision == 'hire' and workload == 1 and employee_productivity == -1 else {1: 0.7, 0: 0.2, -1: 0.1} if recruitment_decision == 'hire' and workload == 0 and employee_productivity == 1 else {1: 0.4, 0: 0.4, -1: 0.2} if recruitment_decision == 'hire' and workload == 0 and employee_productivity == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if recruitment_decision == 'hire' and workload == 0 and employee_productivity == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if recruitment_decision == 'hire' and workload == -1 and employee_productivity == 1 else {1: 0.2, 0: 0.5, -1: 0.3} if recruitment_decision == 'hire' and workload == -1 and employee_productivity == 0 else {1: 0.1, 0: 0.6, -1: 0.3} if recruitment_decision == 'hire' and workload == -1 and employee_productivity == -1 else {1: 0.7, 0: 0.2, -1: 0.1} if recruitment_decision == 'do not hire' and workload == 1 and employee_productivity == 1 else {1: 0.4, 0: 0.4, -1: 0.2} if recruitment_decision == 'do not hire' and workload == 1 and employee_productivity == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if recruitment_decision == 'do not hire' and workload == 1 and employee_productivity == -1 else {1: 0.7, 0: 0.2, -1: 0.1} if recruitment_decision == 'do not hire' and workload == 0 and employee_productivity == 1 else {1: 0.4, 0: 0.4, -1: 0.2} if recruitment_decision == 'do not hire' and workload == 0 and employee_productivity == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if recruitment_decision == 'do not hire' and workload == 0 and employee_productivity == -1 else {1: 0.6, 0: 0.3, -1: 0.1} if recruitment_decision == 'do not hire' and workload == -1 and employee_productivity == 1 else {1: 0.4, 0: 0.4, -1: 0.2} if recruitment_decision == 'do not hire' and workload == -1 and employee_productivity == 0 else {1: 0.3, 0: 0.4, -1: 0.3}"
+    },
+    {
+        "variable": "employee productivity",
+        "variable_card": 3,
+        "evidence": [
+            "market salary",
+            "company culture"
+        ],
+        "evidence_card": [
+            3,
+            3
+        ],
+        "state_names": {
+            "employee productivity": [
+                1,
+                0,
+                -1
+            ],
+            "market salary": [
+                1,
+                0,
+                -1
+            ],
+            "company culture": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda market_salary, company_culture: {1: 0.7, 0: 0.2, -1: 0.1} if market_salary == 1 and company_culture == 1 else {1: 0.5, 0: 0.3, -1: 0.2} if market_salary == 1 and company_culture == 0 else {1: 0.3, 0: 0.4, -1: 0.3} if market_salary == 1 and company_culture == -1 else {1: 0.6, 0: 0.3, -1: 0.1} if market_salary == 0 and company_culture == 1 else {1: 0.4, 0: 0.4, -1: 0.2} if market_salary == 0 and company_culture == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if market_salary == 0 and company_culture == -1 else {1: 0.5, 0: 0.3, -1: 0.2} if market_salary == -1 and company_culture == 1 else {1: 0.3, 0: 0.4, -1: 0.3} if market_salary == -1 and company_culture == 0 else {1: 0.1, 0: 0.5, -1: 0.4}"
+    },
+    {
+        "variable": "workload",
+        "variable_card": 3,
+        "state_names": {
+            "workload": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.4+2*0, 0: 0.4-0, -1: 0.2-0}"
+    },
+    {
+        "variable": "market salary",
+        "variable_card": 3,
+        "state_names": {
+            "market salary": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.3+2*0.199999, 0: 0.4-0.199999, -1: 0.3-0.199999}"
+    },
+    {
+        "variable": "company culture",
+        "variable_card": 3,
+        "state_names": {
+            "company culture": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.4+2*0, 0: 0.4-0, -1: 0.2-0}"
+    }
+]

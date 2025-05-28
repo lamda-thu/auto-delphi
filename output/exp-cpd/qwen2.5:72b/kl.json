@@ -1,0 +1,66 @@
+{
+    "da-01-longTermCareInsurance": {
+        "avg": 21.650814814814815,
+        "std": 1.5341377442177797
+    },
+    "da-02-carryUmbrella": {
+        "avg": 0.0,
+        "std": 0.0
+    },
+    "da-04-cargoContainerScreening": {
+        "avg": 26.186,
+        "std": 0.0
+    },
+    "da-05-chemicalUsage": {
+        "avg": 8.52125,
+        "std": 3.1099433044901086
+    },
+    "gpt-01-disasterManagement": {
+        "avg": 0.026571428571428572,
+        "std": 0.04537935339210679
+    },
+    "gpt-02-scienceArtSelection": {
+        "avg": 0.004222222222222222,
+        "std": 0.004521553322083512
+    },
+    "gpt-03-electricVehicleMarketing": {
+        "avg": 0.06277777777777778,
+        "std": 0.08958851803720477
+    },
+    "gpt-04-agriculturalProduction": {
+        "avg": 0.7095714285714285,
+        "std": 0.44556849721932285
+    },
+    "gpt-05-trafficManagement": {
+        "avg": 0.8865714285714286,
+        "std": 1.2837842312401848
+    },
+    "gpt-06-examPreparation": {
+        "avg": 0.048,
+        "std": 0.013285330255586423
+    },
+    "gpt-07-recruitment": {
+        "avg": 0.48987499999999995,
+        "std": 0.863431432880292
+    },
+    "gpt-08-financialManagement": {
+        "avg": 24.587222222222223,
+        "std": 0.2693672111531845
+    },
+    "gpt-09-productDevelopment": {
+        "avg": 0.6290740740740741,
+        "std": 1.1477412240478764
+    },
+    "gpt-10-healthManagement": {
+        "avg": 6.4684,
+        "std": 0.863881820621316
+    },
+    "macro": {
+        "avg": 6.447882171201814,
+        "std": 9.974303033660943
+    },
+    "micro": {
+        "avg": 8.259268421052631,
+        "std": 10.932293805912181
+    }
+}

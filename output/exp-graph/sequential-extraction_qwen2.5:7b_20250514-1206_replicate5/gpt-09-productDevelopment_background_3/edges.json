@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "development_cost",
+        "effect": "product_success_launch"
+    },
+    {
+        "cause": "market_demand",
+        "effect": "sales_in_market"
+    },
+    {
+        "cause": "team_productivity",
+        "effect": "product_success_launch"
+    }
+]

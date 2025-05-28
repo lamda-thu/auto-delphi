@@ -1,0 +1,27 @@
+[
+    {
+        "stochastic_function": "lambda: {'high': 0.3, 'neutral': 0.5, 'low': 0.2}",
+        "variable": "market demand",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'high': 0.3, 'moderate': 0.4, 'low': 0.3}",
+        "variable": "competitor pricing",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'high': 0.3 - 0.1, 'average': 0.4 - 0.1, 'low': 0.3 + 2 * 0.1}",
+        "variable": "production difficulty",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda launch_decision, market_demand, competitor_pricing, production_difficulty: {1: 1.0 if launch_decision == 'launch' and market_demand == 'high' else (0.5 if launch_decision == 'launch' and market_demand == 'neutral' and competitor_pricing == 'high' else (0.3 if launch_decision == 'launch' and (market_demand == 'neutral' or market_demand == 'low') and production_difficulty == 'low' else 0.1)), 0: 0.5 if launch_decision == 'launch' and market_demand == 'neutral' and competitor_pricing != 'high' else (0.7 if launch_decision == 'launch' and (market_demand == 'neutral' or market_demand == 'low') and production_difficulty != 'low' else 0.9), -1: 0.4 if launch_decision == 'launch' and market_demand != 'high' and competitor_pricing != 'high' and production_difficulty != 'low' else (0.1 if launch_decision == 'launch' and market_demand != 'high' and competitor_pricing == 'high' and production_difficulty != 'low' else 0.0)} if launch_decision == 'not launch' else {0: 1.0}",
+        "variable": "profit",
+        "evidence": [
+            "launch decision",
+            "market demand",
+            "competitor pricing",
+            "production difficulty"
+        ]
+    }
+]

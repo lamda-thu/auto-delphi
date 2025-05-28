@@ -1,0 +1,26 @@
+[
+    {
+        "cause": "screening decision",
+        "effect": "alarm"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "alarm",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "costs"
+    },
+    {
+        "cause": "alarm",
+        "effect": "costs"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "costs"
+    }
+]

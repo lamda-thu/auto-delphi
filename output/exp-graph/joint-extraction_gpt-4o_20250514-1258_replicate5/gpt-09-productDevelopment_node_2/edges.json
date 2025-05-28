@@ -1,0 +1,26 @@
+[
+    {
+        "cause": "development cost",
+        "effect": "product success probability"
+    },
+    {
+        "cause": "market demand",
+        "effect": "market sales"
+    },
+    {
+        "cause": "team productivity",
+        "effect": "product success probability"
+    },
+    {
+        "cause": "product success probability",
+        "effect": "market sales"
+    },
+    {
+        "cause": "investment decision",
+        "effect": "development cost"
+    },
+    {
+        "cause": "investment decision",
+        "effect": "team productivity"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "stochastic_function": "lambda: {'good': 0.1, 'average': 0.3, 'bad': 0.6}",
+        "variable": "weather conditions",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1: 0.1, 0: 0.3, -1: 0.6}",
+        "variable": "public transport efficiency",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda traffic_control_decision, weather_conditions, public_transport_efficiency: {1: 0.7, 0: 0.2, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == 1 else {1: 0.6, 0: 0.3, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == 0 else {1: 0.5, 0: 0.4, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == -1 else {1: 0.6, 0: 0.3, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == 1 else {1: 0.5, 0: 0.4, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == 0 else {1: 0.4, 0: 0.5, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'bad' and public_transport_efficiency == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'bad' and public_transport_efficiency == 0 else {1: 0.3, 0: 0.6, -1: 0.1} if traffic_control_decision == 'apply restrictions' and weather_conditions == 'bad' and public_transport_efficiency == -1 else {1: 0.9, 0: 0.05, -1: 0.05} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == 1 else {1: 0.8, 0: 0.1, -1: 0.1} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == 0 else {1: 0.7, 0: 0.2, -1: 0.1} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'good' and public_transport_efficiency == -1 else {1: 0.6, 0: 0.2, -1: 0.2} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == 1 else {1: 0.5, 0: 0.3, -1: 0.2} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == 0 else {1: 0.4, 0: 0.4, -1: 0.2} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'average' and public_transport_efficiency == -1 else {1: 0.3, 0: 0.3, -1: 0.4} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'bad' and public_transport_efficiency == 1 else {1: 0.2, 0: 0.4, -1: 0.4} if traffic_control_decision == 'do not apply restrictions' and weather_conditions == 'bad' and public_transport_efficiency == 0 else {1: 0.2, 0: 0.5, -1: 0.3}",
+        "variable": "traffic volume",
+        "evidence": [
+            "traffic control decision",
+            "weather conditions",
+            "public transport efficiency"
+        ]
+    },
+    {
+        "stochastic_function": "lambda traffic_volume: {1: 0.8, 0: 0.15, -1: 0.05} if traffic_volume == 1 else ({1: 0.5, 0: 0.4, -1: 0.1} if traffic_volume == 0 else {1: 0.2, 0: 0.5, -1: 0.3})",
+        "variable": "traffic efficiency",
+        "evidence": [
+            "traffic volume"
+        ]
+    }
+]

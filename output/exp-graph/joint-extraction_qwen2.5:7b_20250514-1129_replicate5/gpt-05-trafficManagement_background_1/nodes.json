@@ -1,0 +1,42 @@
+[
+    {
+        "variable_name": "traffic_control_decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "apply_restrictions",
+            "do_not_apply_restrictions"
+        ]
+    },
+    {
+        "variable_name": "traffic_volume",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "weather_conditions",
+        "variable_type": "chance",
+        "variable_values": [
+            "good",
+            "bad"
+        ]
+    },
+    {
+        "variable_name": "public_transportation_efficiency",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "traffic_flow",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            1
+        ]
+    }
+]

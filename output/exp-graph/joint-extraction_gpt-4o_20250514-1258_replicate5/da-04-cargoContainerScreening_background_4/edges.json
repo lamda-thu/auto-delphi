@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "screening decision",
+        "effect": "alarm status"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "terrorist deterrence"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "screening effectiveness"
+    },
+    {
+        "cause": "alarm status",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "financial cost"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "financial cost"
+    },
+    {
+        "cause": "terrorist attack risk",
+        "effect": "financial cost"
+    },
+    {
+        "cause": "terrorist deterrence",
+        "effect": "terrorist attack risk"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "radiological disposal cost"
+    },
+    {
+        "cause": "screening effectiveness",
+        "effect": "terrorist deterrence"
+    }
+]

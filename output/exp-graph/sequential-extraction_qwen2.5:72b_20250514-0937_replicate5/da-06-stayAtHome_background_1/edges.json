@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "infection_rate",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "people_contacted"
+    },
+    {
+        "cause": "people_contacted",
+        "effect": "exposure_likelihood"
+    },
+    {
+        "cause": "exposure_likelihood",
+        "effect": "infection_likelihood"
+    },
+    {
+        "cause": "infection_likelihood",
+        "effect": "hospitalization_likelihood"
+    },
+    {
+        "cause": "hospitalization_likelihood",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "hospitalization_likelihood",
+        "effect": "treatment_duration"
+    },
+    {
+        "cause": "treatment_duration",
+        "effect": "loss_of_earnings"
+    },
+    {
+        "cause": "infection_likelihood",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "staying_home_costs"
+    }
+]

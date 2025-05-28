@@ -1,0 +1,38 @@
+[
+    {
+        "cause": "age",
+        "effect": "insurancepremiumperyear"
+    },
+    {
+        "cause": "age",
+        "effect": "longtermcareexpenseperday"
+    },
+    {
+        "cause": "gender",
+        "effect": "lifeexpectancy"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurancepremiumperyear"
+    },
+    {
+        "cause": "gender",
+        "effect": "longtermcareexpenseperday"
+    },
+    {
+        "cause": "maximumcoverageperday",
+        "effect": "insurancepremiumperyear"
+    },
+    {
+        "cause": "lifeexpectancy",
+        "effect": "totalcost"
+    },
+    {
+        "cause": "longtermcareexpenseperday",
+        "effect": "totalcost"
+    },
+    {
+        "cause": "maximumcoverageperday",
+        "effect": "totalcost"
+    }
+]

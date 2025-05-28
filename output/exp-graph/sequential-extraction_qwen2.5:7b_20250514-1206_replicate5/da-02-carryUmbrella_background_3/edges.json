@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "weather_outcome",
+        "effect": "forecast_accuracy"
+    },
+    {
+        "cause": "forecast_accuracy",
+        "effect": "carry_umbrella_decision"
+    },
+    {
+        "cause": "carry_umbrella_decision",
+        "effect": "umbrella_cost"
+    },
+    {
+        "cause": "weather_outcome",
+        "effect": "umbrella_cost"
+    }
+]

@@ -1,0 +1,18 @@
+Background:
+The decision-making problem revolves around determining the best amount of exercise time to positively impact a person's health status. The issue takes into account how the exercise time influences both the person's weight and health status directly. Additionally, diet quality plays a role in affecting health status, connecting all these factors in determining overall health. In essence, when deciding on exercise time, one must consider its effects on weight and, collectively with diet quality, how it alters health status.
+
+
+Factors to be considered:
+In the decision-making problem, the following factors need to be considered:
+
+1. Exercise Time: This is a decision factor where you can choose how much time to spend exercising. This factor is under your control and you can adjust it based on your preferences and schedule.
+
+2. Diet Quality: This is a chance factor which involves the quality of food you consume daily. It isn't directly controllable but can be influenced by your food selections and nutritional choices.
+
+3. Weight: This is also a chance factor which refers to your body weight. It can change over time influenced by various factors like your exercise time and diet quality.
+
+4. Health Status: This is the utility factor that indicates your overall health condition. It is the outcome of interest affected by your exercise time, diet quality, and weight. This factor helps in understanding how well you are doing health-wise.
+
+
+Decision:'exercise time'
+Alternatives:[1, 0, -1]

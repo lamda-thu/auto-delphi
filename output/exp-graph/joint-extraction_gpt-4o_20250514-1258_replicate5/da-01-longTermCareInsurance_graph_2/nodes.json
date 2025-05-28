@@ -1,0 +1,69 @@
+[
+    {
+        "variable_name": "maximum coverage per day",
+        "variable_type": "decision",
+        "variable_values": [
+            0,
+            100,
+            150,
+            200,
+            250
+        ]
+    },
+    {
+        "variable_name": "age",
+        "variable_type": "chance",
+        "variable_values": [
+            "young",
+            "middle-aged",
+            "elderly"
+        ]
+    },
+    {
+        "variable_name": "gender",
+        "variable_type": "chance",
+        "variable_values": [
+            "male",
+            "female"
+        ]
+    },
+    {
+        "variable_name": "life expectancy",
+        "variable_type": "chance",
+        "variable_values": [
+            "short",
+            "medium",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "long term care expense per day",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "insurance premium per year",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "total cost",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            100000,
+            200000,
+            300000,
+            400000,
+            500000
+        ]
+    }
+]

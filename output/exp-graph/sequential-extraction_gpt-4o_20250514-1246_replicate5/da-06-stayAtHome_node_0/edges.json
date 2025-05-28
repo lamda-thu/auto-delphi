@@ -1,0 +1,86 @@
+[
+    {
+        "cause": "age",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "age",
+        "effect": "health consequences"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "cost of staying at home in usd"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "stay at home duration in days"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "exposure"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "number of people one contacts"
+    },
+    {
+        "cause": "number of people one contacts",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "health consequences"
+    },
+    {
+        "cause": "infection",
+        "effect": "hospital stays in days"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "medical expenses in usd"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "prolonged treatment costs"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "treatment time expenses in usd"
+    },
+    {
+        "cause": "infection",
+        "effect": "death cost"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "cost of staying at home in usd"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "loss of earnings"
+    },
+    {
+        "cause": "health consequences",
+        "effect": "loss of earnings"
+    },
+    {
+        "cause": "cost of staying at home in usd",
+        "effect": "communal repercussions"
+    },
+    {
+        "cause": "loss of earnings",
+        "effect": "communal repercussions"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "cause": "screening decision",
+        "effect": "alarm"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "deterrence effect of screening"
+    },
+    {
+        "cause": "alarm",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "inspection result",
+        "effect": "cost of radiological disposal"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "alarm"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "cost of terrorist attack"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "cost of screening"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of inspection"
+    },
+    {
+        "cause": "alarm",
+        "effect": "risk of false alarm"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "financial impact of safety decisions"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "financial impact of safety decisions"
+    },
+    {
+        "cause": "cost of screening",
+        "effect": "financial impact of safety decisions"
+    },
+    {
+        "cause": "cost of inspection",
+        "effect": "financial impact of safety decisions"
+    },
+    {
+        "cause": "cost of radiological disposal",
+        "effect": "financial impact of safety decisions"
+    },
+    {
+        "cause": "cost of terrorist attack",
+        "effect": "financial impact of safety decisions"
+    }
+]

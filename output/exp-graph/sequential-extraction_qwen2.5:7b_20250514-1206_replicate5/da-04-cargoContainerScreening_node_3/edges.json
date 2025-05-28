@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "smuggled_nuclear_threat",
+        "effect": "alarm"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "alarm"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "alarm",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "inspection_result"
+    }
+]

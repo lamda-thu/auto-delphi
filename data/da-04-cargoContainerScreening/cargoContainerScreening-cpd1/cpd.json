@@ -1,0 +1,167 @@
+[
+    {
+        "variable": "smuggled nuclear threat",
+        "variable_card": 2,
+        "stochastic_function": "lambda screening_decision: {'exist': {'screen': 1, 'not screen': 1.0}[screening_decision] * 5e-10, 'not exist': 1- {'screen': 1, 'not screen': 1.0}[screening_decision] * 5e-10}",
+        "evidence": [
+            "screening decision"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "smuggled nuclear threat": [
+                "exist",
+                "not exist"
+            ],
+            "screening decision": [
+                "screen",
+                "not screen"
+            ]
+        }
+    },
+    {
+        "variable": "alarm",
+        "variable_card": 2,
+        "stochastic_function": "lambda screening_decision, smuggled_nuclear_threat: 'no signal' if screening_decision=='not screen' else {'signal': 0.8, 'no signal': 0.2} if smuggled_nuclear_threat=='exist' else {'signal': 0.025, 'no signal': 1-0.025}",
+        "evidence": [
+            "screening decision",
+            "smuggled nuclear threat"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "alarm": [
+                "signal",
+                "no signal"
+            ],
+            "screening decision": [
+                "screen",
+                "not screen"
+            ],
+            "smuggled nuclear threat": [
+                "exist",
+                "not exist"
+            ]
+        }
+    },
+    {
+        "variable": "inspection result",
+        "variable_card": 2,
+        "stochastic_function": "lambda inspection_decision, smuggled_nuclear_threat: {'threat not found': 1.0} if inspection_decision=='not inspect' or smuggled_nuclear_threat=='not exist' else {'find threat': 0.9, 'threat not found': 0.1}",
+        "evidence": [
+            "inspection decision",
+            "smuggled nuclear threat"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "inspection result": [
+                "find threat",
+                "threat not found"
+            ],
+            "inspection decision": [
+                "inspect",
+                "not inspect"
+            ],
+            "smuggled nuclear threat": [
+                "exist",
+                "not exist"
+            ]
+        }
+    },
+    {
+        "variable": "cost of screening",
+        "variable_card": 2,
+        "stochastic_function": "lambda screening_decision: -{'screen': 6, 'not screen': 0}[screening_decision]",
+        "evidence": [
+            "screening decision"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "cost of screening": [
+                "0",
+                "-#cost of screening#"
+            ],
+            "screening decision": [
+                "screen",
+                "not screen"
+            ]
+        }
+    },
+    {
+        "variable": "cost of inspection",
+        "variable_card": 2,
+        "stochastic_function": "lambda inspection_decision: - {'inspect': 600, 'not inspect': 0}[inspection_decision]",
+        "evidence": [
+            "inspection decision"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "cost of inspection": [
+                "0",
+                "-#cost of inspection#"
+            ],
+            "inspection decision": [
+                "inspect",
+                "not inspect"
+            ]
+        }
+    },
+    {
+        "variable": "cost of radiological disposal",
+        "variable_card": 2,
+        "stochastic_function": "lambda inspection_result: - {'find threat': 100000, 'threat not found': 0}[inspection_result]",
+        "evidence": [
+            "inspection result"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "cost of radiological disposal": [
+                0,
+                -100000
+            ],
+            "inspection result": [
+                "find threat",
+                "threat not found"
+            ]
+        }
+    },
+    {
+        "variable": "cost of terrorist attack",
+        "variable_card": 2,
+        "stochastic_function": "lambda smuggled_nuclear_threat, inspection_result : {0: 1.0} if smuggled_nuclear_threat=='not exist' or inspection_result=='find threat' else {-10000000000.0: 0.9, 0: 0.1}",
+        "evidence": [
+            "smuggled nuclear threat",
+            "inspection result"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "cost of terrorist attack": [
+                "0",
+                "-#cost of attack#"
+            ],
+            "smuggled nuclear threat": [
+                "exist",
+                "not exist"
+            ],
+            "inspection result": [
+                "find threat",
+                "threat not found"
+            ]
+        }
+    }
+]

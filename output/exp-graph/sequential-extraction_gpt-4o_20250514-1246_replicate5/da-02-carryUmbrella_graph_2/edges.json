@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "weather outcome",
+        "effect": "weather forecast"
+    },
+    {
+        "cause": "weather forecast",
+        "effect": "carry umbrella decision"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "sunny with umbrella"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "rain without umbrella"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "transport cost"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "umbrella purchase cost"
+    },
+    {
+        "cause": "weather outcome",
+        "effect": "rain without umbrella"
+    },
+    {
+        "cause": "weather outcome",
+        "effect": "sunny with umbrella"
+    },
+    {
+        "cause": "weather outcome",
+        "effect": "transport cost"
+    },
+    {
+        "cause": "weather outcome",
+        "effect": "umbrella purchase cost"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "cause": "threat_presence",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "alarm_status",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "threat_presence",
+        "effect": "terrorist_attack_occurrence"
+    },
+    {
+        "cause": "terrorist_attack_occurrence",
+        "effect": "terrorist_attack_cost"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "screening_cost"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "inspection_cost"
+    },
+    {
+        "cause": "threat_presence",
+        "effect": "radiological_disposal_cost"
+    }
+]

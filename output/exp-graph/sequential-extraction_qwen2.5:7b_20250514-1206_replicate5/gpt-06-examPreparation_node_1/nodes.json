@@ -1,0 +1,45 @@
+[
+    {
+        "variable_name": "study_decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "study more",
+            "study less"
+        ]
+    },
+    {
+        "variable_name": "current_knowledge",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "health_status",
+        "variable_type": "chance",
+        "variable_values": [
+            "good",
+            "moderate",
+            "poor"
+        ]
+    },
+    {
+        "variable_name": "exam_difficulty",
+        "variable_type": "chance",
+        "variable_values": [
+            "easy",
+            "medium",
+            "hard"
+        ]
+    },
+    {
+        "variable_name": "exam_score",
+        "variable_type": "utility",
+        "variable_values": [
+            10,
+            20
+        ]
+    }
+]

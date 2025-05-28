@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "study_decision",
+        "effect": "current_knowledge"
+    },
+    {
+        "cause": "study_decision",
+        "effect": "health_status"
+    },
+    {
+        "cause": "exam_difficulty",
+        "effect": "exam_score"
+    }
+]

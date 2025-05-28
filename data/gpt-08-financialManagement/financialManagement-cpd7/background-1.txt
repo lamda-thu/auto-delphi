@@ -1,0 +1,12 @@
+Background:
+In the decision-making scenario, a person is faced with the decision of how to invest their money. The outcome of this decision, which is the person's future wealth, depends on several factors:
+1. The decision itself regarding where and how to invest.
+2. The amount of savings the person currently has.
+3. The risks associated with the market at that time.
+4. The overall economic conditions.
+
+When making the investment decision, the person is aware of their current savings, but don't know the existing market risks and the prevailing economic conditions. Each of these factors plays a critical role in influencing the level of wealth.
+
+
+Decision:'investment decision'
+Alternatives:['invest', 'do not invest']

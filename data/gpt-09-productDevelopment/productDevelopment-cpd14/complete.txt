@@ -1,0 +1,89 @@
+Background:
+In the decision-making problem described, a company is facing a scenario where it must decide how much to invest in a product. The success and sales of the product in the market are influenced by several factors. First, the cost to develop the product plays a role in how successful it would sell. Additionally, the demand for similar products in the market also impacts sales potential. On another note, the productivity of the team tasked with developing the product can affect how likely the product is to succeed upon launch. Finally, this likelihood of product success upon launch then directly impacts its sales in the market. Thus, the company's initial investment decision must take into account these various aspects to gauge the potential financial outcome from the sales of the product.
+
+
+Factors to be considered:
+When addressing a decision-making problem, factors can be categorized based on their role and impact. Some of these factors are:
+
+1. **Investment Decision**: This is a strategic choice or action that needs to be taken based on the evaluation of multiple considerations. This decision plays a crucial role as it can directly affect the outcomes and should align with the desired objectives and available resources.
+
+2. **Development Cost**: This refers to the expenses incurred to develop a product or service. It's a critical element as it influences financial planning and can impact profitability.
+
+3. **Market Demand**: Understanding the demand in the market is fundamental as it helps predict potential sales volume and informs decisions on production scale and marketing strategies.
+
+4. **Team Productivity**: The efficiency and effectiveness of the team working on a project are vital as they directly determine the pace and quality of the output, which in turn influences success rates.
+
+5. **Product Success Probability**: This factor gauges the likelihood of a product or service being successful in the market. It's a predictive measure derived from various qualitative and quantitative assessments.
+
+6. **Market Sales**: This is the end result, representing the financial value or utility gained from all previous activities and decisions. This measure reflects the effectiveness of the decisions made and strategies implemented in terms of revenue generation.
+
+
+Factors to be considered and their relations:
+When deciding on whether to invest in a new product, several factors need to be considered and their interrelationships understood. Firstly, the decision to invest affects the overall market sales of the product. In other words, the choice of whether to proceed with the investment influences sales outcomes.
+
+Additionally, the development cost is an essential factor as it also impacts the market sales of the product. Lower development costs might lead to higher profits while higher costs may reduce profitability, influencing sales results.
+
+Market demand plays a crucial role too, as it directly affects market sales. High demand can lead to better sales, while low demand might result in poor sales performance.
+
+Another critical factor is team productivity, which influences the probability of the product's success. A more productive team can increase the likelihood of developing a successful product, which is vital as this success probability in turn influences market sales. 
+
+Understanding how all these aspects—investment decision, development costs, market demand, team productivity, and product success probability—interact and influence one another is crucial for making an informed decision about investing in a new product. Consideration of how each element affects market sales will ultimately determine the potential success or failure of the product in the market.
+
+
+Conditional probability distributions:
+The quantitative relations between variables according to the conditional probability list are as follows:
+
+1. **Team Productivity**:
+   - Probability of team productivity being 'high' is 0.4 + 2*0.1.
+   - Probability of team productivity being 'neutral' is 0.4 - 0.1.
+   - Probability of team productivity being 'low' is 0.2 - 0.1.
+
+2. **Development challenge**:
+   - Development challenge is 'high' with probability 0.3 + 2*0.1.
+   - Development challenge is 'medium' with probability 0.4 - 0.1.
+   - Development challenge is 'low' with probability 0.3 - 0.1.
+
+3. **Market Demand**:
+   - Market demand is 'high' with probability 0.4 + 2*0.1.
+   - Market demand is 'moderate' with probability 0.4 - 0.1.
+   - Market demand is 'low' with probability 0.2 - 0.1.
+
+4. **Product Success**: This is dependent on 'team productivity'.
+   - If team productivity is 'high', the probability of 'huge success' is 0.7, 'moderate success' is 0.3, and 'small success' is 0.0.
+   - If team productivity is 'neutral', the probabilities are 0.4 for 'huge success', 0.4 for 'moderate success', and 0.2 for 'small success'.
+   - If team productivity is 'low', the probabilities are 0.1 for 'huge success', 0.5 for 'moderate success', and 0.4 for 'small success'.
+   
+5. **Market Sales**: This depends on 'investment decision', 'development cost', 'market demand', and 'product success probability'.
+   - If no investment is made ('do not invest'), the market sales takes value 0 (with probability 1).
+   - If investment is made ('invest'), various combinations of 'development cost', 'market demand', and 'product success probability' each lead to different probability distributions, like:
+     - If development challenge is 'low', market demand is 'high', and product success is 'huge success', market sales takes value 1 with probability 0.7, 0 with probability 0.2, and -1 with probability 0.1.
+     - If development challenge is 'low', market demand is 'high', and product success is 'moderate success', market sales takes value 1 with probability 0.5, 0 with probability 0.3, and -1 with probability 0.2.
+     - If development challenge is 'low', market demand is 'high', and product success is 'small success', market sales takes value 1 with probability 0.3, 0 with probability 0.4, and -1 with probability 0.3.
+     - If development challenge is 'low', market demand is 'moderate', and product success is 'huge success', market sales takes value 1 with probability 0.6, 0 with probability 0.3, and -1 with probability 0.1.
+     - If development challenge is 'low', market demand is 'moderate', and product success is 'moderate success', market sales takes value 1 with probability 0.4, 0 with probability 0.4, and -1 with probability 0.2.
+     - If development challenge is 'low', market demand is 'moderate', and product success is 'small success', market sales takes value 1 with probability 0.2, 0 with probability 0.5, and -1 with probability 0.3.
+     - If development challenge is 'low', market demand is 'low', and product success is 'huge success', market sales takes value 1 with probability 0.5, 0 with probability 0.3, and -1 with probability 0.2.
+     - If development challenge is 'low', market demand is 'low', and product success is 'moderate success', market sales takes value 1 with probability 0.3, 0 with probability 0.4, and -1 with probability 0.3.
+     - If development challenge is 'low', market demand is 'low', and product success is 'small success', market sales takes value 1 with probability 0.1, 0 with probability 0.5, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'high', and product success is 'huge success', market sales takes value 1 with probability 0.4, 0 with probability 0.4, and -1 with probability 0.2.
+     - If development challenge is 'medium', market demand is 'high', and product success is 'moderate success', market sales takes value 1 with probability 0.2, 0 with probability 0.5, and -1 with probability 0.3.
+     - If development challenge is 'medium', market demand is 'high', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.6, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'moderate', and product success is 'huge success', market sales takes value 1 with probability 0.3, 0 with probability 0.4, and -1 with probability 0.3.
+     - If development challenge is 'medium', market demand is 'moderate', and product success is 'moderate success', market sales takes value 1 with probability 0.1, 0 with probability 0.5, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'moderate', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.6, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'low', and product success is 'huge success', market sales takes value 1 with probability 0.1, 0 with probability 0.5, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'low', and product success is 'moderate success', market sales takes value 1 with probability 0.0, 0 with probability 0.6, and -1 with probability 0.4.
+     - If development challenge is 'medium', market demand is 'low', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.7, and -1 with probability 0.3.
+     - If development challenge is 'high', market demand is 'high', and product success is 'huge success', market sales takes value 1 with probability 0.2, 0 with probability 0.5, and -1 with probability 0.3.
+     - If development challenge is 'high', market demand is 'high', and product success is 'moderate success', market sales takes value 1 with probability 0.0, 0 with probability 0.8, and -1 with probability 0.2.
+     - If development challenge is 'high', market demand is 'high', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.7, and -1 with probability 0.3.
+     - If development challenge is 'high', market demand is 'moderate', and product success is 'huge success', market sales takes value 1 with probability 0.0, 0 with probability 0.8, and -1 with probability 0.2.
+     - If development challenge is 'high', market demand is 'moderate', and product success is 'moderate success', market sales takes value 1 with probability 0.0, 0 with probability 0.7, and -1 with probability 0.3.
+     - If development challenge is 'high', market demand is 'moderate', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.6, and -1 with probability 0.4.
+     - If development challenge is 'high', market demand is 'low', and product success is 'huge success', market sales takes value 1 with probability 0.0, 0 with probability 0.7, and -1 with probability 0.3.
+     - If development challenge is 'high', market demand is 'low', and product success is 'moderate success', market sales takes value 1 with probability 0.0, 0 with probability 0.6, and -1 with probability 0.4. 
+     - If development challenge is 'high', market demand is 'low', and product success is 'small success', market sales takes value 1 with probability 0.0, 0 with probability 0.5, and -1 with probability 0.5. 
+
+
+Decision:'investment decision'
+Alternatives:['invest', 'do not invest']

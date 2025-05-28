@@ -1,0 +1,85 @@
+[
+    {
+        "stochastic_function": "lambda: {58: 1.0}",
+        "variable": "age",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {20000: 0.3, 40000: 0.5, 60000: 0.2}",
+        "variable": "income in usd",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {0.0153: 1.0}",
+        "variable": "population infection density",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {7: 1.0}",
+        "variable": "stay at home duration in days",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_decision: {1: 0.8, 52: 0.2} if stay_at_home_decision == 'stay at home' else {5: 0.95, 42: 0.05}",
+        "variable": "number of people one contacts",
+        "evidence": [
+            "stay at home decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_decision, income_in_usd, stay_at_home_duration_in_days: {(income_in_usd * stay_at_home_duration_in_days) / 365: 1} if stay_at_home_decision == 'stay at home' else {0: 1}",
+        "variable": "cost of staying at home in usd",
+        "evidence": [
+            "stay at home decision",
+            "income in usd",
+            "stay at home duration in days"
+        ]
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_duration_in_days, population_infection_density, number_of_people_one_contacts: {0: 1 - (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts), 1: (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts)} if stay_at_home_duration_in_days == 7 and number_of_people_one_contacts in [5, 52] else {0: 1, 1: 0} if stay_at_home_duration_in_days != 7 or number_of_people_one_contacts not in [5, 52] else {}",
+        "variable": "exposure",
+        "evidence": [
+            "stay at home duration in days",
+            "population infection density",
+            "number of people one contacts"
+        ]
+    },
+    {
+        "stochastic_function": "lambda exposure: {'not infected': 0.945, 'mild': 0.0447, 'severe': 0.0063825, 'critical': 0.0018987, 'dead': 0.0002608} if exposure == 'exposed' else {'not infected': 1.0}",
+        "variable": "infection",
+        "evidence": [
+            "exposure"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection: {0: 0.845, 14: 0.055, 31.5: 0.015, 35: 0.085}",
+        "variable": "hospital stays in days",
+        "evidence": [
+            "infection"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection: {0: 0.845, -12692: 0.055 * 0.8, -34223: 0.055 * (1 - 0.8) * (1 - 0.305), -88134: 0.055 * (1 - 0.8) * 0.305 * (1 - 0.557)} if infection == 'exposed' else {0: 1.0}",
+        "variable": "medical expenses in usd",
+        "evidence": [
+            "infection"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection, age, income_in_usd: {-840000: 1.0 if (infection == 'dead' and age == 58) else 0.0, -1640000: 1.0 if (infection == 'dead' and age != 58) else 0.0, 0: 1.0 if infection != 'dead' else 0.0}",
+        "variable": "death cost",
+        "evidence": [
+            "infection",
+            "age",
+            "income in usd"
+        ]
+    },
+    {
+        "stochastic_function": "lambda hospital_stays_in_days, income_in_usd: {(income_in_usd * hospital_stays_in_days) / 365: 1.0} if hospital_stays_in_days > 0 else {0: 1.0}",
+        "variable": "treatment time expenses in usd",
+        "evidence": [
+            "hospital stays in days",
+            "income in usd"
+        ]
+    }
+]

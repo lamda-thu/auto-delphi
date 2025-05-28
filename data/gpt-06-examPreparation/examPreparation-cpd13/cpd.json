@@ -1,0 +1,95 @@
+[
+    {
+        "variable": "current knowledge",
+        "variable_card": 3,
+        "evidence": [
+            "study decision"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "current knowledge": [
+                1,
+                0,
+                -1
+            ],
+            "study decision": [
+                "study more",
+                "study less"
+            ]
+        },
+        "stochastic_function": "lambda study_decision: {1: 0.7+0, 0: 0.3-0, -1: 0.0} if study_decision == 'study more' else {1: 0.3, 0: 0.5+0, -1: 0.2-0}"
+    },
+    {
+        "variable": "health status",
+        "variable_card": 3,
+        "evidence": [
+            "study decision"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "health status": [
+                1,
+                0,
+                -1
+            ],
+            "study decision": [
+                "study more",
+                "study less"
+            ]
+        },
+        "stochastic_function": "lambda study_decision: {1: 0.6+0.1, 0: 0.3-0.1, -1: 0.1} if study_decision == 'study less' else {1: 0.4+0.1/2, 0: 0.4+0.1/2, -1: 0.2-0.1}"
+    },
+    {
+        "variable": "exam score",
+        "variable_card": 3,
+        "evidence": [
+            "current knowledge",
+            "health status",
+            "exam difficulty"
+        ],
+        "evidence_card": [
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "exam score": [
+                1,
+                0,
+                -1
+            ],
+            "current knowledge": [
+                1,
+                0,
+                -1
+            ],
+            "health status": [
+                1,
+                0,
+                -1
+            ],
+            "exam difficulty": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda current_knowledge, health_status, exam_difficulty: {1: 0.7, 0: 0.2, -1: 0.1} if current_knowledge == 1 and health_status == 1 and exam_difficulty == -1 else {1: 0.6, 0: 0.3, -1: 0.1} if current_knowledge == 1 and health_status == 1 and exam_difficulty == 0 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == 1 and health_status == 1 and exam_difficulty == 1 else {1: 0.6, 0: 0.3, -1: 0.1} if current_knowledge == 1 and health_status == 0 and exam_difficulty == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == 1 and health_status == 0 and exam_difficulty == 0 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == 1 and health_status == 0 and exam_difficulty == 1 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == 1 and health_status == -1 and exam_difficulty == -1 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == 1 and health_status == -1 and exam_difficulty == 0 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == 1 and health_status == -1 and exam_difficulty == 1 else {1: 0.6, 0: 0.3, -1: 0.1} if current_knowledge == 0 and health_status == 1 and exam_difficulty == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == 0 and health_status == 1 and exam_difficulty == 0 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == 0 and health_status == 1 and exam_difficulty == 1 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == 0 and health_status == 0 and exam_difficulty == -1 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == 0 and health_status == 0 and exam_difficulty == 0 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == 0 and health_status == 0 and exam_difficulty == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == 0 and health_status == -1 and exam_difficulty == -1 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == 0 and health_status == -1 and exam_difficulty == 0 else {1: 0.2, 0: 0.7, -1: 0.1} if current_knowledge == 0 and health_status == -1 and exam_difficulty == 1 else {1: 0.5, 0: 0.4, -1: 0.1} if current_knowledge == -1 and health_status == 1 and exam_difficulty == -1 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == -1 and health_status == 1 and exam_difficulty == 0 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == -1 and health_status == 1 and exam_difficulty == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if current_knowledge == -1 and health_status == 0 and exam_difficulty == -1 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == -1 and health_status == 0 and exam_difficulty == 0 else {1: 0.2, 0: 0.7, -1: 0.1} if current_knowledge == -1 and health_status == 0 and exam_difficulty == 1 else {1: 0.3, 0: 0.6, -1: 0.1} if current_knowledge == -1 and health_status == -1 and exam_difficulty == -1 else {1: 0.2, 0: 0.7, -1: 0.1} if current_knowledge == -1 and health_status == -1 and exam_difficulty == 0 else {1: 0.1, 0: 0.8, -1: 0.1}"
+    },
+    {
+        "variable": "exam difficulty",
+        "variable_card": 3,
+        "state_names": {
+            "exam difficulty": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.3+0.1, 0: 0.4, -1: 0.3-0.1}"
+    }
+]

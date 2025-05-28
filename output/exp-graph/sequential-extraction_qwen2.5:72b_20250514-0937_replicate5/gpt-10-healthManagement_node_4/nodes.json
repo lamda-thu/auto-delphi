@@ -1,0 +1,40 @@
+[
+    {
+        "variable_name": "exercise time",
+        "variable_type": "decision",
+        "variable_values": [
+            "1 hour",
+            "0.5 hour",
+            "No exercise"
+        ]
+    },
+    {
+        "variable_name": "diet quality",
+        "variable_type": "chance",
+        "variable_values": [
+            "High",
+            "Medium",
+            "Low"
+        ]
+    },
+    {
+        "variable_name": "weight",
+        "variable_type": "chance",
+        "variable_values": [
+            "Underweight",
+            "Normal",
+            "Overweight",
+            "Obese"
+        ]
+    },
+    {
+        "variable_name": "health status",
+        "variable_type": "utility",
+        "variable_values": [
+            10,
+            5,
+            0,
+            -5
+        ]
+    }
+]

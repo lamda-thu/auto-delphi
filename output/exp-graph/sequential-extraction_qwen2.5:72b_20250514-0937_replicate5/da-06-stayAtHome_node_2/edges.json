@@ -1,0 +1,58 @@
+[
+    {
+        "cause": "age",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "income_in_usd",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "population_infection_density",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "stay_at_home_duration_in_days",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "number_of_people_one_contacts"
+    },
+    {
+        "cause": "number_of_people_one_contacts",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "health_consequences"
+    },
+    {
+        "cause": "health_consequences",
+        "effect": "hospital_stays_in_days"
+    },
+    {
+        "cause": "health_consequences",
+        "effect": "medical_expenses_in_usd"
+    },
+    {
+        "cause": "health_consequences",
+        "effect": "death_cost"
+    },
+    {
+        "cause": "health_consequences",
+        "effect": "treatment_time_expenses_in_usd"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "cost_of_staying_at_home_in_usd"
+    },
+    {
+        "cause": "infection",
+        "effect": "loss_of_earnings_in_usd"
+    }
+]

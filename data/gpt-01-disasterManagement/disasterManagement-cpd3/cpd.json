@@ -1,0 +1,72 @@
+[
+    {
+        "variable": "social wellbeing",
+        "variable_card": 3,
+        "evidence": [
+            "emergency response level",
+            "disaster severity",
+            "public reaction"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3
+        ],
+        "state_names": {
+            "social wellbeing": [
+                1,
+                0,
+                -1
+            ],
+            "emergency response level": [
+                "elevated",
+                "normal"
+            ],
+            "disaster severity": [
+                "mild",
+                "moderate",
+                "severe"
+            ],
+            "public reaction": [
+                "positive",
+                "neutral",
+                "negative"
+            ]
+        },
+        "stochastic_function": "lambda emergency_response_level, disaster_severity, public_reaction: {1: 0.6, 0: 0.3, -1: 0.1} if emergency_response_level == 'normal' and disaster_severity == 'mild' and public_reaction in ['positive', 'neutral'] else {1: 0.3, 0: 0.4, -1: 0.3} if emergency_response_level == 'normal' and disaster_severity == 'moderate' and public_reaction in ['positive', 'neutral'] else {1: 0.2, 0: 0.5, -1: 0.3} if emergency_response_level == 'elevated' and public_reaction in ['positive', 'neutral'] else {1: 0.1, 0: 0.2, -1: 0.7}"
+    },
+    {
+        "variable": "public reaction",
+        "variable_card": 3,
+        "evidence": [
+            "emergency response level"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "public reaction": [
+                "positive",
+                "neutral",
+                "negative"
+            ],
+            "emergency response level": [
+                "elevated",
+                "normal"
+            ]
+        },
+        "stochastic_function": "lambda emergency_response_level: {'positive': 2*0.3+0.05, 'neutral': 0.3+0.05, 'negative': 0.9-3*0.3} if emergency_response_level == 'elevated' else {'positive': 2*0.3, 'neutral': 0.3, 'negative': 1-3*0.3}"
+    },
+    {
+        "variable": "disaster severity",
+        "variable_card": 3,
+        "state_names": {
+            "disaster severity": [
+                "mild",
+                "moderate",
+                "severe"
+            ]
+        },
+        "stochastic_function": "lambda: {'mild': 1-3*0.1, 'moderate': 2*0.1, 'severe': 0.1}"
+    }
+]

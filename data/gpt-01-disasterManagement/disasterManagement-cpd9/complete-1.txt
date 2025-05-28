@@ -1,0 +1,44 @@
+Background:
+The decision-making problem revolves around determining an appropriate emergency response level in light of a potential disaster, the severity of which is unknown. This decision aims to ensure social wellbeing. The chosen level of emergency response can influence the public’s reaction to the disaster, which in turn also affects social wellbeing. In summary, the main goal is to make a decision on how to respond to a disaster to maximize social wellbeing, taking into account how severe the disaster can be and how the public might respond to the chosen reaction level.
+
+
+Factors to be considered:
+In a decision-making problem regarding safety during a crisis, one must consider several factors:
+
+1. **Emergency Response Level**: This indicates the intensity or extent of measures taken by authorities or organizations to respond to a crisis. It involves deciding on the actions that need to be taken to manage the situation.
+
+2. **Disaster Severity**: This refers to the magnitude or seriousness of the crisis or disaster in question. It could range from a minor incident to a severe catastrophe.
+
+3. **Public Reaction**: This captures how the public or community reacts or is likely to react to both the crisis itself and the measures implemented by authorities. Public reaction can vary widely and can affect the overall situation.
+
+4. **Social wellbeing**: This is a measure of the wellbeing and security of the community or society in the wake of a crisis, considering how safe and secure individuals feel.
+
+
+Factors to be considered and their relations:
+When making decisions about the emergency response level, several factors need to be considered and their relationships understood. The decision of the response level can directly influence public safety and the reaction of the public.
+
+1. **Disaster Severity**: This is an important variable to consider. The intensity or scale of the disaster can significantly impact public wellbeing. A more severe disaster might demand a higher level of emergency response to ensure wellbeing.
+
+2. **Emergency Response Level**: This is the primary decision to be made. Choosing the appropriate level of response is crucial. This level of response can influence how the public reacts to the disaster. The disaster severity is unknown at the time of the decision, so the variable should not be dependent on the disaster severity.
+
+3. **Public Reaction**: The reaction of the public can vary based on the chosen level of emergency response. For instance, an inadequate response might lead to panic, while an overly aggressive response could cause undue stress or backlash. This public reaction, in turn, feeds back into public wellbeing.
+
+4. **Social wellbeing**: This represents the overall wellbeing and security of the community in the face of the disaster. It is affected by the disaster severity, the emergency response level, and the public's reaction to the disaster and the chosen response level.
+
+
+Conditional probability distributions:      
+1) The variable 'social wellbeing' has a conditional probability distribution dependent on three variables: 'emergency response level,' 'disaster severity,' and 'public reaction.' The conditional probabilities are:
+   - If the 'emergency response level' is 'normal,' 'disaster severity' is 'mild,' and 'public reaction' is 'positive' or 'neutral,' then the 'social wellbeing' takes value 1 with probability 0.6, value 0 with probability 0.3, and value -1 with probability 0.1.
+   - If the 'emergency response level' is 'normal,' 'disaster severity' is 'moderate,' and 'public reaction' is 'positive' or 'neutral,' then the 'social wellbeing' takes value 1 with probability 0.3, value 0 with probability 0.4, and value -1 with probability 0.3.
+   - If the 'emergency response level' is 'elevated,' and 'public reaction' is 'positive' or 'neutral,' then the 'social wellbeing' takes value 1 with probability 0.2, value 0 with probability 0.5, and value -1 with probability 0.3.
+   - For other combinations not specified, the 'social wellbeing' takes value 1 with probability 0.1, value 0 with probability 0.2, and value -1 with probability 0.7.
+
+2) The variable 'public reaction' has a conditional probability distribution dependent on 'emergency response level.' The conditional probabilities are:
+   - If the 'emergency response level' is 'elevated,' the 'public reaction' is 'positive' with probability 2*0.3+0.05, 'neutral' with probability 0.3+0.05, and 'negative' with probability 0.9-3*0.3.
+   - If the 'emergency response level' is 'normal,' the 'public reaction' is 'positive' with probability 2*0.3, 'neutral' with probability 0.3, and 'negative' with probability 1-3*0.3.
+
+3) The variable 'disaster severity' has a marginal probability distribution independent of the other variables. The disaster severity can be 'severe', 'moderate', or 'mild'. It is 'severe' with probability 0.3, 'moderate' with probability 2*0.3, and 'mild' with probability 1-3*0.3.
+
+
+Decision:'emergency response level'
+Alternatives:['elevated', 'normal']

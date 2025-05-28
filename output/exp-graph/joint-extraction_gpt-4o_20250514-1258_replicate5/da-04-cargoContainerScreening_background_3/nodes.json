@@ -1,0 +1,85 @@
+[
+    {
+        "variable_name": "screening decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "screen",
+            "not screen"
+        ]
+    },
+    {
+        "variable_name": "alarm status",
+        "variable_type": "chance",
+        "variable_values": [
+            "alarm triggered",
+            "no alarm"
+        ]
+    },
+    {
+        "variable_name": "inspection decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "inspect",
+            "not inspect"
+        ]
+    },
+    {
+        "variable_name": "terrorist deterrence",
+        "variable_type": "chance",
+        "variable_values": [
+            "deterred",
+            "not deterred"
+        ]
+    },
+    {
+        "variable_name": "financial cost",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            1000,
+            10000,
+            1000000
+        ]
+    },
+    {
+        "variable_name": "terrorist attack risk",
+        "variable_type": "chance",
+        "variable_values": [
+            "attack occurs",
+            "no attack"
+        ]
+    },
+    {
+        "variable_name": "radiological disposal cost",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            5000
+        ]
+    },
+    {
+        "variable_name": "screening accuracy",
+        "variable_type": "chance",
+        "variable_values": [
+            "accurate",
+            "false alarm",
+            "missed threat"
+        ]
+    },
+    {
+        "variable_name": "inspection cost",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            2000
+        ]
+    },
+    {
+        "variable_name": "terrorist attack consequences",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            10000000
+        ]
+    }
+]

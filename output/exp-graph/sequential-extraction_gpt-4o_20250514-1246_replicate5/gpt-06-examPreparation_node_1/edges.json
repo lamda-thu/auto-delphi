@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "current knowledge",
+        "effect": "exam score"
+    },
+    {
+        "cause": "health status",
+        "effect": "exam score"
+    },
+    {
+        "cause": "exam difficulty",
+        "effect": "exam score"
+    }
+]

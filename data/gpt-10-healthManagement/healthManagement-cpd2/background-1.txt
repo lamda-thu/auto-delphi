@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around determining the best amount of exercise time to positively impact a person's health status. The issue takes into account how the exercise time influences both the person's weight and health status directly. Additionally, diet quality plays a role in affecting health status, connecting all these factors in determining overall health. In essence, when deciding on exercise time, one must consider its effects on weight and, collectively with diet quality, how it alters health status.
+
+
+Decision:'exercise time'
+Alternatives:[1, 0, -1]

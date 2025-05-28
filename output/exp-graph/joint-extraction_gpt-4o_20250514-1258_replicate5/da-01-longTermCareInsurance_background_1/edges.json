@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "age",
+        "effect": "insurance premium"
+    },
+    {
+        "cause": "age",
+        "effect": "daily long-term care expense"
+    },
+    {
+        "cause": "age",
+        "effect": "life expectancy"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurance premium"
+    },
+    {
+        "cause": "gender",
+        "effect": "life expectancy"
+    },
+    {
+        "cause": "coverage amount",
+        "effect": "daily long-term care expense"
+    },
+    {
+        "cause": "coverage amount",
+        "effect": "insurance premium"
+    },
+    {
+        "cause": "life expectancy",
+        "effect": "total cost (negative utility)"
+    },
+    {
+        "cause": "insurance premium",
+        "effect": "total cost (negative utility)"
+    },
+    {
+        "cause": "daily long-term care expense",
+        "effect": "total cost (negative utility)"
+    }
+]

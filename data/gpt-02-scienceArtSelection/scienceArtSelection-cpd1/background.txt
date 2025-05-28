@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around choosing a specific field of study and how this choice impacts future income. Firstly, the field selected directly affects exam performance and job prospects in that area. Then, exam performance also influences the job prospects, indicating that doing well in exams can enhance the chances of getting a good job. Finally, the better the job prospects from these evaluations and initial field choice, the greater the potential for earning a higher future income. Essentially, the problem presents the interplay between educational decisions and their economic outcomes down the line.
+
+
+Decision:'field choice'
+Alternatives:['science', 'arts']

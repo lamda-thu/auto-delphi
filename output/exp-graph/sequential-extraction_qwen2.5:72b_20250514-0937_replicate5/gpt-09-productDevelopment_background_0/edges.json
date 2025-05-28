@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "cost_to_develop",
+        "effect": "product_success_likelihood"
+    },
+    {
+        "cause": "market_demand",
+        "effect": "sales_potential"
+    },
+    {
+        "cause": "team_productivity",
+        "effect": "product_success_likelihood"
+    },
+    {
+        "cause": "product_success_likelihood",
+        "effect": "sales_potential"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "stay at home decision",
+        "effect": "number of contacts"
+    },
+    {
+        "cause": "number of contacts",
+        "effect": "exposure to disease"
+    },
+    {
+        "cause": "exposure to disease",
+        "effect": "health consequences"
+    },
+    {
+        "cause": "health consequences",
+        "effect": "medical costs"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "loss of earnings"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "direct costs of staying at home"
+    },
+    {
+        "cause": "age",
+        "effect": "health consequences"
+    },
+    {
+        "cause": "income",
+        "effect": "loss of earnings"
+    },
+    {
+        "cause": "infection rate",
+        "effect": "exposure to disease"
+    },
+    {
+        "cause": "duration of stay at home",
+        "effect": "number of contacts"
+    }
+]

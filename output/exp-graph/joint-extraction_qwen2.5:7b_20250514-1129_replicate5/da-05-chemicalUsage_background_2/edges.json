@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "usage_decision",
+        "effect": "economic_value"
+    },
+    {
+        "cause": "chemical_carcinogenic_activity",
+        "effect": "cancer_cost"
+    },
+    {
+        "cause": "human_exposure_level",
+        "effect": "cancer_cost"
+    },
+    {
+        "cause": "usage_decision",
+        "effect": "human_exposure_level"
+    },
+    {
+        "cause": "chemical_carcinogenic_activity",
+        "effect": "economic_value"
+    }
+]

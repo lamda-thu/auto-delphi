@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "launch_decision",
+        "effect": "market_demand"
+    },
+    {
+        "cause": "launch_decision",
+        "effect": "competitor_pricing"
+    },
+    {
+        "cause": "launch_decision",
+        "effect": "production_difficulty"
+    }
+]

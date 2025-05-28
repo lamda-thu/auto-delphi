@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "screening_decision",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "smuggled_nuclear_threat",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "smuggled_nuclear_threat",
+        "effect": "inspection_result"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "cost_of_screening"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "cost_of_inspection"
+    },
+    {
+        "cause": "smuggled_nuclear_threat",
+        "effect": "cost_of_terrorist_attack"
+    },
+    {
+        "cause": "inspection_result",
+        "effect": "cost_of_radiological_disposal"
+    }
+]

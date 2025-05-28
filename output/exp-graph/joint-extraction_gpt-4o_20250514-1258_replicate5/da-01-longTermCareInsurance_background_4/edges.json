@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "age",
+        "effect": "insurance_premium"
+    },
+    {
+        "cause": "age",
+        "effect": "long_term_care_expenses"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurance_premium"
+    },
+    {
+        "cause": "gender",
+        "effect": "life_expectancy"
+    },
+    {
+        "cause": "life_expectancy",
+        "effect": "total_cost"
+    },
+    {
+        "cause": "insurance_premium",
+        "effect": "total_cost"
+    },
+    {
+        "cause": "long_term_care_expenses",
+        "effect": "total_cost"
+    },
+    {
+        "cause": "maximum_coverage_per_day",
+        "effect": "total_cost"
+    },
+    {
+        "cause": "age",
+        "effect": "maximum_coverage_per_day"
+    },
+    {
+        "cause": "gender",
+        "effect": "maximum_coverage_per_day"
+    }
+]

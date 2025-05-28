@@ -1,0 +1,37 @@
+[
+    {
+        "variable_name": "emergency_response_level",
+        "variable_type": "decision",
+        "variable_values": [
+            "elevated",
+            "normal"
+        ]
+    },
+    {
+        "variable_name": "disaster_severity",
+        "variable_type": "chance",
+        "variable_values": [
+            "mild",
+            "moderate",
+            "severe",
+            "extremely severe"
+        ]
+    },
+    {
+        "variable_name": "public_reaction",
+        "variable_type": "chance",
+        "variable_values": [
+            "calm",
+            "panicked",
+            "neutral"
+        ]
+    },
+    {
+        "variable_name": "social_wellbeing",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            100
+        ]
+    }
+]

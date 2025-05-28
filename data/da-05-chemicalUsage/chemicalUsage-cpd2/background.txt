@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around the choice to use a chemical. This decision impacts the economic value derived from the chemical, which in turn influences the overall net value. At the same time, the decision to use the chemical also impacts the cost related to cancer treatment. The cost of cancer is influenced by three factors: the decision of whether or not to use the chemical, the level of human exposure to the chemical, and the chemical's carcinogenic activity. These factors collectively influence the final net value which combines the economic benefits and the cancer-related costs of using the chemical. This decision-making problem seeks to determine the viability of using the chemical by weighing its economic benefits against its health-related costs.
+
+
+Decision:'usage decision'
+Alternatives:['ban', 'restrict', 'permit']

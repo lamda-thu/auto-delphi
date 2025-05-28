@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "usagedecision",
+        "effect": "economicvalue"
+    },
+    {
+        "cause": "usagedecision",
+        "effect": "cancercost"
+    },
+    {
+        "cause": "humanexposure",
+        "effect": "cancercost"
+    },
+    {
+        "cause": "carcinogenicactivity",
+        "effect": "cancercost"
+    }
+]

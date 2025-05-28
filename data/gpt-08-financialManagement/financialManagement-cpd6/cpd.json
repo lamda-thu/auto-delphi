@@ -1,0 +1,81 @@
+[
+    {
+        "variable": "current savings",
+        "variable_card": 3,
+        "state_names": {
+            "current savings": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 1.0}"
+    },
+    {
+        "variable": "market risk",
+        "variable_card": 3,
+        "state_names": {
+            "market risk": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.3+2*0.1, 0: 0.4-0.1, -1: 0.3-0.1}"
+    },
+    {
+        "variable": "economic conditions",
+        "variable_card": 3,
+        "state_names": {
+            "economic conditions": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.4+2*0.2, 0: 0.4-0.2, -1: 0.2-0.2}"
+    },
+    {
+        "variable": "wealth",
+        "variable_card": 3,
+        "evidence": [
+            "investment decision",
+            "current savings",
+            "market risk",
+            "economic conditions"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "wealth": [
+                1,
+                0,
+                -1
+            ],
+            "investment decision": [
+                "invest",
+                "do not invest"
+            ],
+            "current savings": [
+                "high",
+                "medium",
+                "low"
+            ],
+            "market risk": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "economic conditions": [
+                "favorable",
+                "neutral",
+                "unfavorable"
+            ]
+        },
+        "stochastic_function": "lambda investment_decision, current_savings, market_risk, economic_conditions: {1: 0, 0: 0.95, -1: 0.05} if investment_decision == 'do not invest' else {1: 0.6, 0: 0.2, -1: 0.2} if investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'favorable' else {1: 0.2, 0: 0.6, -1: 0.2} if investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'neutral' else {1: 0.3, 0: 0.4, -1: 0.3} if investment_decision == 'invest' and current_savings == 'high' and market_risk == 'medium' and economic_conditions == 'favorable' else {1: 0.1, 0: 0.2, -1: 0.7}"
+    }
+]

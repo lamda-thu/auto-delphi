@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "investment decision",
+        "effect": "market sales"
+    },
+    {
+        "cause": "development challenge",
+        "effect": "market sales"
+    },
+    {
+        "cause": "market demand",
+        "effect": "market sales"
+    },
+    {
+        "cause": "team productivity",
+        "effect": "product success"
+    },
+    {
+        "cause": "product success",
+        "effect": "market sales"
+    }
+]

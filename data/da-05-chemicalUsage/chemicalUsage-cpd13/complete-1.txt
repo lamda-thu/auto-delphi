@@ -1,0 +1,79 @@
+Background:
+The decision-making problem revolves around the choice to use a chemical. This decision impacts the economic value derived from the chemical, which in turn influences the overall net value. At the same time, the decision to use the chemical also impacts the cost related to cancer treatment. The cost of cancer is influenced by three factors: the decision of whether or not to use the chemical, the level of human exposure to the chemical, and the chemical's carcinogenic activity. These factors collectively influence the final net value which combines the economic benefits and the cancer-related costs of using the chemical. This decision-making problem seeks to determine the viability of using the chemical by weighing its economic benefits against its health-related costs.
+
+
+Factors to be considered:
+When making a decision regarding the usage of a particular chemical or product, several factors come into play:
+
+1. **Usage Decision**: This is the primary choice regarding whether or not to use the chemical.
+2. **Economic Value**: This refers to the financial benefits or impacts associated with using the chemical.
+3. **Cancer Cost**: This involves the potential health costs, specifically relating to cancer, that could result from using the chemical.
+4. **Human Exposure**: This factor considers the extent to which people might be exposed to the chemical.
+5. **Carcinogenic Activity**: This assesses the potential of the chemical to cause cancer based on its properties.
+6. **Net Value**: This represents the overall value, considering both the economic benefits and the health costs.
+
+
+Factors to be considered and their relations:
+When making decisions, it's important to consider how different factors interact and influence the outcome. Here's a straightforward way to understand the considerations to be made in a decision-making process relating to the usage of a certain chemical.
+
+First, the decision on whether to use the chemical directly affects its economic value. This economic value is essentially how profitable or beneficial the product is from a financial perspective. Additionally, the decision to use the chemical also impacts the cost associated with potential health risks, specifically cancer in this scenario.
+
+The cost of cancer, which is influenced by the usage decision, is also affected by two other factors: the level of carcinogenic activity of the chemical and the degree of human exposure to it. This means that both the inherent cancer-causing potential of the chemical and how much people are exposed to it will alter the overall cancer-related costs.
+
+The final factor to consider is the net value, which is the overall utility or worth considering all positives and negatives. This net value is determined by balancing the economic value (the financial gains) against the cancer costs (the financial and well-being losses). Thus, the overall decision should aim to maximize this net value, taking comprehensive account of the interplay between economic benefits and health-related costs.
+
+In summary, when deciding on the usage of a potentially carcinogenic product, one should weigh the direct economic benefits against the health-related costs, where the costs are further influenced by both the nature of the chemical and the level of human exposure to it. The decision should ideally be guided by the goal of optimizing overall net value, which incorporates both these financial and health perspectives.
+
+
+Conditional probability distributions:
+The conditional probability list describes the relationships between various variables concerning economic values, cancer costs, net values, human exposure, and carcinogenic activity.
+
+1. **Economic Value**:
+   - The economic value of a chemical depends on the usage decision:
+     - If the decision is 'ban', the economic value is 0 with a probability of 1.0.
+     - If the decision is 'restrict', the economic value is 5 with a probability of 1.0.
+     - If the decision is 'permit', the economic value is 100 with a probability of 1.0.
+
+2. **Cancer Cost**:
+   The cancer cost associated with a chemical is influenced by three factors: usage decision, carcinogenic activity, and human exposure:
+   - If the decision is 'ban', the cancer cost is 0 with a probability of 1.0.
+   - If the decision is 'restrict'
+      - If the carcinogenic activity is 'inactive', the cancer cost is 0 with a probability of 1.0.
+      - If the carcinogenic activity is 'moderate', the cancer cost increases with human exposure:
+         - cost -0.05 (with probability 1.0) if human exposure is 'low'
+         - cost -0.5 (with probability 1.0) if human exposure is 'medium'
+         - cost -5 (with probability 1.0) if human exposure is 'high'
+      - If the carcinogenic activity is 'very active', the cancer cost increases with human exposure:
+         - cost -1 (with probability 1.0) if human exposure is 'low'
+         - cost -10 (with probability 1.0) if human exposure is 'medium'
+         - cost -100 (with probability 1.0) if human exposure is 'high'
+   - If the decision is 'permit'
+      - If the carcinogenic activity is 'inactive', the cancer cost is 0 with a probability of 1.0.
+      - If the carcinogenic activity is 'moderate', the cancer cost increases with human exposure:
+         - cost -0.5 (with probability 1.0) if human exposure is 'low'
+         - cost -5 (with probability 1.0) if human exposure is 'medium'
+         - cost -50 (with probability 1.0) if human exposure is 'high'
+      - If the carcinogenic activity is 'very active', the cancer cost increases with human exposure:
+         - cost -10 (with probability 1.0) if human exposure is 'low'
+         - cost -100 (with probability 1.0) if human exposure is 'medium'
+      - cost -1000 (with probability 1.0) if human exposure is 'high'
+
+
+3. **Net Value**:
+   - The net value of a chemical is the sum of the economic value and cancer cost (with a probability of 1.0).
+
+4. **Human Exposure**:
+   - The probability distribution for human exposure levels is:
+     - 'high' with a probability of 0.5,
+     - 'medium' with a probability of 0.45,
+     - 'low' with a probability of 0.05.
+
+5. **Carcinogenic Activity**:
+   - The probability distribution for carcinogenic activity is:
+     - 'inactive' with a probability of 0.5,
+     - 'moderate' with a probability of 0.4,
+     - 'very active' with a probability of 0.1.
+
+
+Decision:'usage decision'
+Alternatives:['ban', 'restrict', 'permit']

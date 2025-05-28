@@ -1,0 +1,10 @@
+Background:
+The decision-making problem revolves around whether an individual should choose to stay at home during a time when an infectious disease is spreading within a population. This decision is influenced by various personal and environmental factors including the person's age, their income, the infection rate in the local population, and how long they plan to stay home. Once this decision is made, it affects how many people they are likely to come in contact with, which in turn influences their chances of being exposed to the disease. The likelihood of exposure may lead to health consequences such as getting infected, which might result in hospitalization and associated medical costs, or even more severe outcomes like death. The financial implications are broad, encompassing not just medical bills but also the potential costs related to prolonged treatment due to hospital stays, the loss of earnings from not working, and the direct costs of choosing to stay at home.  The risk, health outcomes, and financial impacts are all intertwined, making this a complex decision with numerous personal and communal repercussions.
+
+
+Context information: 
+Currently, official data indicates that 0.0153 of the population is infected. The authority suggests that citizens stay at home for 7 days.
+The decision-maker is 58-years-old with 40000 dollors annual income. 
+
+Decision:'stay at home decision'
+Alternatives:['stay at home', 'not stay at home']

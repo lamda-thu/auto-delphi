@@ -1,0 +1,86 @@
+[
+    {
+        "id": "da-01",
+        "name": "longTermCareInsurance",
+        "contexts": []
+    },
+    {
+        "id": "da-02",
+        "name": "carryUmbrella",
+        "contexts": [
+            {
+                "id": 1,
+                "values": {"c1": "rain"}
+            },
+            {
+                "id": 2,
+                "values": {"c1": "no rain"}
+            }
+        ]
+    },
+    {
+        "id": "da-04",
+        "name": "cargoContainerScreening",
+        "contexts": []
+    },
+    {
+        "id": "da-05",
+        "name": "chemicalUsage",
+        "contexts": []
+    },
+    {
+        "id": "da-06",
+        "name": "stayAtHome",
+        "contexts": []
+    },
+    {
+        "id": "gpt-01",
+        "name": "disasterManagement",
+        "contexts": []
+    },
+    {
+        "id": "gpt-02",
+        "name": "scienceArtSelection",
+        "contexts": []
+    },
+    {
+        "id": "gpt-03",
+        "name": "electricVehicleMarketing",
+        "contexts": []
+    },
+    {
+        "id": "gpt-04",
+        "name": "agriculturalProduction",
+        "contexts": []
+    },
+    {
+        "id": "gpt-05",
+        "name": "trafficManagement",
+        "contexts": []
+    },
+    {
+        "id": "gpt-06",
+        "name": "examPreparation",
+        "contexts": []
+    },
+    {
+        "id": "gpt-07",
+        "name": "recruitment",
+        "contexts": []
+    },
+    {
+        "id": "gpt-08",
+        "name": "financialManagement",
+        "contexts": []
+    },
+    {
+        "id": "gpt-09",
+        "name": "productDevelopment",
+        "contexts": []
+    },
+    {
+        "id": "gpt-10",
+        "name": "healthManagement",
+        "contexts": []
+    }
+]

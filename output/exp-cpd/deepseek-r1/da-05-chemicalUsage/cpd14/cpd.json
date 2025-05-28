@@ -1,0 +1,36 @@
+[
+    {
+        "stochastic_function": "lambda: {'inactive':0.5,'moderate':0.4,'very active':0.1}",
+        "variable": "carcinogenic activity",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'low':0.05,'medium':0.45,'high':0.5}",
+        "variable": "human exposure",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda usage_decision: {0:1.0,-1:0.0,-5:0.0} if usage_decision=='ban' else ({0:0.0,-1:1.0,-5:0.0} if usage_decision=='restrict' else {0:0.0,-1:0.0,-5:1.0})",
+        "variable": "economic value",
+        "evidence": [
+            "usage decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda usage_decision, carcinogenic_activity, human_exposure: {(0.0 if usage_decision == 'ban' else 0.1 if usage_decision == 'restrict' else 1.0) * (0.0 if carcinogenic_activity == 'inactive' else 0.5 if carcinogenic_activity == 'moderate' else 10.0) * (1.0 if human_exposure == 'low' else 10.0 if human_exposure == 'medium' else 100.0): 1.0}",
+        "variable": "cancer cost",
+        "evidence": [
+            "usage decision",
+            "carcinogenic activity",
+            "human exposure"
+        ]
+    },
+    {
+        "stochastic_function": "lambda economic_value, cancer_cost: {1:1.0,0:0.0} if economic_value ==0 and cancer_cost ==1 else {0:1.0,1:0.0}",
+        "variable": "net value",
+        "evidence": [
+            "economic value",
+            "cancer cost"
+        ]
+    }
+]

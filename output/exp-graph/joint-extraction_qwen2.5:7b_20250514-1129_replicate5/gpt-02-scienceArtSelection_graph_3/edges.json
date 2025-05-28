@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "field_choice",
+        "effect": "exam_performance"
+    },
+    {
+        "cause": "field_choice",
+        "effect": "job_prospects"
+    },
+    {
+        "cause": "exam_performance",
+        "effect": "job_prospects"
+    },
+    {
+        "cause": "job_prospects",
+        "effect": "future_income"
+    }
+]

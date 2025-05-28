@@ -1,0 +1,34 @@
+[
+    {
+        "stochastic_function": "lambda: {1:0.5,0:0.3,-1:0.2}",
+        "variable": "development cost",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1: 0.6, 0: 0.3, -1: 0.1}",
+        "variable": "market demand",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.799998,0:0.200001,-1:0.000001}",
+        "variable": "team productivity",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda team_productivity: {1:0.7,0:0.3,-1:0.0} if team_productivity==1 else ({1:0.4,0:0.4,-1:0.2} if team_productivity==0 else {1:0.1,0:0.5,-1:0.4})",
+        "variable": "product success probability",
+        "evidence": [
+            "team productivity"
+        ]
+    },
+    {
+        "stochastic_function": "lambda investment_decision, development_cost, market_demand, product_success_probability: {1:0.0,0:1.0,-1:0.0} if investment_decision == 'do not invest' else {1:0.7,0:0.2,-1:0.1} if development_cost == 1 and market_demand == 1 and product_success_probability == 1 else {1:0.0,0:1.0,-1:0.0}",
+        "variable": "market sales",
+        "evidence": [
+            "investment decision",
+            "development cost",
+            "market demand",
+            "product success probability"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "cause": "infection_rate",
+        "effect": "exposure_to_disease"
+    },
+    {
+        "cause": "duration_of_stay",
+        "effect": "number_of_contacts"
+    },
+    {
+        "cause": "number_of_contacts",
+        "effect": "exposure_to_disease"
+    },
+    {
+        "cause": "exposure_to_disease",
+        "effect": "health_consequences"
+    },
+    {
+        "cause": "health_consequences",
+        "effect": "hospitalization"
+    },
+    {
+        "cause": "hospitalization",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "hospitalization",
+        "effect": "loss_of_earnings"
+    },
+    {
+        "cause": "hospitalization",
+        "effect": "direct_costs_of_staying_at_home"
+    }
+]

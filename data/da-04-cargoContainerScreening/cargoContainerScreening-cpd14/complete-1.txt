@@ -1,0 +1,79 @@
+Background:
+The decision-making problem in question revolves around making security choices at a checkpoint where there is a potential risk of a smuggled nuclear threat in the container. You need to decide whether to screen the containers. Screening may trigger alarms when threats are present, and may deter the terrorists. Downstream decision on inspection depends on the screening decision and whether the alarm goes off. The entire sequence and combination of decisions and outcomes have financial implications, manifesting in various cost types, such as the cost of screening, inspection, radiological disposal, and in worst-case scenarios, costs associated with a terrorist attack. Essentially, the decision-making process aims to balance the safety concerns against the costs incurred while addressing the risk of nuclear threats.
+
+
+Factors to be considered:
+In this decision-making problem, several key factors need to be considered:
+
+1. **Screening Decision**: This refers to the initial choice about whether or not to conduct screenings. 
+
+2. **Inspection Decision**: This refers to the decision on conducting further inspections after initial screening.
+
+3. **Smuggled Nuclear Threat**: This factor represents the possibility or risk of a nuclear threat being smuggled in the container.
+
+4. **Alarm**: This is a signal or alert that might be triggered during the screening process.
+
+5. **Inspection Result**: This reflects the outcome of the inspection process (whether a threat is found).
+
+6. **Cost of Screening**: The monetary expense associated with carrying out screening.
+
+7. **Cost of Inspection**: The financial cost related to conducting inspections.
+
+8. **Cost of Radiological Disposal**: This involves the expenses associated with disposing of radiological materials, if any are found.
+
+9. **Cost of Terrorist Attack**: This estimates the potential financial impact of a terrorist attack if it were to occur.
+
+
+Factors to be considered and their relations:
+When making decisions about security measures like screening and inspections, several factors and their relationships need to be considered to understand their impacts on risks and costs.
+
+1. **Screening Decision**: This is the first decision to be made, determining whether to inspect the container. If radioactive materials are present, an alarm is likely to be set off. It also has a deterrence effect that lowers the probability of a possible smuggled threat. Screening leads to a screening cost.
+
+2. **Alarm**: Whether an alarm goes off can depend on the initial screening as well as if there is an actual smuggled threat. It never goes off if no screening was carried out. The alarm status helps decide if a further inspection is necessary.
+
+3. **Inspection Decision**: Depending on the initial screening decision and the alarm, there may be a need for a more detailed inspection. Inspection may find the existing threat. It leads to an inspection cost.
+
+4. **Smuggled Nuclear Threat**: It's possible that a threat exists. It will trigger alarms and be found by inspections with certain probability. If present and not found, these threats may turn into terrorist attacks.
+
+5. **Costs**: The decision and outcomes of screening and inspections influence various costs, such as:
+   - The direct financial impact of screening and inspection.
+   - The cost associated with managing any contaminative or hazardous materials, if found.
+   - Economic consequences of any terrorist attack (if the threat was not mitigated successfully).
+
+
+Conditional probability distributions:
+1. The "smuggled nuclear threat" depends the "screening decision," 
+   - If the decision is to 'screen', the probability of a smuggled nuclear threat 'exist' is 5e-10, and 'not exist' with probability 1 - 5e-10.
+   - If the decision is 'not screen', the probability of a threat existing is 5.0 * 5e-10. The threat 'not exist' with probability 1 - 5.0 * 5e-10.
+
+2. The variable "alarm" depends on both "screening decision" and "smuggled nuclear threat."
+   - If the screening decision is 'not screen', the alarm always indicates "no signal."
+   - If screening decision is to 'screen':
+     - If a nuclear threat exists, the probability of an alarm giving a "signal" is 0.8, and "no signal" with probability 0.2.
+     - If the threat does not exist, the probability of 'signal' is 0.025 and the probability of 'no signal' is 0.975.
+
+3. The variable "inspection result" is dependent on "inspection decision" and "smuggled nuclear threat."
+   - If the inspection decision is 'not inspect', the inspection result is always 'threat not found' (with probability 1.0).
+   - If the inspection decision is 'inspect', but the threat does not exist, the result is always "threat not found" (with probability 1.0).
+   - If the inspection decision is 'inspect' and a threat exists, the inspection result is 'find threat' with probability 0.9, and 'threat not found' with probability 0.1
+
+4. The "cost of screening" depends on the "screening decision."
+   - If the decision is to 'screen', the cost is 6 USD (with probability 1).
+   - If the decision is 'not screen', the cost is 0 (with probability 1).
+
+5. The "cost of inspection" depends on the "inspection decision."
+   - If the decision is to 'inspect', the cost is 600 USD (with probability 1).
+   - If the decision is 'not inspect', the cost is 0 (with probablity 1).
+
+6. The "cost of radiological disposal" depends on the "inspection result."
+   - If the inspection result is "find threat," the cost is 100,000 USD (with probablity 1).
+   - If the inspection result is 'threat not found', the cost is 0 (with probablity 1).
+
+7. The "cost of terrorist attack" varies based on the "smuggled nuclear threat" and "inspection result."
+   - If the threat is 'not exist', the cost is 0 (with probablity 1).
+   - If the threat does 'exist', but the inspection result is 'threat found', the cost is 0 (with probablity 1).
+   - If the threat does 'exist', and the inspection result is 'threat not found', there is a 0.9 probability of incurring a cost of 40000000000.0 USD, and a 0.1 probability of zero cost.
+
+
+Decision:'screening decision'
+Alternatives:['screen', 'not screen']

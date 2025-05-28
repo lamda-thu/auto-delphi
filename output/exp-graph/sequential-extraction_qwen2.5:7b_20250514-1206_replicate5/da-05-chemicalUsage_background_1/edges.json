@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "chemical_usage",
+        "effect": "economic_value"
+    },
+    {
+        "cause": "chemical_usage",
+        "effect": "cancer_treatment_cost"
+    },
+    {
+        "cause": "human_exposure_level",
+        "effect": "cancer_treatment_cost"
+    },
+    {
+        "cause": "chemical_carcinogenic_activity",
+        "effect": "cancer_treatment_cost"
+    }
+]

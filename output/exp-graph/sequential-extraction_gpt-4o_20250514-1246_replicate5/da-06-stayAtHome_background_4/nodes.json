@@ -1,0 +1,111 @@
+[
+    {
+        "variable_name": "age",
+        "variable_type": "chance",
+        "variable_values": [
+            "young",
+            "middle-aged",
+            "elderly"
+        ]
+    },
+    {
+        "variable_name": "income",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "infection_rate",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "duration",
+        "variable_type": "chance",
+        "variable_values": [
+            "short",
+            "medium",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "contact_rate",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "exposure_likelihood",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "moderate",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "infection_status",
+        "variable_type": "chance",
+        "variable_values": [
+            "not infected",
+            "infected"
+        ]
+    },
+    {
+        "variable_name": "hospitalization_needed",
+        "variable_type": "chance",
+        "variable_values": [
+            "not required",
+            "required"
+        ]
+    },
+    {
+        "variable_name": "medical_costs",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            10000
+        ]
+    },
+    {
+        "variable_name": "loss_of_income",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            5000
+        ]
+    },
+    {
+        "variable_name": "stay_home_cost",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            2000
+        ]
+    },
+    {
+        "variable_name": "health_outcome",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            -10000
+        ]
+    },
+    {
+        "variable_name": "stay_at_home_decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "stay at home",
+            "not stay at home"
+        ]
+    }
+]

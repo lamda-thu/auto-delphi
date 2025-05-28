@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "weather outcome",
+        "effect": "weather forecast"
+    },
+    {
+        "cause": "weather forecast",
+        "effect": "carry umbrella decision"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "umbrella inconvenience cost"
+    },
+    {
+        "cause": "weather outcome",
+        "effect": "wetness cost"
+    },
+    {
+        "cause": "carry umbrella decision",
+        "effect": "wetness cost"
+    }
+]

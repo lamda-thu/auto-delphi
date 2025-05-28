@@ -1,0 +1,50 @@
+[
+    {
+        "cause": "age",
+        "effect": "exposure_risk"
+    },
+    {
+        "cause": "income",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "infection_rate",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "duration",
+        "effect": "stay_at_home_decision"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "exposure_risk"
+    },
+    {
+        "cause": "exposure_risk",
+        "effect": "health_outcome"
+    },
+    {
+        "cause": "health_outcome",
+        "effect": "medical_costs"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "stay_home_cost"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "lost_income"
+    },
+    {
+        "cause": "population_density",
+        "effect": "infection_rate"
+    },
+    {
+        "cause": "stay_at_home_decision",
+        "effect": "communal_impact"
+    },
+    {
+        "cause": "infection_rate",
+        "effect": "exposure_risk"
+    }
+]

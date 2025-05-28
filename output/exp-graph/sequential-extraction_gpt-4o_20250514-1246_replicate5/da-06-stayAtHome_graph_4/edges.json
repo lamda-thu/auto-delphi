@@ -1,0 +1,90 @@
+[
+    {
+        "cause": "age",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "number of people one contacts"
+    },
+    {
+        "cause": "number of people one contacts",
+        "effect": "exposure"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "exposure"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "hospital stays in days"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "medical expenses in usd"
+    },
+    {
+        "cause": "infection",
+        "effect": "death cost"
+    },
+    {
+        "cause": "age",
+        "effect": "death cost"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "death cost"
+    },
+    {
+        "cause": "infection",
+        "effect": "treatment time expenses in usd"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "treatment time expenses in usd"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "cost of staying at home in usd"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "cost of staying at home in usd"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "containment benefit"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "public health impact"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "public health impact"
+    },
+    {
+        "cause": "age",
+        "effect": "life value associated with age"
+    }
+]

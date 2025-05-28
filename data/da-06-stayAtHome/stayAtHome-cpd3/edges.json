@@ -1,0 +1,78 @@
+[
+    {
+        "cause": "age",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "income in USD",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "number of people one contacts"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "exposure"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "exposure"
+    },
+    {
+        "cause": "number of people one contacts",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "hospital stays in days"
+    },
+    {
+        "cause": "infection",
+        "effect": "medical expenses in USD"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "treatment time expenses in USD"
+    },
+    {
+        "cause": "income in USD",
+        "effect": "treatment time expenses in USD"
+    },
+    {
+        "cause": "infection",
+        "effect": "death cost"
+    },
+    {
+        "cause": "age",
+        "effect": "death cost"
+    },
+    {
+        "cause": "income in USD",
+        "effect": "death cost"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "cost of staying at home in USD"
+    },
+    {
+        "cause": "income in USD",
+        "effect": "cost of staying at home in USD"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "cost of staying at home in USD"
+    }
+]

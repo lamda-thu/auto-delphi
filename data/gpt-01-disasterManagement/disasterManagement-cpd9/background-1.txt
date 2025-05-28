@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around determining an appropriate emergency response level in light of a potential disaster, the severity of which is unknown. This decision aims to ensure social wellbeing. The chosen level of emergency response can influence the public’s reaction to the disaster, which in turn also affects social wellbeing. In summary, the main goal is to make a decision on how to respond to a disaster to maximize social wellbeing, taking into account how severe the disaster can be and how the public might respond to the chosen reaction level.
+
+
+Decision:'emergency response level'
+Alternatives:['elevated', 'normal']

@@ -1,0 +1,279 @@
+[
+    {
+        "variable": "age",
+        "variable_card": 4,
+        "stochastic_function": "lambda: {38: 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "age": [
+                38,
+                58
+            ]
+        }
+    },
+    {
+        "variable": "income in USD",
+        "variable_card": 3,
+        "stochastic_function": "lambda: {40000: 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "income in USD": [
+                20000,
+                40000
+            ]
+        }
+    },
+    {
+        "variable": "population infection density",
+        "variable_card": 3,
+        "stochastic_function": "lambda: {0.0153: 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "population infection density": [
+                1.7e-05,
+                0.0153
+            ]
+        }
+    },
+    {
+        "variable": "number of people one contacts",
+        "variable_card": 2,
+        "stochastic_function": "lambda stay_at_home_decision: {1: 1.0} if stay_at_home_decision=='stay at home' else {52: 1.0}",
+        "evidence": [
+            "stay at home decision"
+        ],
+        "evidence_card": [
+            2
+        ]
+    },
+    {
+        "variable": "stay at home duration in days",
+        "variable_card": 4,
+        "stochastic_function": "lambda: {7: 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "stay at home duration in days": [
+                7,
+                28
+            ]
+        }
+    },
+    {
+        "variable": "exposure",
+        "variable_card": 2,
+        "evidence": [
+            "population infection density",
+            "stay at home duration in days",
+            "number of people one contacts"
+        ],
+        "evidence_card": [
+            3,
+            4,
+            2
+        ],
+        "state_names": {
+            "exposure": [
+                "exposed",
+                "not exposed"
+            ],
+            "population infection density": [
+                1.7e-05,
+                0.0153
+            ],
+            "stay at home duration in days": [
+                7,
+                28
+            ],
+            "number of people one contacts": [
+                1,
+                5,
+                9,
+                42,
+                52,
+                62
+            ]
+        },
+        "stochastic_function": "lambda population_infection_density, stay_at_home_duration_in_days, number_of_people_one_contacts: {'exposed': 1.0 - (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts), 'not exposed': (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts)}"
+    },
+    {
+        "variable": "infection",
+        "variable_card": 5,
+        "stochastic_function": "lambda exposure: {'not infected': 1.0 - 0.1, 'mild': 0.1 * 0.8, 'severe': 0.1 * (1 - 0.8) * (1 - 0.305), 'critical': 0.1 * (1 - 0.8) * 0.305 * (1 - 0.557), 'dead': 0.1 * (1 - 0.8) * 0.305 * 0.557} if exposure=='exposed' else {'not infected': 1.0}",
+        "evidence": [
+            "exposure"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "infection": [
+                "not infected",
+                "mild",
+                "severe",
+                "critical",
+                "dead"
+            ],
+            "exposure": [
+                "exposed",
+                "not exposed"
+            ]
+        }
+    },
+    {
+        "variable": "hospital stays in days",
+        "variable_card": 4,
+        "stochastic_function": "lambda infection: {0: 1.0} if infection=='not infected' else {14: 1.0} if infection=='mild' else {31.5: 1.0} if infection=='severe' else {31.5: 1.0} if infection=='critical' else {35: 1.0}",
+        "evidence": [
+            "infection"
+        ],
+        "evidence_card": [
+            5
+        ],
+        "state_names": {
+            "hospital stays in days": [
+                0,
+                14,
+                31.5,
+                35
+            ],
+            "infection": [
+                "not infected",
+                "mild",
+                "severe",
+                "critical",
+                "dead"
+            ]
+        }
+    },
+    {
+        "variable": "medical expenses in USD",
+        "variable_card": 4,
+        "stochastic_function": "lambda infection: {-88134: 1.0} if infection=='dead' else {-34223: 1.0} if infection=='critical' else {-12692: 1.0} if infection=='severe' else {0: 1.0}",
+        "evidence": [
+            "infection"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "medical expenses in USD": [
+                0,
+                -12692,
+                -34223,
+                -88134
+            ],
+            "infection": [
+                "not infected",
+                "mild",
+                "severe",
+                "critical",
+                "dead"
+            ]
+        }
+    },
+    {
+        "variable": "death cost",
+        "variable_card": 60,
+        "stochastic_function": "lambda infection, age, income_in_USD: {-(79 - age) * income_in_USD: 1.0} if infection=='dead' else {0: 1.0}",
+        "evidence": [
+            "infection",
+            "age",
+            "income in USD"
+        ],
+        "evidence_card": [
+            5,
+            4,
+            3
+        ],
+        "state_names": {
+            "death cost": [
+                -1640000,
+                -840000,
+                0
+            ],
+            "infection": [
+                "not infected",
+                "mild",
+                "severe",
+                "critical",
+                "dead"
+            ],
+            "age": [
+                38,
+                58
+            ],
+            "income in USD": [
+                20000,
+                40000
+            ]
+        }
+    },
+    {
+        "variable": "treatment time expenses in USD",
+        "variable_card": 12,
+        "stochastic_function": "lambda income_in_USD, hospital_stays_in_days: {- income_in_USD * hospital_stays_in_days / 365: 1.0}",
+        "evidence": [
+            "income in USD",
+            "hospital stays in days"
+        ],
+        "evidence_card": [
+            3,
+            4
+        ],
+        "state_names": {
+            "treatment time expenses in USD": [
+                -3835.62,
+                -3452.05,
+                -1534.25,
+                0.0
+            ],
+            "income in USD": [
+                20000,
+                40000
+            ],
+            "hospital stays in days": [
+                0,
+                14,
+                31.5,
+                35
+            ]
+        }
+    },
+    {
+        "variable": "cost of staying at home in USD",
+        "variable_card": 12,
+        "stochastic_function": "lambda income_in_USD, stay_at_home_duration_in_days, stay_at_home_decision: {- income_in_USD * stay_at_home_duration_in_days / 365: 1.0} if stay_at_home_decision=='stay at home' else {0: 1.0}",
+        "evidence": [
+            "income in USD",
+            "stay at home duration in days",
+            "stay at home decision"
+        ],
+        "evidence_card": [
+            3,
+            4,
+            2
+        ],
+        "state_names": {
+            "cost of staying at home in USD": [
+                -767.12,
+                0
+            ],
+            "income in USD": [
+                20000,
+                40000
+            ],
+            "stay at home duration in days": [
+                7,
+                28
+            ],
+            "stay at home decision": [
+                "stay at home",
+                "not stay at home"
+            ]
+        }
+    }
+]

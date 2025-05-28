@@ -1,0 +1,100 @@
+[
+    {
+        "variable_name": "stay_at_home_decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "stay at home",
+            "not stay at home"
+        ]
+    },
+    {
+        "variable_name": "infection_rate",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "duration_of_staying_home",
+        "variable_type": "chance",
+        "variable_values": [
+            "short",
+            "recommended duration",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "contacts_with_people",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "exposure_to_disease",
+        "variable_type": "chance",
+        "variable_values": [
+            "not exposed",
+            "exposed"
+        ]
+    },
+    {
+        "variable_name": "health_outcomes",
+        "variable_type": "chance",
+        "variable_values": [
+            "healthy",
+            "infected",
+            "hospitalized",
+            "death"
+        ]
+    },
+    {
+        "variable_name": "medical_costs",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            -1000,
+            -10000
+        ]
+    },
+    {
+        "variable_name": "loss_of_earnings",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            -500,
+            -5000
+        ]
+    },
+    {
+        "variable_name": "direct_costs_of_staying_home",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            -200,
+            -2000
+        ]
+    },
+    {
+        "variable_name": "age",
+        "variable_type": "chance",
+        "variable_values": [
+            "young",
+            "middle-aged",
+            "elderly"
+        ]
+    },
+    {
+        "variable_name": "income",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    }
+]

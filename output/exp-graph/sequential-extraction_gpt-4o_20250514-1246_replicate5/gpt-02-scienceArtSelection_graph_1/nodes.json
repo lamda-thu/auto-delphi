@@ -1,0 +1,84 @@
+[
+    {
+        "variable_name": "field choice",
+        "variable_type": "decision",
+        "variable_values": [
+            "science",
+            "arts"
+        ]
+    },
+    {
+        "variable_name": "personal interests",
+        "variable_type": "chance",
+        "variable_values": [
+            "high interest",
+            "low interest"
+        ]
+    },
+    {
+        "variable_name": "skills",
+        "variable_type": "chance",
+        "variable_values": [
+            "strong skills",
+            "weak skills"
+        ]
+    },
+    {
+        "variable_name": "market demand",
+        "variable_type": "chance",
+        "variable_values": [
+            "high demand",
+            "low demand"
+        ]
+    },
+    {
+        "variable_name": "difficulty of field",
+        "variable_type": "chance",
+        "variable_values": [
+            "high difficulty",
+            "low difficulty"
+        ]
+    },
+    {
+        "variable_name": "exam performance",
+        "variable_type": "chance",
+        "variable_values": [
+            "excellent",
+            "average",
+            "poor"
+        ]
+    },
+    {
+        "variable_name": "job availability",
+        "variable_type": "chance",
+        "variable_values": [
+            "many opportunities",
+            "few opportunities"
+        ]
+    },
+    {
+        "variable_name": "job nature",
+        "variable_type": "chance",
+        "variable_values": [
+            "high-paying",
+            "low-paying"
+        ]
+    },
+    {
+        "variable_name": "geographical location",
+        "variable_type": "chance",
+        "variable_values": [
+            "urban",
+            "rural"
+        ]
+    },
+    {
+        "variable_name": "future income",
+        "variable_type": "utility",
+        "variable_values": [
+            10000,
+            50000,
+            100000
+        ]
+    }
+]

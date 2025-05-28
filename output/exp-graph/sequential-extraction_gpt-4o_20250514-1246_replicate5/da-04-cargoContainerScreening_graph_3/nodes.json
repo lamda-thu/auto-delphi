@@ -1,0 +1,90 @@
+[
+    {
+        "variable_name": "screening decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "screen",
+            "not screen"
+        ]
+    },
+    {
+        "variable_name": "smuggled nuclear threat",
+        "variable_type": "chance",
+        "variable_values": [
+            "threat present",
+            "no threat"
+        ]
+    },
+    {
+        "variable_name": "deterrence effect",
+        "variable_type": "chance",
+        "variable_values": [
+            "high deterrence",
+            "low deterrence"
+        ]
+    },
+    {
+        "variable_name": "alarm",
+        "variable_type": "chance",
+        "variable_values": [
+            "triggered",
+            "not triggered"
+        ]
+    },
+    {
+        "variable_name": "inspection decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "inspect",
+            "not inspect"
+        ]
+    },
+    {
+        "variable_name": "inspection outcome",
+        "variable_type": "chance",
+        "variable_values": [
+            "threat found",
+            "no threat found"
+        ]
+    },
+    {
+        "variable_name": "cost of screening",
+        "variable_type": "utility",
+        "variable_values": [
+            -5000,
+            0
+        ]
+    },
+    {
+        "variable_name": "cost of inspection",
+        "variable_type": "utility",
+        "variable_values": [
+            -20000,
+            0
+        ]
+    },
+    {
+        "variable_name": "cost of radiological disposal",
+        "variable_type": "utility",
+        "variable_values": [
+            -100000,
+            0
+        ]
+    },
+    {
+        "variable_name": "cost of terrorist attack",
+        "variable_type": "utility",
+        "variable_values": [
+            -100000000,
+            0
+        ]
+    },
+    {
+        "variable_name": "financial impact of terrorist attack",
+        "variable_type": "utility",
+        "variable_values": [
+            -100000000,
+            0
+        ]
+    }
+]

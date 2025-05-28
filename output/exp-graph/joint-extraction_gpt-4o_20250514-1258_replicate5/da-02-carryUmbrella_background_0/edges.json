@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "actual_weather",
+        "effect": "weather_forecast"
+    },
+    {
+        "cause": "weather_forecast",
+        "effect": "carry_umbrella_decision"
+    },
+    {
+        "cause": "carry_umbrella_decision",
+        "effect": "associated_cost"
+    },
+    {
+        "cause": "actual_weather",
+        "effect": "associated_cost"
+    }
+]

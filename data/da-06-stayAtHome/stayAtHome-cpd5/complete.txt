@@ -1,0 +1,110 @@
+Background:
+The decision-making problem revolves around whether an individual should choose to stay at home during a time when an infectious disease is spreading within a population. This decision is influenced by various personal and environmental factors including the person's age, their income, the infection rate in the local population, and how long they plan to stay home. Once this decision is made, it affects how many people they are likely to come in contact with, which in turn influences their chances of being exposed to the disease. The likelihood of exposure may lead to health consequences such as getting infected, which might result in hospitalization and associated medical costs, or even more severe outcomes like death. The financial implications are broad, encompassing not just medical bills but also the potential costs related to prolonged treatment due to hospital stays, the loss of earnings from not working, and the direct costs of choosing to stay at home.  The risk, health outcomes, and financial impacts are all intertwined, making this a complex decision with numerous personal and communal repercussions.
+
+
+Factors to be considered:
+In the decision-making problem, the factors to be considered are:
+
+1. **Age**: The age of the individual(s) involved in the decision.
+2. **Income in USD**: The economic earnings in dollars.
+3. **Population Infection Density**: The density of infections within the population.
+4. **Stay at Home Duration in Days**: The number of days an individual plans to or should stay at home.
+5. **Stay at Home Decision**: The decision whether to stay at home or not.
+6. **Number of People One Contacts**: The count of individuals one interacts with.
+7. **Exposure**: The potential exposure to infection.
+8. **Infection**: The occurrence of infection from exposure.
+9. **Hospital Stays in Days**: The duration of stay in a hospital if infected.
+10. **Medical Expenses in USD**: The financial cost incurred for medical treatment.
+11. **Death Cost**: The cost associated with an individual's death.
+12. **Treatment Time Expenses in USD**: The economic losses due to time spent in treatment.
+13. **Cost of Staying at Home in USD**: The economic impact of choosing to stay at home.
+
+
+Factors to be considered and their relations:
+When making a decision about whether to stay at home during an infectious disease outbreak, several important factors should be considered. Firstly, an individual's age and income can both influence their choice. Additionally, the density of infection in the population and the planned duration of staying at home are also critical.
+
+The choice to stay at home impacts how many people an individual might come into contact with, potentially reducing exposure to the disease. The duration of staying at home and the number of contacts, together with the infection density in the population, directly affect a person’s exposure to the disease.
+
+If a person becomes exposed, there's a risk of infection, which can lead to various consequences. An infection may result in hospitalization, which increases medical expenses and potentially necessitates prolonged treatment, further incurring financial costs. An individual’s income influences these treatment expenses and their ability to manage these costs.
+
+Additionally, age and income can influence the cost of potential death resulting from the infection, reflecting varied life values and financial capabilities in handling the after-effects.    
+
+The decision to stay at home also incurs direct costs, influenced again by income and the duration of the stay. These expenses need to be weighed against the personal and public health benefits of helping to contain the spread of the disease.
+
+In summary, making the decision to stay at home involves balancing personal factors (like age and income), the broader situation (such as infection density), and the potential individual consequences (like exposure to disease and financial impacts). Understanding these relationships can help a person make a well-rounded decision.
+
+
+Conditional probability distributions:
+Here are the quantitative relations and conditional probabilities described in the given list:
+
+1. **Age**: 38 (with a probability of 1.0).
+
+2. **Income in USD**: 40000 (with a probability of 1.0).
+
+3. **Population Infection Density**: the population infection density is 0.0153 (with a probability of 1.0).
+
+4. **Number of People One Contacts**:
+   This variable is conditional on the 'stay at home decision'.
+   - If the decision is to 'stay at home', the number of contacts is 1 with a probability of 1.0.
+   - If not 'staying at home', the number of contacts becomes 52 with a probability of 1.0.
+
+
+5. **Stay at Home Duration in Days**: 7 days (with a probability of 1.0).
+
+6. **Exposure**:
+   Exposure depends on three variables: 'population infection density', 'stay at home duration in days', and 'number of people one contacts'. 
+   - One gets 'exposed' with a probability calculated as 1.0 - (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts).
+   - One is 'not exposed' with a probability of (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts).
+
+7. **Infection**: The probability distribution for 'infection' depends if one is 'exposed' or not. If 'exposed', probabilities are defined for different severities of infection outcomes ('not infected', 'mild', 'severe', 'critical', 'dead') using the rate of infection (0.055) and conditional distribution, otherwise, 'not infected' is certain.
+   - If 'exposed':
+     - 'not infected': 1.0 - 0.055
+     - 'mild': 0.055 * 0.8
+     - 'severe': 0.055 * (1 - 0.8) * (1 - 0.305)
+     - 'critical': 0.055 * (1 - 0.8) * 0.305 * (1 - 0.557)
+     - 'dead': 0.055 * (1 - 0.8) * 0.305 * 0.557
+   - If 'not exposed', the probability of being 'not infected' is 1.0.
+
+8. **Hospital Stays in Days**:
+   The duration of hospital stays varies based on the level of infection. 
+   - If infection is 'not infected': hospital stays is 0 days (with a probability of 1.0)
+   - If infection is 'mild' infection: hospital stays is 14 days (with a probability of 1.0)
+   - If 'severe' or 'critical' infection: hospital stays is 31.5 days (with a probability of 1.0)
+   - If 'dead': hospital stays is 35 days (with a probability of 1.0)
+
+9. **Medical Expenses in USD**:
+   The medical expenses depends on the level of infection.
+   - If infection is 'dead': the medical expenses is 88134 USD (with a probability of 1.0)
+   - If infection is 'critical': the medical expenses is 34223 USD (with a probability of 1.0)
+   - If infection is 'severe': the medical expenses is 12692 USD (with a probability of 1.0)
+   - else (if infection is 'not infected' or 'mild'): medical expense is 0 USD (with a probability of 1.0)
+
+10. **Death Cost**:
+   There will be a death cost if the infection results in death. 
+    - If infection is 'dead', death cost depends on the age at death and the income. It's calculated as (79 - age) * income_in_USD: 
+      - If age is 38, and income is 40000 USD, the death cost is 1640000 USD (with a probability of 1.0)
+      - If age is 58, and income is 40000 USD, the death cost is 840000 USD (with a probability of 1.0)
+   - else, death cost is 0 USD (with a probability of 1.0)
+
+11. **Treatment Time Expenses in USD**:
+   This expense ties back to both 'income in USD' and 'hospital stays in days', calculated as daily income times number of hospital days.
+   - It's calculated as (income_in_USD * hospital_stays_in_days) / 365 (with a probability of 1.0)
+      - If income is 40000 USD, and hospital stays is 14 days, the treatment time expenses is 1534.25 USD (with a probability of 1.0)
+      - If income is 40000 USD, and hospital stays is 31.5 days, the treatment time expenses is 3452.05 USD (with a probability of 1.0)
+      - If income is 40000 USD, and hospital stays is 35 days, the treatment time expenses is 3835.62 USD (with a probability of 1.0)
+      - Else, the treatment time expenses is 0 USD (with a probability of 1.0)
+
+
+12. **Cost of Staying at Home in USD**: Depending on the 'stay at home decision'.
+   - If 'stay at home', the cost is the daily income multiplied by duration of staying at home, which is (income_in_USD * stay_at_home_duration_in_days) / 365 (with a probability of 1.0)
+      - If income is 40000 USD, and stay at home duration is 7 days, the cost is 767.12 USD (with a probability of 1.0)
+      - If income is 40000 USD, and stay at home duration is 28 days, the cost is 3835.62 USD (with a probability of 1.0)
+   - If 'not stay at home', the cost is 0 USD (with a probability of 1.0)
+
+
+Context information: 
+Currently, official data indicates that 0.0153 of the population is infected. The authority suggests that citizens stay at home for 7 days.
+The decision-maker is 38-years-old with 40000 dollors annual income. 
+
+Decision:'stay at home decision'
+Alternatives:['stay at home', 'not stay at home']

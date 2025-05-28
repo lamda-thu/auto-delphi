@@ -1,0 +1,38 @@
+[
+    {
+        "cause": "stay at home decision",
+        "effect": "stay at home duration in days"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "number of people one contacts"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "hospital stays in days"
+    },
+    {
+        "cause": "infection",
+        "effect": "medical expenses in usd"
+    },
+    {
+        "cause": "infection",
+        "effect": "death cost"
+    },
+    {
+        "cause": "infection",
+        "effect": "treatment time expenses in usd"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "cost of staying at home in usd"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "variable_name": "investment decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "invest",
+            "do not invest"
+        ]
+    },
+    {
+        "variable_name": "cost to develop the product",
+        "variable_type": "chance",
+        "variable_values": [
+            "low cost",
+            "high cost"
+        ]
+    },
+    {
+        "variable_name": "demand for similar products",
+        "variable_type": "chance",
+        "variable_values": [
+            "low demand",
+            "high demand"
+        ]
+    },
+    {
+        "variable_name": "team productivity",
+        "variable_type": "chance",
+        "variable_values": [
+            "low productivity",
+            "high productivity"
+        ]
+    },
+    {
+        "variable_name": "product success upon launch",
+        "variable_type": "chance",
+        "variable_values": [
+            "not successful",
+            "successful"
+        ]
+    },
+    {
+        "variable_name": "sales in the market",
+        "variable_type": "utility",
+        "variable_values": [
+            -10000,
+            50000
+        ]
+    }
+]

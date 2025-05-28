@@ -1,0 +1,9 @@
+Background:
+The decision-making problem revolves around deciding whether or not to carry an umbrella based on the weather forecast and the actual weather outcome. The outcome of the weather influences the forecast, and in turn, the forecast affects the decision to carry an umbrella. Additionally, both the decision to carry an umbrella and the actual weather outcome can affect the associated cost, such as the inconvenience of carrying an umbrella unnecessarily or getting wet.
+
+
+Context information: 
+This morning, the weather forecast says there will be #forecast#.
+
+Decision:'carry umbrella decision'
+Alternatives:['carry', 'not carry']

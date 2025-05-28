@@ -1,0 +1,20 @@
+Background:
+The decision-making problem revolves around choosing a specific field of study and how this choice impacts future income. Firstly, the field selected directly affects exam performance and job prospects in that area. Then, exam performance also influences the job prospects, indicating that doing well in exams can enhance the chances of getting a good job. Finally, the better the job prospects from these evaluations and initial field choice, the greater the potential for earning a higher future income. Essentially, the problem presents the interplay between educational decisions and their economic outcomes down the line.
+
+
+Factors to be considered:
+When considering decision-making, there are several key factors to keep in mind:
+
+1. Field Choice: This involves the decision about which area or sector to pursue. It might be based on personal interests, skills, or market demand.
+
+2. Exam Performance: This factor represents how well one performs academically in their chosen field. It encompasses grades, test results, or any formal evaluation standards.
+
+3. Job Prospects: This element is concerned with the availability and nature of employment opportunities after graduation or upon acquiring necessary qualifications in the chosen field.
+
+4. Future Income: This is about the anticipated earnings a person might expect from their career over time. This may vary based on the sector, position, geographical location, and other relevant elements.
+
+Each of these aspects plays an important role in decision-making related to one's educational and career path.
+
+
+Decision:'field choice'
+Alternatives:['science', 'arts']

@@ -1,0 +1,36 @@
+[
+    {
+        "stochastic_function": "lambda: {'inactive': 0.5, 'moderate': 0.4, 'very active': 0.1}",
+        "variable": "carcinogenic activity",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'low': 0.05, 'medium': 0.45, 'high': 0.5}",
+        "variable": "human exposure",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda usage_decision: {0.0: 1.0} if usage_decision == 'ban' else ({1.0: 1.0} if usage_decision == 'restrict' else {20.0: 1.0})",
+        "variable": "economic value",
+        "evidence": [
+            "usage decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda usage_decision, carcinogenic_activity, human_exposure: {-1000: 1.0} if usage_decision == 'permit' and carcinogenic_activity == 'very active' and human_exposure == 'high' else {-100: 1.0} if (usage_decision == 'restrict' and carcinogenic_activity == 'very active' and human_exposure == 'high') or (usage_decision == 'permit' and carcinogenic_activity == 'moderate' and human_exposure == 'medium') else {-50: 1.0} if usage_decision == 'permit' and carcinogenic_activity == 'moderate' and human_exposure == 'high' else {-10: 1.0} if (usage_decision == 'restrict' and carcinogenic_activity == 'very active' and human_exposure == 'medium') or (usage_decision == 'permit' and carcinogenic_activity == 'very active' and human_exposure == 'low') else {-5: 1.0} if usage_decision == 'permit' and carcinogenic_activity == 'moderate' and human_exposure == 'medium' else {-1: 1.0} if (usage_decision == 'restrict' and carcinogenic_activity == 'very active' and human_exposure == 'low') or (usage_decision == 'permit' and carcinogenic_activity == 'moderate' and human_exposure == 'low') else {-0.5: 1.0} if usage_decision == 'restrict' and carcinogenic_activity == 'moderate' and human_exposure == 'medium' else {-0.05: 1.0} if usage_decision == 'restrict' and carcinogenic_activity == 'moderate' and human_exposure == 'low' else {0: 1.0}",
+        "variable": "cancer cost",
+        "evidence": [
+            "usage decision",
+            "carcinogenic activity",
+            "human exposure"
+        ]
+    },
+    {
+        "stochastic_function": "lambda economic_value, cancer_cost: {0.0: 1.0} if (economic_value == 0.0 and cancer_cost == 0) or (economic_value == 1.0 and cancer_cost == 0) else {1.0: 1.0} if economic_value == 1.0 and cancer_cost == -0.05 else {20.0: 1.0} if economic_value == 20.0 and cancer_cost == 0 else {0.95: 1.0} if economic_value == 1.0 and cancer_cost == -0.05 else {0.5: 1.0} if economic_value == 1.0 and cancer_cost == -0.5 else {0.0: 1.0} if economic_value == 1.0 and cancer_cost == -1.0 else {-4.0: 1.0} if economic_value == 1.0 and cancer_cost == -5.0 else {-9.0: 1.0} if economic_value == 1.0 and cancer_cost == -10.0 else {-49.0: 1.0} if economic_value == 1.0 and cancer_cost == -50.0 else {-99.0: 1.0} if economic_value == 1.0 and cancer_cost == -100.0 else {-999.0: 1.0} if economic_value == 1.0 and cancer_cost == -1000.0 else {19.95: 1.0} if economic_value == 20.0 and cancer_cost == -0.05 else {19.5: 1.0} if economic_value == 20.0 and cancer_cost == -0.5 else {19.0: 1.0} if economic_value == 20.0 and cancer_cost == -1.0 else {15.0: 1.0} if economic_value == 20.0 and cancer_cost == -5.0 else {10.0: 1.0} if economic_value == 20.0 and cancer_cost == -10.0 else {-30.0: 1.0} if economic_value == 20.0 and cancer_cost == -50.0 else {-80.0: 1.0} if economic_value == 20.0 and cancer_cost == -100.0 else {-980.0: 1.0} if economic_value == 20.0 and cancer_cost == -1000.0 else {0.0: 1.0}",
+        "variable": "net value",
+        "evidence": [
+            "economic value",
+            "cancer cost"
+        ]
+    }
+]

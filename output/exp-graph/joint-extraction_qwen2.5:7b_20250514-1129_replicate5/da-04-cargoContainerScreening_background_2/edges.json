@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "screening_decision",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "security_risk",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "alarm_status",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "security_risk",
+        "effect": "terrorist_attack"
+    }
+]

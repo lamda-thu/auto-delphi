@@ -1,0 +1,74 @@
+[
+    {
+        "variable": "diet quality",
+        "variable_card": 3,
+        "state_names": {
+            "diet quality": [
+                "good",
+                "average",
+                "poor"
+            ]
+        },
+        "stochastic_function": "lambda: {'good': 0.5+2*0.199999, 'average': 0.3-0.199999, 'poor': 0.2-0.199999}"
+    },
+    {
+        "variable": "weight",
+        "variable_card": 3,
+        "evidence": [
+            "exercise time"
+        ],
+        "evidence_card": [
+            3
+        ],
+        "state_names": {
+            "weight": [
+                "normal",
+                "overweight",
+                "obese"
+            ],
+            "exercise time": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda exercise_time: {'normal': 0.7+2*1e-06, 'overweight': 0.2-1e-06, 'abese': 0.1-1e-06} if exercise_time == 1 else {'normal': 0.5+2*1e-06, 'overweight': 0.3-1e-06, 'abese': 0.2-1e-06} if exercise_time == 0 else {'normal': 0.3+2*1e-06, 'overweight': 0.4-1e-06, 'abese': 0.3-1e-06}"
+    },
+    {
+        "variable": "health status",
+        "variable_card": 3,
+        "evidence": [
+            "exercise time",
+            "diet quality",
+            "weight"
+        ],
+        "evidence_card": [
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "health status": [
+                1,
+                0,
+                -1
+            ],
+            "exercise time": [
+                1,
+                0,
+                -1
+            ],
+            "diet quality": [
+                "good",
+                "average",
+                "poor"
+            ],
+            "weight": [
+                "normal",
+                "overweight",
+                "obese"
+            ]
+        },
+        "stochastic_function": "lambda exercise_time, diet_quality, weight: {1: 0.8, 0: 0.15, -1: 0.05} if exercise_time == 1 and diet_quality == 'good' and weight == 'normal' else {1: 0.6, 0: 0.3, -1: 0.1} if exercise_time == 1 and diet_quality == 'good' and weight == 'overweight' else {1: 0.4, 0: 0.4, -1: 0.2} if exercise_time == 1 and diet_quality == 'good' and weight == 'obese' else {1: 0.7, 0: 0.2, -1: 0.1} if exercise_time == 1 and diet_quality == 'average' and weight == 'normal' else {1: 0.5, 0: 0.4, -1: 0.1} if exercise_time == 1 and diet_quality == 'average' and weight == 'overweight' else {1: 0.3, 0: 0.5, -1: 0.2} if exercise_time == 1 and diet_quality == 'average' and weight == 'obese' else {1: 0.6, 0: 0.3, -1: 0.1} if exercise_time == 1 and diet_quality == 'poor' and weight == 'normal' else {1: 0.4, 0: 0.4, -1: 0.2} if exercise_time == 1 and diet_quality == 'poor' and weight == 'overweight' else {1: 0.2, 0: 0.5, -1: 0.3} if exercise_time == 1 and diet_quality == 'poor' and weight == 'obese' else {1: 0.7, 0: 0.2, -1: 0.1} if exercise_time == 0 and diet_quality == 'good' and weight == 'normal' else {1: 0.5, 0: 0.4, -1: 0.1} if exercise_time == 0 and diet_quality == 'good' and weight == 'overweight' else {1: 0.3, 0: 0.5, -1: 0.2} if exercise_time == 0 and diet_quality == 'good' and weight == 'obese' else {1: 0.4, 0: 0.4, -1: 0.2} if exercise_time == 0 and diet_quality == 'average' and weight == 'normal' else {1: 0.2, 0: 0.5, -1: 0.3} if exercise_time == 0 and diet_quality == 'average' and weight == 'overweight' else {1: 0.1, 0: 0.6, -1: 0.3} if exercise_time == 0 and diet_quality == 'average' and weight == 'obese' else {1: 0.3, 0: 0.5, -1: 0.2} if exercise_time == 0 and diet_quality == 'poor' and weight == 'normal' else {1: 0.1, 0: 0.6, -1: 0.3} if exercise_time == 0 and diet_quality == 'poor' and weight == 'overweight' else {1: 0.0, 0: 0.7, -1: 0.3} if exercise_time == 0 and diet_quality == 'poor' and weight == 'obese' else {1: 0.5, 0: 0.4, -1: 0.1} if exercise_time == -1 and diet_quality == 'good' and weight == 'normal' else {1: 0.3, 0: 0.5, -1: 0.2} if exercise_time == -1 and diet_quality == 'good' and weight == 'overweight' else {1: 0.1, 0: 0.6, -1: 0.3} if exercise_time == -1 and diet_quality == 'good' and weight == 'obese' else {1: 0.3, 0: 0.5, -1: 0.2} if exercise_time == -1 and diet_quality == 'average' and weight == 'normal' else {1: 0.1, 0: 0.6, -1: 0.3} if exercise_time == -1 and diet_quality == 'average' and weight == 'overweight' else {1: 0.0, 0: 0.7, -1: 0.3} if exercise_time == -1 and diet_quality == 'average' and weight == 'obese' else {1: 0.1, 0: 0.6, -1: 0.3} if exercise_time == -1 and diet_quality == 'poor' and weight == 'normal' else {1: 0.0, 0: 0.7, -1: 0.3} if exercise_time == -1 and diet_quality == 'poor' and weight == 'overweight' else {1: 0.0, 0: 0.8, -1: 0.2}"
+    }
+]

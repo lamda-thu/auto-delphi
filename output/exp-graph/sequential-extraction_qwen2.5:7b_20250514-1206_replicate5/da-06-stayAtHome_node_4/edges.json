@@ -1,0 +1,38 @@
+[
+    {
+        "cause": "populationinfectiondensity",
+        "effect": "numberpeoplecontacted"
+    },
+    {
+        "cause": "stayathomedurationindays",
+        "effect": "numberpeoplecontacted"
+    },
+    {
+        "cause": "numberpeoplecontacted",
+        "effect": "exposuretoinfection"
+    },
+    {
+        "cause": "exposuretoinfection",
+        "effect": "infectionoutcome"
+    },
+    {
+        "cause": "infectionoutcome",
+        "effect": "hospitalstaydurationindays"
+    },
+    {
+        "cause": "infectionoutcome",
+        "effect": "medicalexpensesusd"
+    },
+    {
+        "cause": "infectionoutcome",
+        "effect": "deathcost"
+    },
+    {
+        "cause": "infectionoutcome",
+        "effect": "treatmenttimeexpensesusd"
+    },
+    {
+        "cause": "stayathomedurationindays",
+        "effect": "costofstayingathomeusd"
+    }
+]

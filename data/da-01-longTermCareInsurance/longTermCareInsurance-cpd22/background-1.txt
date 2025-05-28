@@ -1,0 +1,9 @@
+Background:
+The problem involves deciding how much insurance coverage per day an individual should choose, taking into account their age and gender. These personal factors influence the cost of the insurance premium each year and the expected daily expenses for long-term care. Additionally, gender affects the life expectancy, which also impacts the overall cost calculation. The goal is to determine the daily coverage amount while managing the total cost, which is affected by the chosen coverage amount, the insurance premium, and long-term care expenses. This decision requires considering how personal characteristics and chosen coverage influence both immediate and future financial factors.
+
+
+Context information: 
+The decision-maker is a 75-year-old 'male'.
+
+Decision:'maximum coverage per day'
+Alternatives:[0, 100, 150, 200, 250]

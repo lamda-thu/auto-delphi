@@ -1,0 +1,28 @@
+Background:
+The decision-making problem in question revolves around making security choices at a checkpoint where there is a potential risk of a smuggled nuclear threat in the container. You need to decide whether to screen the containers. Screening may trigger alarms when threats are present, and may deter the terrorists. Downstream decision on inspection depends on the screening decision and whether the alarm goes off. The entire sequence and combination of decisions and outcomes have financial implications, manifesting in various cost types, such as the cost of screening, inspection, radiological disposal, and in worst-case scenarios, costs associated with a terrorist attack. Essentially, the decision-making process aims to balance the safety concerns against the costs incurred while addressing the risk of nuclear threats.
+
+
+Factors to be considered:
+In this decision-making problem, several key factors need to be considered:
+
+1. **Screening Decision**: This refers to the initial choice about whether or not to conduct screenings. 
+
+2. **Inspection Decision**: This refers to the decision on conducting further inspections after initial screening.
+
+3. **Smuggled Nuclear Threat**: This factor represents the possibility or risk of a nuclear threat being smuggled in the container.
+
+4. **Alarm**: This is a signal or alert that might be triggered during the screening process.
+
+5. **Inspection Result**: This reflects the outcome of the inspection process (whether a threat is found).
+
+6. **Cost of Screening**: The monetary expense associated with carrying out screening.
+
+7. **Cost of Inspection**: The financial cost related to conducting inspections.
+
+8. **Cost of Radiological Disposal**: This involves the expenses associated with disposing of radiological materials, if any are found.
+
+9. **Cost of Terrorist Attack**: This estimates the potential financial impact of a terrorist attack if it were to occur.
+
+
+Decision:'screening decision'
+Alternatives:['screen', 'not screen']

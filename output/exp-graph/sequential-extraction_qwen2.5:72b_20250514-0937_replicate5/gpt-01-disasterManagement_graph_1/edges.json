@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "emergency response level",
+        "effect": "public reaction"
+    },
+    {
+        "cause": "disaster severity",
+        "effect": "social wellbeing"
+    },
+    {
+        "cause": "public reaction",
+        "effect": "social wellbeing"
+    }
+]

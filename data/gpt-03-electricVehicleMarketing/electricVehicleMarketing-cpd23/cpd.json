@@ -1,0 +1,81 @@
+[
+    {
+        "variable": "profit",
+        "variable_card": 3,
+        "evidence": [
+            "launch decision",
+            "market demand",
+            "competitor pricing",
+            "production difficulty"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "profit": [
+                1,
+                0,
+                -1
+            ],
+            "launch decision": [
+                "launch",
+                "not launch"
+            ],
+            "market demand": [
+                "high",
+                "neutral",
+                "low"
+            ],
+            "competitor pricing": [
+                "high",
+                "moderate",
+                "low"
+            ],
+            "production difficulty": [
+                "high",
+                "average",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda launch_decision, market_demand, competitor_pricing, production_difficulty: {1: 0, 0: 1, -1: 0} if launch_decision == 'not launch' else {1: 1, 0: 0, -1: 0} if market_demand == 'high' else {1: 0.5, 0: 0.4, -1: 0.1} if market_demand == 'neutral' and competitor_pricing == 'high' else {1: 0.3, 0: 0.3, -1: 0.4} if market_demand in ['neutral', 'low'] and production_difficulty == 'low' else {1: 0, 0: 0, -1: 1}"
+    },
+    {
+        "variable": "market demand",
+        "variable_card": 3,
+        "state_names": {
+            "market demand": [
+                "high",
+                "neutral",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.3+-0.1, 'neutral': 0.5+-0.1, 'low': 0.2-2*-0.1}"
+    },
+    {
+        "variable": "competitor pricing",
+        "variable_card": 3,
+        "state_names": {
+            "competitor pricing": [
+                "high",
+                "moderate",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.4-0.1, 'moderate': 0.4-0.1, 'low': 0.2+2*0.1}"
+    },
+    {
+        "variable": "production difficulty",
+        "variable_card": 3,
+        "state_names": {
+            "production difficulty": [
+                "high",
+                "average",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.3-0.1, 'average': 0.4-0.1, 'low': 0.3+2*0.1}"
+    }
+]

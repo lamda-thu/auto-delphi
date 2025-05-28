@@ -1,0 +1,92 @@
+Background:
+The decision-making problem revolves around how much studying to do for an exam. Several factors influence the final exam score, which is the ultimate outcome of interest. Firstly, the decision on how much to study will affect a person's current knowledge and health status. Naturally, more studying can increase knowledge but might affect health due to stress or reduced rest. Both the current knowledge and health status directly influence the exam score. Furthermore, the difficulty level of the exam, which is determined separately, also impacts the exam score. A tougher exam could lead to a lower score. Therefore, the decision on how much to study must consider these factors to optimize the exam score while maintaining a balance with health.
+
+
+Factors to be considered:
+In the decision-making problem, several factors come into play:
+
+1. Study Decision: This involves the choice on how much and in what manner to prepare for an exam. It is a crucial decision that directly influences outcomes.
+
+2. Current Knowledge: This refers to the pre-existing understanding or expertise one has before engaging in further study. This initial knowledge level can impact how well one performs in the assessment.
+
+3. Exam Difficulty: This is an external factor that depicts how challenging the exam is. The level of difficulty can vary and will influence the final performance on the exam.
+
+4. Health Status: This pertains to the physical and mental well-being during the preparation and on the exam day. Good health can enhance concentration and stamina, thus affecting performance.
+
+5. Exam Score: This is the outcome or result of the exam which reflects the culmination of various influencing factors including the amount and effectiveness of studies, health condition, and the inherent difficulty of the exam. 
+
+These factors need to be carefully considered to optimize performance and achieve desired results in the exam.
+
+
+Factors to be considered and their relations:
+In making a decision about how much to study, there are several factors to consider and how they interrelate with one another:
+
+1. **Study Decision**: This is the choice about the amount of effort and time you plan to invest in studying. This decision influences your current knowledge and your health status. Choosing to study more might enhance your knowledge but could stress you or reduce your sleep which impacts your health. 
+
+2. **Current Knowledge**: This is your present understanding or mastery of the subject matter before your study decision impacts it. The level of your current knowledge will contribute to your final exam score.
+
+3. **Health Status**: This refers to your overall physical and mental well-being during the period of your exam preparation. Being in good health can help you perform better in your exam. Your health status is also influenced by your study decisions, such as the number of hours you sleep and the stress you endure while preparing.
+
+4. **Exam Difficulty**: This is an external factor describing how challenging the exam is. The difficulty level of the exam is independent of your personal choices but has a direct impact on your exam score.
+
+5. **Exam Score**: This is the outcome that sums up your performance in the exam. It is influenced by your current knowledge, health status and the inherent difficulty of the exam. Essentially, this is what you aim to maximize through your study decisions, preparation and managing health.
+
+In sum, when deciding how much to study, consider how it affects both your health and your current understanding of the subject. In turn, both your health and knowledge, alongside the inherent difficulty of the exam, will determine your exam score. All these factors need to be balanced to achieve the best possible outcome on your exam.
+
+
+Conditional probability distributions:
+1. **Variable: Current Knowledge**
+   - **Dependencies:** Dependent on the 'study decision'.
+   - **Conditional Probabilities:**
+     - If 'study decision' is 'study more', the probabilities are as follows:
+       - Knowledge is good (1): \(0.7 + 0\)
+       - Knowledge is neutral (0): \(0.3 - 0\)
+       - Knowledge is poor (-1): 0.0
+     - Otherwise (if not 'study more'), the probabilities are:
+       - Knowledge is good (1): 0.3
+       - Knowledge is neutral (0): \(0.5 + 0\)
+       - Knowledge is poor (-1): \(0.2 - 0\)
+
+2. **Variable: Health Status**
+   - **Dependencies:** Dependent on the 'study decision'.
+   - **Conditional Probabilities:**
+     - If 'study decision' is 'study less', the probabilities are as follows:
+       - Health is good (1): \(0.6 + 0.199999\)
+       - Health is neutral (0): \(0.3 - 0.199999\)
+       - Health is poor (-1): 0.1
+     - Otherwise (if not 'study less'), the probabilities are:
+       - Health is good (1): \(0.4 + 0.199999/2\)
+       - Health is neutral (0): \(0.4 + 0.199999/2\)
+       - Health is poor (-1): \(0.2 - 0.199999\)
+
+3. **Variable: Exam Score**
+   - **Dependencies:** Dependent on 'current knowledge', 'health status', and 'exam difficulty'.
+   - **Conditional Probabilities:** Multiple scenarios based on values of all three evidence variables covering possible combinations:
+     - If current knowledge is 1:
+       - With health status as 1:
+         - Exam difficulty at levels -1, 0, and 1 respectively yield:
+           - 0.7, 0.6, 0.5 (for good score 1)
+           - 0.2, 0.3, 0.4 (for neutral score 0)
+           - All cases have 0.1 probability for poor score (-1).
+       - With health status as 0:
+         - Exam difficulty at levels -1, 0, and 1 respectively yield:
+           - 0.6, 0.5, 0.4 (for good score 1)
+           - 0.3, 0.4, 0.5 (for neutral score 0)
+           - All cases for score -1: 0.1.
+       - With health status as -1:
+         - Exam difficulty at levels -1, 0, and 1 respectively yield:
+           - 0.5, 0.4, 0.3 (for good score 1)
+           - 0.4, 0.5, 0.6 (for neutral score 0)
+           - All cases for score -1: 0.1.
+     - When current knowledge is 0 or -1:
+       - Similar structure of nested conditions for health status (good, neutral, or poor) and difficulty level (-1, 0, 1) with probabilities for each condition.
+   
+4. **Variable: Exam Difficulty**
+   - **Unconditional Distribution with continuous scaling:**
+     - High difficulty (1): \(0.3 + 0\)
+     - Neutral difficulty (0): 0.4
+     - Low difficulty (-1): \(0.3 - 0\)
+
+
+Decision:'study decision'
+Alternatives:['study more', 'study less']

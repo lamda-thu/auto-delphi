@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "field choice",
+        "effect": "exam performance"
+    },
+    {
+        "cause": "field choice",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "exam performance",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "job prospects",
+        "effect": "future income"
+    },
+    {
+        "cause": "personal interests",
+        "effect": "field choice"
+    },
+    {
+        "cause": "skills",
+        "effect": "field choice"
+    },
+    {
+        "cause": "market demand",
+        "effect": "field choice"
+    }
+]

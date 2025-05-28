@@ -1,0 +1,34 @@
+[
+    {
+        "variable_name": "weather outcome",
+        "variable_type": "chance",
+        "variable_values": [
+            "rainy",
+            "sunny"
+        ]
+    },
+    {
+        "variable_name": "weather forecast",
+        "variable_type": "chance",
+        "variable_values": [
+            "rainy",
+            "sunny"
+        ]
+    },
+    {
+        "variable_name": "carry umbrella decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "carry",
+            "not carry"
+        ]
+    },
+    {
+        "variable_name": "cost of carrying umbrella",
+        "variable_type": "utility",
+        "variable_values": [
+            -10,
+            0
+        ]
+    }
+]

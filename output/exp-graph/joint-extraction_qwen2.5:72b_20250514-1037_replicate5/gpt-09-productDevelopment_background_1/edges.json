@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "investment decision",
+        "effect": "cost to develop the product"
+    },
+    {
+        "cause": "cost to develop the product",
+        "effect": "product success upon launch"
+    },
+    {
+        "cause": "demand for similar products",
+        "effect": "sales in the market"
+    },
+    {
+        "cause": "team productivity",
+        "effect": "product success upon launch"
+    },
+    {
+        "cause": "product success upon launch",
+        "effect": "sales in the market"
+    }
+]

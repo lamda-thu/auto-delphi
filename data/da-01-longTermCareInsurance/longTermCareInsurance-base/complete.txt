@@ -1,0 +1,91 @@
+Background:
+The problem involves deciding how much insurance coverage per day an individual should choose, taking into account their age and gender. These personal factors influence the cost of the insurance premium each year and the expected daily expenses for long-term care. Additionally, gender affects the life expectancy, which also impacts the overall cost calculation. The goal is to determine the daily coverage amount while managing the total cost, which is affected by the chosen coverage amount, the insurance premium, and long-term care expenses. This decision requires considering how personal characteristics and chosen coverage influence both immediate and future financial factors.
+
+
+Factors to be considered:
+In this decision-making problem, we consider several factors:
+
+1. **Age**: This factor influences various costs and insurance-related aspects. Older individuals might face different expenses and insurance premiums compared to younger ones.
+
+2. **Gender**: This can affect life expectancy and financial elements such as insurance premiums and daily expenses.
+
+3. **Maximum Coverage per Day**: This is a choice to be made. It dictates the daily maximum amount that an insurance policy will cover, which in turn influences insurance premiums and total cost.
+
+4. **Life Expectancy**: This factor relates to how long an individual is expected to live, which can impact the overall cost planning.
+
+5. **Long Term Care Expense per Day**: This concerns the daily expense for long-term care, which varies and contributes directly to the total cost.
+
+6. **Insurance Premium per Year**: This is an annual cost that varies based on other factors like age, gender, and the chosen maximum coverage per day.
+
+7. **Total Cost**: This is the overall financial impact, including all expenses and premiums, integrated over time. This is what one would ideally want to minimize or optimize according to their circumstances and choices made about coverage.
+
+
+Factors to be considered and their relations:
+When making a decision about how much daily coverage to have for long-term care insurance, it's important to consider several factors and how they relate to one another.
+
+One main factor to take into account is your age. Your age not only influences how much you'll pay for insurance each year but also affects the cost of long-term care per day, which can impact the total cost. It’s also directly relevant to the amount of daily coverage you decide to get.
+
+Your gender is another critical factor. Like age, gender affects the yearly insurance premium and the daily long-term care expenses. It also plays a role in determining your life expectancy, which in turn influences the total cost.
+
+The decision on the maximum coverage per day that you choose will subsequently influence the amount you pay annually for the insurance. This decision also directly affects the total cost, as obtaining more coverage might reduce potential out-of-pocket expenses.
+
+The total cost itself is influenced by several things: how much the insurance premium is per year, how much the long-term care costs per day, and your expected lifespan - all factors that vary depending on your personal details like age and gender.
+
+
+Conditional probability distributions:
+The Conditional Probability list articulates various variables, each controlled by conditional probability distributions, as defined:
+
+1. **Age**: #age# (with probability 1).
+
+2. **Gender**: #gender# (with probability 1).
+
+3. **Life Expectancy**:
+   - For males, life expectancy is 82.5 years (with probability 1)
+   - For females, life expectancy is 85.2 years (with probability 1).
+
+4. **Long Term Care Expense per Day**
+   - **Probability Distribution**: Depends on both age and gender:
+     - For a 65-year-old male: Expense is 226 USD with probability 0.0005 * #age_factor#, 0 USD otherwise.
+     - For a 75-year-old male: Expense is 226 USD with probability 0.0005 * #age_factor# ** 2, 0 USD otherwise.
+     - For a 65-year-old female: Expense is 226 * #gender_factor# USD with probability 0.0005 * #age_factor#, 0 USD otherwise.
+     - For a 75-year-old female: Expense is 226 * #gender_factor# USD with probability 0.0005 * #age_factor# ** 2, 0 USD otherwise.
+
+5. **Insurance Premium per Year**:
+   The premium is determined by the variables 'age', 'gender', and 'maximum coverage per day'.
+     - For a 65-year-old male
+          - with a maximum coverage of 100, the premium is 2669.68 USD
+          - with a maximum coverage of 150, it is 3981.47 USD
+          - with a maximum coverage of 200, it is 5339.36 USD
+          - with a maximum coverage of 250, it is 6674.20 USD
+     - For a 75-year-old male
+          - with a maximum coverage of 100, the premium is 3764.89 USD
+          - with a maximum coverage of 150, it is 5647.33 USD
+          - with a maximum coverage of 200, it is 7529.77 USD
+          - with a maximum coverage of 250, it is 9412.22 USD
+     - For a 65-year-old female
+          - with a maximum coverage of 100, the premium is 2959.19 USD
+          - with a maximum coverage of 150, it is 4438.79 USD
+          - with a maximum coverage of 200, it is 5918.38 USD
+          - with a maximum coverage of 250, it is 7397.98 USD
+     - For a 75-year-old female
+          - with a maximum coverage of 100, the premium is 4959.45 USD
+          - with a maximum coverage of 150, it is 7439.18 USD
+          - with a maximum coverage of 200, it is 9918.90 USD
+          - with a maximum coverage of 250, it is 12398.63 USD
+     - For all ages and genders, the premium is 0 USD if the maximum coverage per day is 0.
+       
+6. **Total Cost**:
+     This calculation evaluates the expected longevity (difference between life expectancy and current age) and three key financial figures:
+     - Long-term care expenses per day.
+     - Insurances premiums per year.
+     - Maximum coverage per day under insurance.
+     The cost calculation has two scenarios:
+     - If the 'long term care expense per day' exceeds the 'maximum coverage per day', total cost is calculated as (life expectancy - age) * (- 365 * long term care expense per day - insurance premium per year + 365 * maximum coverage per day).
+     - Otherwise, the 'maximum coverage per day' can cover the 'long term care expense per day'. The cost is calculated as (life expectancy - age) * (-insurance premium per year).
+
+
+Context information: 
+The decision-maker is a #age#-year-old #gender#.
+
+Decision:'maximum coverage per day'
+Alternatives:[0, 100, 150, 200, 250]

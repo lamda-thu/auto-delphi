@@ -1,0 +1,63 @@
+Background:
+In the decision-making scenario, a person is faced with the decision of how to invest their money. The outcome of this decision, which is the person's future wealth, depends on several factors:
+1. The decision itself regarding where and how to invest.
+2. The amount of savings the person currently has.
+3. The risks associated with the market at that time.
+4. The overall economic conditions.
+
+When making the investment decision, the person is aware of their current savings, but don't know the existing market risks and the prevailing economic conditions. Each of these factors plays a critical role in influencing the level of wealth.
+
+
+Factors to be considered:
+When considering a decision-making problem about investment, several factors need to be taken into account:
+
+1. **Investment Decision**: This involves choosing how to invest your resources. It could mean deciding between different kinds of stocks, bonds, real estate, or other investment vehicles. The investment decision is influenced by the current savings. The market risk and the economic conditions are not known at the time of the decision, so the decision should not depend on them.
+
+2. **Current Savings**: This refers to the amount of money you have already saved up that is available for investment. It plays a crucial role in determining how much you can afford to invest.
+
+3. **Market Risk**: This factor represents the potential ups and downs in the market that can affect the outcome of your investment. It includes the volatility of the market and the associated risks.
+
+4. **Economic Conditions**: These encompass broader economic factors like inflation, interest rates, economic growth, and job markets that can influence the success of your investment.
+
+5. **Wealth**: This is the overall financial outcome that is impacted by your investment decision, taking into account your current savings, the market risks, and economic conditions.
+
+
+Factors to be considered and their relations:
+When making decisions, especially financial ones such as how to invest, there are various factors to take into account. The decision on where to invest your money is influenced by your existing savings, while also accounting for the uncertainty of the economic conditions and the current market risks.
+
+Firstly, the amount you initially have – your current savings – will undoubtedly affect how much you can invest and potentially how much wealth you can generate. This means that your starting amount plays a significant role in your future financial status.
+
+Secondly, the general market risk impacts the final wealth. A riskier market may offer higher potential returns, but also greater chances of losses, thereby influencing the outcome of your investment decision.
+
+Lastly, economic conditions have a role in shaping your wealth outcome as well. The 'economic conditions' variable is a proxy for the broader economic factors like economic growth, inflation rates, and overall economic stability, which can all impact the outcome of your investment.
+
+In summary, when deciding on an investment, remember that not only is the investment choice itself important, but it's also heavily dependent on your available resources, the current state of the market, and broader economic factors. Each of these elements can affect your eventual financial standing, and they are interrelated, meaning a change in one can influence the others. Understanding these relationships will better equip you to make informed choices and potentially maximize your wealth.
+
+
+Conditional probability distributions:
+1. **Current Savings**: Your current savings is 'high' (with probability 1).
+
+2. **Market Risk**: 
+   - With a probability of 0.3 + 2 times 0.1, the value is 'low'.
+   - With a probability of 0.4 - 0.1, the value is 'medium'.
+   - With a probability of 0.3 - 0.1, the value is 'high'.
+   This variable also has no evidence influencing its probability distribution.
+
+3. **Economic Conditions**: The CPD for economic conditions is described by a lambda function where:
+   - With a probability of 0.4 + 2 times 0.1, the value is 'favorable'.
+   - With a probability of 0.4 - 0.1, the value is 'neutral'.
+   - With a probability of 0.2 - 0.1, the value is 'unfavorable'.
+   Economic conditions too have no evidence affecting the CPD.
+
+4. **Wealth**: 
+   Under this model, the conditional probability distribution of **wealth** depends on four variables: the investment decision, current savings, market risk, and economic conditions.
+   - If the investment decision is "do not invest,"
+      wealth = 1 has probability 0, wealth = 0 has 0.95, and wealth = –1 has 0.05
+   - If the decision is "invest", then,
+      - If current savings = 'high' and market risk = 'low', economic conditions = 'favorable', the probabilities are 0.6, 0.2, 0.2 for wealth to be 1, 0, and -1, respectively.
+      - If current savings = 'high' and market risk = 'low', economic conditions = 'neutral, the probabilities are 0.2, 0.6, 0.2 for wealth to be 1, 0, and -1, respectively.
+      - If current savings = 'high' and market risk = 'medium', economic conditions = 'favorable', the probabilities are 0.3, 0.4, 0.3 for wealth to be 1, 0, and -1, respectively.
+      - Otherwise, if the decision is "invest", the probabilities are 0.1, 0.2, 0.7 for wealth to be 1, 0, and -1, respectively.
+
+Decision:'investment decision'
+Alternatives:['invest', 'do not invest']

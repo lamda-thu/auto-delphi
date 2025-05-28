@@ -1,0 +1,96 @@
+Background:
+The decision-making problem revolves around choosing a specific field of study and how this choice impacts future income. Firstly, the field selected directly affects exam performance and job prospects in that area. Then, exam performance also influences the job prospects, indicating that doing well in exams can enhance the chances of getting a good job. Finally, the better the job prospects from these evaluations and initial field choice, the greater the potential for earning a higher future income. Essentially, the problem presents the interplay between educational decisions and their economic outcomes down the line.
+
+
+Factors to be considered:
+When considering decision-making, there are several key factors to keep in mind:
+
+1. Field Choice: This involves the decision about which area or sector to pursue. It might be based on personal interests, skills, or market demand.
+
+2. Exam Performance: This factor represents how well one performs academically in their chosen field. It encompasses grades, test results, or any formal evaluation standards.
+
+3. Job Prospects: This element is concerned with the availability and nature of employment opportunities after graduation or upon acquiring necessary qualifications in the chosen field.
+
+4. Future Income: This is about the anticipated earnings a person might expect from their career over time. This may vary based on the sector, position, geographical location, and other relevant elements.
+
+Each of these aspects plays an important role in decision-making related to one's educational and career path.
+
+
+Factors to be considered and their relations:
+When making a decision, there are several factors and relationships between them that must be considered. One primary decision is the choice of academic or professional field. This choice can significantly influence other aspects, such as performance in examinations and job prospects.
+
+Firstly, the field you choose can directly affect how well you perform in exams. Different fields have different levels of difficulty and require different skill sets, which may suit some individuals better than others.
+
+Secondly, the field you choose also impacts your future job prospects. Certain fields may have more job opportunities or higher demand in the job market compared to others. Moreover, the performance in exams can further influence job prospects. Better exam performance often leads to better job opportunities, as it is usually an indicator of your proficiency and knowledge in the field.
+
+Lastly, your job prospects are crucial in determining your future income. Better job prospects often lead to higher-paying job offers, ultimately affecting your financial situation.
+
+In summary, the decision regarding the choice of field doesn't just affect academic outcomes but extends to career opportunities and future financial earnings. Each of these factors influences the others, creating a chain of cause-and-effect that must be carefully considered when making such a decision.
+
+
+Conditional probability distributions:
+The Conditional Probability list defines the relationships between different variables based on specified conditions.
+
+1. **Exam Performance**:
+    - Variable: Exam performance
+    - Evidence: Field choice
+    - Probability Distribution:
+        - For students in the 'science' field, the conditional probabilities are:
+            - Excellent: `0.2 + 2*0`
+            - Good: `0.4`
+            - Average: `0.4 - 2*0`
+        - For students in a field other than 'science' (e.g., 'arts'):
+            - Excellent: `0.2 + 0`
+            - Good: `0.5`
+            - Average: `0.3 - 0`
+
+2. **Job Prospects**:
+    - Variable: Job prospects
+    - Evidence: Field choice, Exam performance
+    - Probability Distribution:
+        - For students in the 'science' field:
+            - With 'excellent' exam performance:
+                - Positive: `0.6 + 0`
+                - Neutral: `0.2`
+                - Negative: `0.2 - 0`
+            - With 'good' exam performance:
+                - Positive: `0.3 + 0`
+                - Neutral: `0.4`
+                - Negative: `0.3 - 0`
+            - With 'average' exam performance:
+                - Positive: `0.1 + 0`
+                - Neutral: `0.5`
+                - Negative: `0.4 - 0`
+        - For students in the 'arts' field:
+            - With 'excellent' exam performance:
+                - Positive: `0.5 + 0/2`
+                - Neutral: `0.3`
+                - Negative: `0.2 - 0/2`
+            - With 'good' exam performance:
+                - Positive: `0.3 + 0/2`
+                - Neutral: `0.4`
+                - Negative: `0.3 - 0/2`
+            - With 'average' exam performance:
+                - Positive: `0.1 + 0/2`
+                - Neutral: `0.5`
+                - Negative: `0.4 - 0/2`
+
+3. **Future Income**:
+    - Variable: Future income
+    - Evidence: Job prospects
+    - Probability Distribution:
+        - If the job prospects are 'positive', the future income
+            - takes value 1 with probability 0.8
+            - takes value 0 with probability 0.2
+            - takes value -1 with probability 0.0
+        - If the job prospects are 'neutral', the future income
+            - takes value 1 with probability 0.4
+            - takes value 0 with probability 0.5
+            - takes value -1 with probability 0.1
+        - If the job prospects are 'negative', the future income
+            - takes value 1 with probability 0.1
+            - takes value 0 with probability 0.4
+            - takes value -1 with probability 0.5
+
+Decision:'field choice'
+Alternatives:['science', 'arts']

@@ -1,0 +1,6 @@
+langchain
+langchain-core
+langchain-openai
+openai
+pycid==0.8.2
+pgmpy==0.1.26

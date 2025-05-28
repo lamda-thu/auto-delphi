@@ -1,0 +1,46 @@
+[
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "alarm status"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "alarm status"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "alarm status",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "inspection result",
+        "effect": "cost of radiological disposal"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "cost of terrorist attack"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "cost of screening"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of inspection"
+    },
+    {
+        "cause": "inspection result",
+        "effect": "safety concerns"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "safety concerns"
+    }
+]

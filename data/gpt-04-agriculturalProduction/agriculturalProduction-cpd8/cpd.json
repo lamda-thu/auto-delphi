@@ -1,0 +1,104 @@
+[
+    {
+        "variable": "profit",
+        "variable_card": 3,
+        "evidence": [
+            "land expansion decision",
+            "market price",
+            "crop yield",
+            "planting cost"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "profit": [
+                1,
+                0,
+                -1
+            ],
+            "land expansion decision": [
+                "expand",
+                "do not expand"
+            ],
+            "market price": [
+                1,
+                0,
+                -1
+            ],
+            "crop yield": [
+                1,
+                0,
+                -1
+            ],
+            "planting cost": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda land_expansion_decision, market_price, crop_yield, planting_cost: {1: 0.8, 0: 0.2, -1: 0.0} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 1 and planting_cost == 1 else {1: 0.6, 0: 0.3, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 1 and planting_cost == 0 else {1: 0.4, 0: 0.5, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 1 and planting_cost == -1 else {1: 0.3, 0: 0.4, -1: 0.3} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 0 and planting_cost == 1 else {1: 0.2, 0: 0.4, -1: 0.4} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 0 and planting_cost == 0 else {1: 0.1, 0: 0.5, -1: 0.4} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == 0 and planting_cost == -1 else {1: 0.4, 0: 0.4, -1: 0.2} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == -1 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == -1 and planting_cost == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'expand' and market_price == 1 and crop_yield == -1 and planting_cost == -1 else {1: 0.6, 0: 0.3, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 1 and planting_cost == 1 else {1: 0.5, 0: 0.4, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 1 and planting_cost == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 1 and planting_cost == -1 else {1: 0.4, 0: 0.3, -1: 0.3} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 0 and planting_cost == 1 else {1: 0.3, 0: 0.4, -1: 0.3} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 0 and planting_cost == 0 else {1: 0.2, 0: 0.4, -1: 0.4} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == 0 and planting_cost == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == -1 and planting_cost == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == -1 and planting_cost == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == 0 and crop_yield == -1 and planting_cost == -1 else {1: 0.4, 0: 0.4, -1: 0.2} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 1 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 1 and planting_cost == 0 else {1: 0.2, 0: 0.4, -1: 0.4} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 1 and planting_cost == -1 else {1: 0.4, 0: 0.3, -1: 0.3} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 0 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 0 and planting_cost == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == 0 and planting_cost == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == -1 and planting_cost == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == -1 and planting_cost == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'expand' and market_price == -1 and crop_yield == -1 and planting_cost == -1 else {1: 0.7, 0: 0.2, -1: 0.1} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 1 and planting_cost == 1 else {1: 0.6, 0: 0.3, -1: 0.1} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 1 and planting_cost == 0 else {1: 0.5, 0: 0.4, -1: 0.1} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 1 and planting_cost == -1 else {1: 0.4, 0: 0.4, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 0 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 0 and planting_cost == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == 0 and planting_cost == -1 else {1: 0.3, 0: 0.4, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == -1 and planting_cost == 1 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == -1 and planting_cost == 0 else {1: 0.1, 0: 0.5, -1: 0.4} if land_expansion_decision == 'do not expand' and market_price == 1 and crop_yield == -1 and planting_cost == -1 else {1: 0.5, 0: 0.4, -1: 0.1} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 1 and planting_cost == 1 else {1: 0.4, 0: 0.5, -1: 0.1} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 1 and planting_cost == 0 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 1 and planting_cost == -1 else {1: 0.4, 0: 0.4, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 0 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 0 and planting_cost == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == 0 and planting_cost == -1 else {1: 0.3, 0: 0.4, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == -1 and planting_cost == 1 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == -1 and planting_cost == 0 else {1: 0.1, 0: 0.5, -1: 0.4} if land_expansion_decision == 'do not expand' and market_price == 0 and crop_yield == -1 and planting_cost == -1else {1: 0.4, 0: 0.4, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 1 and planting_cost == 1 else {1: 0.3, 0: 0.5, -1: 0.2} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 1 and planting_cost == 0 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 1 and planting_cost == -1 else {1: 0.3, 0: 0.4, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 0 and planting_cost == 1 else {1: 0.2, 0: 0.5, -1: 0.3} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 0 and planting_cost == 0 else {1: 0.1, 0: 0.5, -1: 0.4} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == 0 and planting_cost == -1 else {1: 0.2, 0: 0.4, -1: 0.4} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == -1 and planting_cost == 1 else {1: 0.1, 0: 0.5, -1: 0.4} if land_expansion_decision == 'do not expand' and market_price == -1 and crop_yield == -1 and planting_cost == 0 else {1: 0.0, 0: 0.3, -1: 0.7}"
+    },
+    {
+        "variable": "crop yield",
+        "variable_card": 3,
+        "evidence": [
+            "weather conditions"
+        ],
+        "evidence_card": [
+            3
+        ],
+        "state_names": {
+            "crop yield": [
+                1,
+                0,
+                -1
+            ],
+            "weather conditions": [
+                "good",
+                "average",
+                "poor"
+            ]
+        },
+        "stochastic_function": "lambda weather_conditions: {1: 0.7, 0: 0.2, -1: 0.1} if weather_conditions == 'good' else {1: 0.4, 0: 0.4, -1: 0.2} if weather_conditions == 'average' else {1: 0.2, 0: 0.5, -1: 0.3}"
+    },
+    {
+        "variable": "market price",
+        "variable_card": 3,
+        "state_names": {
+            "market price": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.3+2*0.199999, 0: 0.3, -1: 0.4-2*0.199999}"
+    },
+    {
+        "variable": "planting cost",
+        "variable_card": 3,
+        "state_names": {
+            "planting cost": [
+                1,
+                0,
+                -1
+            ]
+        },
+        "stochastic_function": "lambda: {1: 0.3+0.199999, 0: 0.3+0.199999, -1: 0.4-2*0.199999}"
+    },
+    {
+        "variable": "weather conditions",
+        "variable_card": 3,
+        "state_names": {
+            "weather conditions": [
+                "good",
+                "average",
+                "poor"
+            ]
+        },
+        "stochastic_function": "lambda: {'good': 2*0.1+0.1, 'average': 0.1+0.3, 'poor': 0.6-3*0.1}"
+    }
+]

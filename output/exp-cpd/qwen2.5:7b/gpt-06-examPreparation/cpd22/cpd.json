@@ -1,0 +1,30 @@
+[
+    {
+        "stochastic_function": "lambda: {1: 0.3 + 0.199999, 0: 0.4, -1: 0.3 - 0.199999}",
+        "variable": "exam difficulty",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda study_decision: {1: 0.7, 0: 0.3} if study_decision == 'study more' else {1: 0.3, 0: 0.5, -1: 0.2}",
+        "variable": "current knowledge",
+        "evidence": [
+            "study decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda study_decision: {'good (1)': 0.6 + 0.1 if study_decision == 'study less' else 0.4 + 0.1/2, 'neutral (0)': 0.3 - 0.1 if study_decision == 'study less' else 0.4 + 0.1/2, 'poor (-1)': 0.1 if study_decision == 'study less' else 0.2 - 0.1}",
+        "variable": "health status",
+        "evidence": [
+            "study decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda current_knowledge, health_status, exam_difficulty: {1: 0.7 if (current_knowledge == 1 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == 1 and health_status == 1 and exam_difficulty == 0) or (current_knowledge == 1 and health_status == 1 and exam_difficulty == 1) else \n                                                           0.6 if (current_knowledge == 1 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == 1 and health_status == 0 and exam_difficulty == -1) or (current_knowledge == 1 and health_status == -1 and exam_difficulty == -1) else \n                                                           0.5 if (current_knowledge == 1 and health_status == 0 and exam_difficulty == 0) or (current_knowledge == 1 and health_status == -1 and exam_difficulty == 0) else \n                                                           0.4 if (current_knowledge == 1 and health_status == 0 and exam_difficulty == 1) or (current_knowledge == 1 and health_status == -1 and exam_difficulty == 1) else \n                                                           0.3 if (current_knowledge == 0 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == 0 and health_status == 1 and exam_difficulty == 0) or (current_knowledge == 0 and health_status == 1 and exam_difficulty == 1) else \n                                                           0.2 if (current_knowledge == 0 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == 0 and health_status == 0 and exam_difficulty == -1) or (current_knowledge == 0 and health_status == -1 and exam_difficulty == -1) else \n                                                           0.1 if (current_knowledge == 0 and health_status == 0 and exam_difficulty == 0) or (current_knowledge == 0 and health_status == -1 and exam_difficulty == 0) else \n                                                           0.9 if (current_knowledge == 0 and health_status == 0 and exam_difficulty == 1) or (current_knowledge == 0 and health_status == -1 and exam_difficulty == 1) else \n                                                           0.8 if (current_knowledge == -1 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == -1 and health_status == 1 and exam_difficulty == 0) or (current_knowledge == -1 and health_status == 1 and exam_difficulty == 1) else \n                                                           0.7 if (current_knowledge == -1 and health_status == 1 and exam_difficulty == -1) or (current_knowledge == -1 and health_status == 0 and exam_difficulty == -1) or (current_knowledge == -1 and health_status == -1 and exam_difficulty == -1) else \n                                                           0.6 if (current_knowledge == -1 and health_status == 0 and exam_difficulty == 0) or (current_knowledge == -1 and health_status == -1 and exam_difficulty == 0) else \n                                                           0.5 if (current_knowledge == -1 and health_status == 0 and exam_difficulty == 1) or (current_knowledge == -1 and health_status == -1 and exam_difficulty == 1) else \n                                                           0.4} if current_knowledge == 1 else {1: 0.6, 0: 0.3, -1: 0.1}",
+        "variable": "exam score",
+        "evidence": [
+            "current knowledge",
+            "health status",
+            "exam difficulty"
+        ]
+    }
+]

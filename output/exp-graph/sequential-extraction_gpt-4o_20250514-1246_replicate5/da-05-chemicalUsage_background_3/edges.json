@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "usage decision",
+        "effect": "economic value"
+    },
+    {
+        "cause": "economic value",
+        "effect": "net value"
+    },
+    {
+        "cause": "usage decision",
+        "effect": "cancer treatment cost"
+    },
+    {
+        "cause": "usage decision",
+        "effect": "human exposure level"
+    },
+    {
+        "cause": "human exposure level",
+        "effect": "cancer treatment cost"
+    },
+    {
+        "cause": "carcinogenic activity",
+        "effect": "cancer treatment cost"
+    },
+    {
+        "cause": "cancer treatment cost",
+        "effect": "net value"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "variable_name": "launch decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "launch",
+            "not launch"
+        ]
+    },
+    {
+        "variable_name": "profitability",
+        "variable_type": "utility",
+        "variable_values": [
+            0,
+            1
+        ]
+    },
+    {
+        "variable_name": "market demand",
+        "variable_type": "chance",
+        "variable_values": [
+            "high",
+            "low"
+        ]
+    },
+    {
+        "variable_name": "competitor pricing",
+        "variable_type": "chance",
+        "variable_values": [
+            "high",
+            "low"
+        ]
+    },
+    {
+        "variable_name": "production difficulty",
+        "variable_type": "chance",
+        "variable_values": [
+            "high",
+            "low"
+        ]
+    }
+]

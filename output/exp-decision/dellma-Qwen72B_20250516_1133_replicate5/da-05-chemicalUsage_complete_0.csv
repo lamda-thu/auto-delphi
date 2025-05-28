@@ -1,0 +1,17 @@
+instance,context,usage decision
+cpd1,1,permit
+cpd10,1,permit
+cpd11,1,permit
+cpd12,1,restrict
+cpd13,1,restrict
+cpd14,1,permit
+cpd15,1,permit
+cpd2,1,ban
+cpd16,1,permit
+cpd3,1,permit
+cpd5,1,permit
+cpd4,1,permit
+cpd6,1,permit
+cpd7,1,restrict
+cpd8,1,permit
+cpd9,1,restrict

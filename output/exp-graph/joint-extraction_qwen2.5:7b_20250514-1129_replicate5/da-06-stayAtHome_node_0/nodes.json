@@ -1,0 +1,98 @@
+[
+    {
+        "variable_name": "stay at home decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "stay at home",
+            "not stay at home"
+        ]
+    },
+    {
+        "variable_name": "population infection density",
+        "variable_type": "chance",
+        "variable_values": [
+            0,
+            1
+        ]
+    },
+    {
+        "variable_name": "stay at home duration in days",
+        "variable_type": "decision",
+        "variable_values": [
+            "short",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "number of people one contacts",
+        "variable_type": "chance",
+        "variable_values": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "variable_name": "exposure",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "infection",
+        "variable_type": "chance",
+        "variable_values": [
+            "no infection",
+            "infection"
+        ]
+    },
+    {
+        "variable_name": "hospital stays in days",
+        "variable_type": "chance",
+        "variable_values": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "variable_name": "medical expenses in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -500,
+            -1000,
+            -1500
+        ]
+    },
+    {
+        "variable_name": "death cost",
+        "variable_type": "utility",
+        "variable_values": [
+            -2000,
+            -3000,
+            -4000
+        ]
+    },
+    {
+        "variable_name": "treatment time expenses in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -100,
+            -200,
+            -300
+        ]
+    },
+    {
+        "variable_name": "cost of staying at home in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -50,
+            -100,
+            -150
+        ]
+    }
+]

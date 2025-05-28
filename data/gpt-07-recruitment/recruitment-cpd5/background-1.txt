@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around recruiting new team members and its effect on overall team efficiency. This decision is influenced by the current workload and the productivity of existing employees. The productivity of employees is further affected by the prevailing market salaries and the company culture. The goal is to understand how these factors collectively impact the efficiency of the team when making recruitment decisions.
+
+
+Decision:'recruitment decision'
+Alternatives:['hire', 'do not hire']

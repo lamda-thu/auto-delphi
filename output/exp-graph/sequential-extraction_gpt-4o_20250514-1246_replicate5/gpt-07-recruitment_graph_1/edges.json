@@ -1,0 +1,10 @@
+[
+    {
+        "cause": "market_salary",
+        "effect": "company_culture"
+    },
+    {
+        "cause": "company_culture",
+        "effect": "team_efficiency"
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "cause": "alarm",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "alarm"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "cost of screening"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of inspection"
+    },
+    {
+        "cause": "inspection result",
+        "effect": "cost of radiological disposal"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "cost of terrorist attack"
+    }
+]

@@ -1,0 +1,287 @@
+,instance,cpd_instance,tvd,kl,js,bs,optimal_action
+0,gpt-05-trafficManagement,1,1,9999999,0.693,1,-9999999
+1,gpt-05-trafficManagement,2,1,9999999,0.693,1,-9999999
+2,gpt-05-trafficManagement,3,1,9999999,0.693,1,-9999999
+3,gpt-05-trafficManagement,4,1,9999999,0.693,1,-9999999
+4,gpt-05-trafficManagement,5,1,9999999,0.693,1,-9999999
+5,gpt-05-trafficManagement,6,1,9999999,0.693,1,-9999999
+6,gpt-05-trafficManagement,7,1,9999999,0.693,1,-9999999
+7,gpt-05-trafficManagement,8,1,9999999,0.693,1,-9999999
+8,gpt-05-trafficManagement,9,1,9999999,0.693,1,-9999999
+9,gpt-09-productDevelopment,1,1,9999999,0.693,1,-9999999
+10,gpt-09-productDevelopment,2,1,9999999,0.693,1,-9999999
+11,gpt-09-productDevelopment,3,1,9999999,0.693,1,-9999999
+12,gpt-09-productDevelopment,4,0.203,0.09,0.023,0.0,do not invest
+13,gpt-09-productDevelopment,5,0.101,0.052,0.012,0.0,do not invest
+14,gpt-09-productDevelopment,6,0.32,4.315,0.098,0.0,do not invest
+15,gpt-09-productDevelopment,7,0.006,0.004,0.001,0.0,do not invest
+16,gpt-09-productDevelopment,8,0.044,0.01,0.003,0.0,do not invest
+17,gpt-09-productDevelopment,9,1,9999999,0.693,1,-9999999
+18,gpt-09-productDevelopment,10,0.012,0.008,0.002,0.0,do not invest
+19,gpt-09-productDevelopment,11,0.049,0.015,0.004,0.0,invest
+20,gpt-09-productDevelopment,12,0.203,4.271,0.079,0.0,invest
+21,gpt-09-productDevelopment,13,0.104,0.052,0.014,0.0,do not invest
+22,gpt-09-productDevelopment,14,1,9999999,0.693,1,-9999999
+23,gpt-09-productDevelopment,15,1,9999999,0.693,1,-9999999
+24,gpt-09-productDevelopment,16,0.006,0.004,0.001,0.0,do not invest
+25,gpt-09-productDevelopment,17,1,9999999,0.693,1,-9999999
+26,gpt-09-productDevelopment,18,1,9999999,0.693,1,-9999999
+27,gpt-09-productDevelopment,19,1,9999999,0.693,1,-9999999
+28,gpt-09-productDevelopment,20,0.204,4.232,0.079,0.0,invest
+29,gpt-09-productDevelopment,21,1,9999999,0.693,1,-9999999
+30,gpt-09-productDevelopment,22,0.202,4.215,0.078,0.0,do not invest
+31,gpt-09-productDevelopment,23,1,9999999,0.693,1,-9999999
+32,gpt-09-productDevelopment,24,1,9999999,0.693,1,-9999999
+33,gpt-09-productDevelopment,25,0.201,4.264,0.077,0.0,do not invest
+34,gpt-09-productDevelopment,26,1,9999999,0.693,1,-9999999
+35,gpt-09-productDevelopment,27,1,9999999,0.693,1,-9999999
+36,gpt-04-agriculturalProduction,1,1,9999999,0.693,1,-9999999
+37,gpt-04-agriculturalProduction,2,1,9999999,0.693,1,-9999999
+38,gpt-04-agriculturalProduction,3,1,9999999,0.693,1,-9999999
+39,gpt-04-agriculturalProduction,4,1,9999999,0.693,1,-9999999
+40,gpt-04-agriculturalProduction,5,1,9999999,0.693,1,-9999999
+41,gpt-04-agriculturalProduction,6,1,9999999,0.693,1,-9999999
+42,gpt-04-agriculturalProduction,7,1,9999999,0.693,1,-9999999
+43,gpt-04-agriculturalProduction,8,0.436,0.621,0.146,0.0,expand
+44,gpt-04-agriculturalProduction,9,0.378,1.327,0.131,0.0,do not expand
+45,gpt-02-scienceArtSelection,1,1,9999999,0.693,1,-9999999
+46,gpt-02-scienceArtSelection,2,1,9999999,0.693,1,-9999999
+47,gpt-02-scienceArtSelection,3,1,9999999,0.693,1,-9999999
+48,gpt-02-scienceArtSelection,4,1,9999999,0.693,1,-9999999
+49,gpt-02-scienceArtSelection,5,1,9999999,0.693,1,-9999999
+50,gpt-02-scienceArtSelection,6,1,9999999,0.693,1,-9999999
+51,gpt-02-scienceArtSelection,7,1,9999999,0.693,1,-9999999
+52,gpt-02-scienceArtSelection,8,1,9999999,0.693,1,-9999999
+53,gpt-02-scienceArtSelection,9,1,9999999,0.693,1,-9999999
+54,gpt-06-examPreparation,1,1,9999999,0.693,1,-9999999
+55,gpt-06-examPreparation,2,1,9999999,0.693,1,-9999999
+56,gpt-06-examPreparation,3,1,9999999,0.693,1,-9999999
+57,gpt-06-examPreparation,4,1,9999999,0.693,1,-9999999
+58,gpt-06-examPreparation,5,1,9999999,0.693,1,-9999999
+59,gpt-06-examPreparation,6,1,9999999,0.693,1,-9999999
+60,gpt-06-examPreparation,7,1.0,23.592,0.693,0.0,study more
+61,gpt-06-examPreparation,8,1,9999999,0.693,1,-9999999
+62,gpt-06-examPreparation,9,1,9999999,0.693,1,-9999999
+63,gpt-06-examPreparation,10,1,9999999,0.693,1,-9999999
+64,gpt-06-examPreparation,11,1,9999999,0.693,1,-9999999
+65,gpt-06-examPreparation,12,0.232,0.164,0.04,0.0,study more
+66,gpt-06-examPreparation,13,1,9999999,0.693,1,-9999999
+67,gpt-06-examPreparation,14,1,9999999,0.693,1,-9999999
+68,gpt-06-examPreparation,15,1.0,23.608,0.693,0.0,study more
+69,gpt-06-examPreparation,16,1.0,23.592,0.693,0.0,study more
+70,gpt-06-examPreparation,17,1,9999999,0.693,1,-9999999
+71,gpt-06-examPreparation,18,1,9999999,0.693,1,-9999999
+72,gpt-06-examPreparation,19,1,9999999,0.693,1,-9999999
+73,gpt-06-examPreparation,20,1.0,23.421,0.693,0.0,study more
+74,gpt-06-examPreparation,21,1,9999999,0.693,1,-9999999
+75,gpt-06-examPreparation,22,1.0,23.305,0.693,0.0,study less
+76,gpt-06-examPreparation,23,1.0,23.587,0.693,0.0,study less
+77,gpt-06-examPreparation,24,1,9999999,0.693,1,-9999999
+78,gpt-06-examPreparation,25,1,9999999,0.693,1,-9999999
+79,gpt-06-examPreparation,26,1,9999999,0.693,1,-9999999
+80,gpt-06-examPreparation,27,1.0,23.962,0.693,0.0,study less
+81,da-01-longTermCareInsurance,1,1,9999999,0.693,1,-9999999
+82,da-01-longTermCareInsurance,2,1,9999999,0.693,1,-9999999
+83,da-01-longTermCareInsurance,3,1,9999999,0.693,1,-9999999
+84,da-01-longTermCareInsurance,4,1,9999999,0.693,1,-9999999
+85,da-01-longTermCareInsurance,5,1,9999999,0.693,1,-9999999
+86,da-01-longTermCareInsurance,6,1,9999999,0.693,1,-9999999
+87,da-01-longTermCareInsurance,7,1,9999999,0.693,1,-9999999
+88,da-01-longTermCareInsurance,8,1,9999999,0.693,1,-9999999
+89,da-01-longTermCareInsurance,9,1,9999999,0.693,1,-9999999
+90,da-01-longTermCareInsurance,10,1,9999999,0.693,1,-9999999
+91,da-01-longTermCareInsurance,11,1,9999999,0.693,1,-9999999
+92,da-01-longTermCareInsurance,12,1,9999999,0.693,1,-9999999
+93,da-01-longTermCareInsurance,13,1,9999999,0.693,1,-9999999
+94,da-01-longTermCareInsurance,14,1,9999999,0.693,1,-9999999
+95,da-01-longTermCareInsurance,15,1,9999999,0.693,1,-9999999
+96,da-01-longTermCareInsurance,16,1,9999999,0.693,1,-9999999
+97,da-01-longTermCareInsurance,17,1,9999999,0.693,1,-9999999
+98,da-01-longTermCareInsurance,18,1,9999999,0.693,1,-9999999
+99,da-01-longTermCareInsurance,19,1,9999999,0.693,1,-9999999
+100,da-01-longTermCareInsurance,20,1,9999999,0.693,1,-9999999
+101,da-01-longTermCareInsurance,21,1,9999999,0.693,1,-9999999
+102,da-01-longTermCareInsurance,22,1,9999999,0.693,1,-9999999
+103,da-01-longTermCareInsurance,23,1,9999999,0.693,1,-9999999
+104,da-01-longTermCareInsurance,24,1,9999999,0.693,1,-9999999
+105,da-01-longTermCareInsurance,25,1,9999999,0.693,1,-9999999
+106,da-01-longTermCareInsurance,26,1,9999999,0.693,1,-9999999
+107,da-01-longTermCareInsurance,27,1,9999999,0.693,1,-9999999
+108,da-01-longTermCareInsurance,28,1,9999999,0.693,1,-9999999
+109,da-01-longTermCareInsurance,29,1,9999999,0.693,1,-9999999
+110,da-01-longTermCareInsurance,30,1,9999999,0.693,1,-9999999
+111,da-01-longTermCareInsurance,31,1,9999999,0.693,1,-9999999
+112,da-01-longTermCareInsurance,32,1,9999999,0.693,1,-9999999
+113,da-05-chemicalUsage,1,1,9999999,0.693,1,-9999999
+114,da-05-chemicalUsage,2,1,9999999,0.693,1,-9999999
+115,da-05-chemicalUsage,3,1,9999999,0.693,1,-9999999
+116,da-05-chemicalUsage,4,1,9999999,0.693,1,-9999999
+117,da-05-chemicalUsage,5,1,9999999,0.693,1,-9999999
+118,da-05-chemicalUsage,6,1,9999999,0.693,1,-9999999
+119,da-05-chemicalUsage,7,1,9999999,0.693,1,-9999999
+120,da-05-chemicalUsage,8,1,9999999,0.693,1,-9999999
+121,da-05-chemicalUsage,9,1,9999999,0.693,1,-9999999
+122,da-05-chemicalUsage,10,1,9999999,0.693,1,-9999999
+123,da-05-chemicalUsage,11,1,9999999,0.693,1,-9999999
+124,da-05-chemicalUsage,12,1,9999999,0.693,1,-9999999
+125,da-05-chemicalUsage,13,1,9999999,0.693,1,-9999999
+126,da-05-chemicalUsage,14,0.65,16.097,0.451,0.0,ban
+127,da-05-chemicalUsage,15,1,9999999,0.693,1,-9999999
+128,da-05-chemicalUsage,16,1,9999999,0.693,1,-9999999
+129,gpt-07-recruitment,1,1,9999999,0.693,1,-9999999
+130,gpt-07-recruitment,2,1,9999999,0.693,1,-9999999
+131,gpt-07-recruitment,3,1,9999999,0.693,1,-9999999
+132,gpt-07-recruitment,4,1,9999999,0.693,1,-9999999
+133,gpt-07-recruitment,5,1,9999999,0.693,1,-9999999
+134,gpt-07-recruitment,6,1,9999999,0.693,1,-9999999
+135,gpt-07-recruitment,7,1,9999999,0.693,1,-9999999
+136,gpt-07-recruitment,8,1,9999999,0.693,1,-9999999
+137,gpt-07-recruitment,9,1,9999999,0.693,1,-9999999
+138,da-04-cargoContainerScreening,1,1,9999999,0.693,1,-9999999
+139,da-04-cargoContainerScreening,2,1,9999999,0.693,1,-9999999
+140,da-04-cargoContainerScreening,3,1,9999999,0.693,1,-9999999
+141,da-04-cargoContainerScreening,4,1,9999999,0.693,1,-9999999
+142,da-04-cargoContainerScreening,5,1,9999999,0.693,1,-9999999
+143,da-04-cargoContainerScreening,6,1,9999999,0.693,1,-9999999
+144,da-04-cargoContainerScreening,7,1,9999999,0.693,1,-9999999
+145,da-04-cargoContainerScreening,8,1,9999999,0.693,1,-9999999
+146,da-04-cargoContainerScreening,9,1,9999999,0.693,1,-9999999
+147,da-04-cargoContainerScreening,10,1,9999999,0.693,1,-9999999
+148,da-04-cargoContainerScreening,11,1,9999999,0.693,1,-9999999
+149,da-04-cargoContainerScreening,12,1,9999999,0.693,1,-9999999
+150,da-04-cargoContainerScreening,13,1,9999999,0.693,1,-9999999
+151,da-04-cargoContainerScreening,14,1,9999999,0.693,1,-9999999
+152,da-04-cargoContainerScreening,15,1,9999999,0.693,1,-9999999
+153,da-04-cargoContainerScreening,16,1,9999999,0.693,1,-9999999
+154,da-04-cargoContainerScreening,17,1,9999999,0.693,1,-9999999
+155,da-04-cargoContainerScreening,18,1,9999999,0.693,1,-9999999
+156,da-04-cargoContainerScreening,19,1,9999999,0.693,1,-9999999
+157,da-04-cargoContainerScreening,20,1,9999999,0.693,1,-9999999
+158,da-04-cargoContainerScreening,21,1,9999999,0.693,1,-9999999
+159,da-04-cargoContainerScreening,22,1,9999999,0.693,1,-9999999
+160,da-04-cargoContainerScreening,23,1,9999999,0.693,1,-9999999
+161,da-04-cargoContainerScreening,24,1,9999999,0.693,1,-9999999
+162,da-06-stayAtHome,1,1,9999999,0.693,1,-9999999
+163,da-06-stayAtHome,2,1,9999999,0.693,1,-9999999
+164,da-06-stayAtHome,3,1,9999999,0.693,1,-9999999
+165,da-06-stayAtHome,4,1,9999999,0.693,1,-9999999
+166,da-06-stayAtHome,5,1,9999999,0.693,1,-9999999
+167,da-06-stayAtHome,6,1,9999999,0.693,1,-9999999
+168,da-06-stayAtHome,7,1,9999999,0.693,1,-9999999
+169,da-06-stayAtHome,8,1,9999999,0.693,1,-9999999
+170,da-06-stayAtHome,9,1,9999999,0.693,1,-9999999
+171,da-06-stayAtHome,10,1,9999999,0.693,1,-9999999
+172,da-06-stayAtHome,11,1,9999999,0.693,1,-9999999
+173,da-06-stayAtHome,12,1,9999999,0.693,1,-9999999
+174,da-06-stayAtHome,13,1,9999999,0.693,1,-9999999
+175,da-06-stayAtHome,14,1,9999999,0.693,1,-9999999
+176,da-06-stayAtHome,15,1,9999999,0.693,1,-9999999
+177,da-06-stayAtHome,16,1,9999999,0.693,1,-9999999
+178,da-06-stayAtHome,17,1,9999999,0.693,1,-9999999
+179,da-06-stayAtHome,18,1,9999999,0.693,1,-9999999
+180,da-06-stayAtHome,19,1,9999999,0.693,1,-9999999
+181,da-06-stayAtHome,20,1,9999999,0.693,1,-9999999
+182,da-06-stayAtHome,21,1,9999999,0.693,1,-9999999
+183,da-06-stayAtHome,22,1,9999999,0.693,1,-9999999
+184,da-06-stayAtHome,23,1,9999999,0.693,1,-9999999
+185,da-06-stayAtHome,24,1,9999999,0.693,1,-9999999
+186,da-06-stayAtHome,25,1,9999999,0.693,1,-9999999
+187,da-06-stayAtHome,26,1,9999999,0.693,1,-9999999
+188,da-06-stayAtHome,27,1,9999999,0.693,1,-9999999
+189,da-06-stayAtHome,28,1,9999999,0.693,1,-9999999
+190,da-06-stayAtHome,29,1,9999999,0.693,1,-9999999
+191,da-06-stayAtHome,30,1,9999999,0.693,1,-9999999
+192,da-06-stayAtHome,31,1,9999999,0.693,1,-9999999
+193,da-06-stayAtHome,32,1,9999999,0.693,1,-9999999
+194,da-06-stayAtHome,33,1,9999999,0.693,1,-9999999
+195,da-06-stayAtHome,34,1,9999999,0.693,1,-9999999
+196,da-06-stayAtHome,35,1,9999999,0.693,1,-9999999
+197,da-06-stayAtHome,36,1,9999999,0.693,1,-9999999
+198,da-06-stayAtHome,37,1,9999999,0.693,1,-9999999
+199,da-06-stayAtHome,38,1,9999999,0.693,1,-9999999
+200,da-06-stayAtHome,39,1,9999999,0.693,1,-9999999
+201,da-06-stayAtHome,40,1,9999999,0.693,1,-9999999
+202,da-06-stayAtHome,41,1,9999999,0.693,1,-9999999
+203,da-06-stayAtHome,42,1,9999999,0.693,1,-9999999
+204,da-06-stayAtHome,43,1,9999999,0.693,1,-9999999
+205,da-06-stayAtHome,44,1,9999999,0.693,1,-9999999
+206,da-06-stayAtHome,45,1,9999999,0.693,1,-9999999
+207,da-06-stayAtHome,46,1,9999999,0.693,1,-9999999
+208,da-06-stayAtHome,47,1,9999999,0.693,1,-9999999
+209,da-06-stayAtHome,48,1,9999999,0.693,1,-9999999
+210,da-06-stayAtHome,49,1,9999999,0.693,1,-9999999
+211,da-06-stayAtHome,50,1,9999999,0.693,1,-9999999
+212,da-06-stayAtHome,51,1,9999999,0.693,1,-9999999
+213,da-06-stayAtHome,52,1,9999999,0.693,1,-9999999
+214,da-06-stayAtHome,53,1,9999999,0.693,1,-9999999
+215,da-06-stayAtHome,54,1,9999999,0.693,1,-9999999
+216,gpt-01-disasterManagement,1,0.05,0.013,0.003,0.0,normal
+217,gpt-01-disasterManagement,2,0.0,0.0,0.0,0.0,normal
+218,gpt-01-disasterManagement,3,0.0,0.0,0.0,0.0,normal
+219,gpt-01-disasterManagement,4,0.025,0.006,0.002,0.0,normal
+220,gpt-01-disasterManagement,5,0.16,0.124,0.036,0.0,normal
+221,gpt-01-disasterManagement,6,1,9999999,0.693,1,-9999999
+222,gpt-01-disasterManagement,7,1,9999999,0.693,1,-9999999
+223,gpt-01-disasterManagement,8,1,9999999,0.693,1,-9999999
+224,gpt-01-disasterManagement,9,1,9999999,0.693,1,-9999999
+225,gpt-10-healthManagement,1,0.442,7.016,0.218,0.0,1
+226,gpt-10-healthManagement,2,0.39,5.457,0.178,0.0,1
+227,gpt-10-healthManagement,3,0.317,4.78,0.156,0.0,1
+228,gpt-10-healthManagement,4,1,9999999,0.693,1,-9999999
+229,gpt-10-healthManagement,5,0.508,8.095,0.247,0.0,0
+230,gpt-10-healthManagement,6,0.453,6.717,0.209,0.0,1
+231,gpt-10-healthManagement,7,1,9999999,0.693,1,-9999999
+232,gpt-10-healthManagement,8,1,9999999,0.693,1,-9999999
+233,gpt-10-healthManagement,9,0.37,6.922,0.194,0.0,1
+234,da-02-carryUmbrella,1,1,9999999,0.693,1,-9999999
+235,da-02-carryUmbrella,2,1,9999999,0.693,1,-9999999
+236,da-02-carryUmbrella,3,1,9999999,0.693,1,-9999999
+237,da-02-carryUmbrella,4,1,9999999,0.693,1,-9999999
+238,da-02-carryUmbrella,5,1,9999999,0.693,1,-9999999
+239,da-02-carryUmbrella,6,1,9999999,0.693,1,-9999999
+240,da-02-carryUmbrella,7,1,9999999,0.693,1,-9999999
+241,da-02-carryUmbrella,8,1,9999999,0.693,1,-9999999
+242,da-02-carryUmbrella,9,1,9999999,0.693,1,-9999999
+243,da-02-carryUmbrella,10,1,9999999,0.693,1,-9999999
+244,da-02-carryUmbrella,11,1,9999999,0.693,1,-9999999
+245,da-02-carryUmbrella,12,1,9999999,0.693,1,-9999999
+246,da-02-carryUmbrella,13,1,9999999,0.693,1,-9999999
+247,da-02-carryUmbrella,14,0.5,12.866,0.347,0.007,carry
+248,da-02-carryUmbrella,15,1,9999999,0.693,1,-9999999
+249,da-02-carryUmbrella,16,1,9999999,0.693,1,-9999999
+250,gpt-08-financialManagement,1,1.0,24.253,0.693,0.0,do not invest
+251,gpt-08-financialManagement,2,1.0,23.951,0.693,0.0,invest
+252,gpt-08-financialManagement,3,1,9999999,0.693,1,-9999999
+253,gpt-08-financialManagement,4,1.0,24.005,0.693,0.0,invest
+254,gpt-08-financialManagement,5,1.0,24.149,0.693,0.0,invest
+255,gpt-08-financialManagement,6,1,9999999,0.693,1,-9999999
+256,gpt-08-financialManagement,7,1.0,23.954,0.693,0.0,invest
+257,gpt-08-financialManagement,8,1.0,24.399,0.693,0.001,do not invest
+258,gpt-08-financialManagement,9,1.0,24.287,0.693,0.001,do not invest
+259,gpt-03-electricVehicleMarketing,1,0.1,2.142,0.037,0.0,launch
+260,gpt-03-electricVehicleMarketing,2,1,9999999,0.693,1,-9999999
+261,gpt-03-electricVehicleMarketing,3,1,9999999,0.693,1,-9999999
+262,gpt-03-electricVehicleMarketing,4,0.765,16.108,0.501,0.0,launch
+263,gpt-03-electricVehicleMarketing,5,0.16,2.159,0.044,0.0,launch
+264,gpt-03-electricVehicleMarketing,6,0.527,9.412,0.303,0.0,not launch
+265,gpt-03-electricVehicleMarketing,7,0.26,2.245,0.063,0.0,launch
+266,gpt-03-electricVehicleMarketing,8,0.597,10.518,0.334,0.0,not launch
+267,gpt-03-electricVehicleMarketing,9,0.316,2.347,0.085,0.0,launch
+268,gpt-03-electricVehicleMarketing,10,0.488,8.899,0.296,0.0,not launch
+269,gpt-03-electricVehicleMarketing,11,0.538,8.906,0.298,0.0,not launch
+270,gpt-03-electricVehicleMarketing,12,1,9999999,0.693,1,-9999999
+271,gpt-03-electricVehicleMarketing,13,1,9999999,0.693,1,-9999999
+272,gpt-03-electricVehicleMarketing,14,0.509,8.051,0.289,0.0,not launch
+273,gpt-03-electricVehicleMarketing,15,0.627,9.441,0.333,0.0,not launch
+274,gpt-03-electricVehicleMarketing,16,1,9999999,0.693,1,-9999999
+275,gpt-03-electricVehicleMarketing,17,0.966,19.428,0.646,0.0,launch
+276,gpt-03-electricVehicleMarketing,18,0.44,0.687,0.157,0.0,launch
+277,gpt-03-electricVehicleMarketing,19,0.839,16.289,0.543,0.0,launch
+278,gpt-03-electricVehicleMarketing,20,0.26,0.178,0.045,0.0,launch
+279,gpt-03-electricVehicleMarketing,21,0.4,0.447,0.105,0.0,launch
+280,gpt-03-electricVehicleMarketing,22,0.21,0.123,0.032,0.0,not launch
+281,gpt-03-electricVehicleMarketing,23,1,9999999,0.693,1,-9999999
+282,gpt-03-electricVehicleMarketing,24,0.408,0.476,0.111,0.0,not launch
+283,gpt-03-electricVehicleMarketing,25,0.24,0.21,0.051,0.0,not launch
+284,gpt-03-electricVehicleMarketing,26,0.312,0.293,0.07,0.0,not launch
+285,gpt-03-electricVehicleMarketing,27,0.428,0.562,0.127,0.0,not launch

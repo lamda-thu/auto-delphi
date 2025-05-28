@@ -1,0 +1,42 @@
+[
+    {
+        "cause": "study decision",
+        "effect": "current knowledge"
+    },
+    {
+        "cause": "study decision",
+        "effect": "health status"
+    },
+    {
+        "cause": "current knowledge",
+        "effect": "exam score"
+    },
+    {
+        "cause": "health status",
+        "effect": "exam score"
+    },
+    {
+        "cause": "exam difficulty",
+        "effect": "exam score"
+    },
+    {
+        "cause": "study decision",
+        "effect": "current knowledge"
+    },
+    {
+        "cause": "study decision",
+        "effect": "health status"
+    },
+    {
+        "cause": "current knowledge",
+        "effect": "exam score"
+    },
+    {
+        "cause": "health status",
+        "effect": "exam score"
+    },
+    {
+        "cause": "exam difficulty",
+        "effect": "exam score"
+    }
+]

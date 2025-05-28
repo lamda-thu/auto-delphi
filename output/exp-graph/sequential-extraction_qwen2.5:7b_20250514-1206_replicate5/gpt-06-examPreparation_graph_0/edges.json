@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "study_more",
+        "effect": "knowledge_gain"
+    },
+    {
+        "cause": "study_more",
+        "effect": "health_impact"
+    },
+    {
+        "cause": "exam_difficulty",
+        "effect": "exam_score"
+    },
+    {
+        "cause": "knowledge_gain",
+        "effect": "exam_score"
+    },
+    {
+        "cause": "health_impact",
+        "effect": "exam_score"
+    }
+]

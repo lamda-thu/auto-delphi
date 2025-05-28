@@ -1,0 +1,27 @@
+[
+    {
+        "stochastic_function": "lambda: {1: 0.3, 0: 0.5, -1: 0.2}",
+        "variable": "market demand",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.4,0:0.4,-1:0.2}",
+        "variable": "competitor pricing",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.1,0:0.2,-1:0.7}",
+        "variable": "production cost",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda launch_decision, market_demand, competitor_pricing, production_cost: {1:0.0, 0:1.0, -1:0.0} if launch_decision == 'not launch' else {1:0.4, 0:0.4, -1:0.2}",
+        "variable": "profit",
+        "evidence": [
+            "launch decision",
+            "market demand",
+            "competitor pricing",
+            "production cost"
+        ]
+    }
+]

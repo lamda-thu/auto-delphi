@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "current_workload",
+        "effect": "recruitment_decision"
+    },
+    {
+        "cause": "productivity_of_existing_employees",
+        "effect": "team_efficiency"
+    },
+    {
+        "cause": "prevailing_market_salaries",
+        "effect": "productivity_of_existing_employees"
+    },
+    {
+        "cause": "company_culture",
+        "effect": "productivity_of_existing_employees"
+    }
+]

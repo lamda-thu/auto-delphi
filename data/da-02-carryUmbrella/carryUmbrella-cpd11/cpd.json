@@ -1,0 +1,64 @@
+[
+    {
+        "variable": "weather forecast",
+        "variable_card": 2,
+        "evidence": [
+            "weather outcome"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "weather forecast": [
+                "rain",
+                "no rain"
+            ],
+            "weather outcome": [
+                "rain",
+                "no rain"
+            ]
+        },
+        "stochastic_function": "lambda weather_outcome: {'rain': 0.6, 'no rain': 1-0.6} if weather_outcome == 'rain' else {'rain': 1-0.9, 'no rain': 0.9}"
+    },
+    {
+        "variable": "cost",
+        "variable_card": 3,
+        "evidence": [
+            "weather outcome",
+            "carry umbrella decision"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "cost": [
+                "0.0",
+                "-2.0",
+                "-#high_cost#"
+            ],
+            "weather outcome": [
+                "rain",
+                "no rain"
+            ],
+            "carry umbrella decision": [
+                "carry",
+                "not carry"
+            ]
+        },
+        "stochastic_function": "lambda weather_outcome, carry_umbrella_decision: {0: 1.0} if weather_outcome == 'no rain' and carry_umbrella_decision == 'not carry' else {-5: 1.0} if weather_outcome == 'rain' and carry_umbrella_decision == 'not carry' else {-2: 1.0}"
+    },
+    {
+        "variable": "weather outcome",
+        "variable_card": 2,
+        "stochastic_function": "lambda: {'rain': 0.4, 'no rain': 1 - 0.4}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "human exposure": [
+                "rain",
+                "no rain"
+            ]
+        }
+    }
+]

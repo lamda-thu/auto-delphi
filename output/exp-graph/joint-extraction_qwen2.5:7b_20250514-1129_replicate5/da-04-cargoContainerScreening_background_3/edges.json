@@ -1,0 +1,34 @@
+[
+    {
+        "cause": "screening_decision",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "security_risk",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "alarm_status",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "terrorist_attack"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "screening_cost"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "inspection_cost"
+    },
+    {
+        "cause": "alarm_status",
+        "effect": "radiological_disposal_cost"
+    },
+    {
+        "cause": "terrorist_attack",
+        "effect": "terrorist_attack_cost"
+    }
+]

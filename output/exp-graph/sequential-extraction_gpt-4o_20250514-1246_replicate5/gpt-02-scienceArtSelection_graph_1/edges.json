@@ -1,0 +1,30 @@
+[
+    {
+        "cause": "field choice",
+        "effect": "exam performance"
+    },
+    {
+        "cause": "field choice",
+        "effect": "job availability"
+    },
+    {
+        "cause": "field choice",
+        "effect": "job nature"
+    },
+    {
+        "cause": "exam performance",
+        "effect": "job availability"
+    },
+    {
+        "cause": "exam performance",
+        "effect": "job nature"
+    },
+    {
+        "cause": "job availability",
+        "effect": "future income"
+    },
+    {
+        "cause": "job nature",
+        "effect": "future income"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "stochastic_function": "lambda: {1: 0.3, 0: 0.4, -1: 0.3}",
+        "variable": "current savings",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.3,0:0.4,-1:0.3}",
+        "variable": "market risk",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.4,0:0.4,-1:0.2}",
+        "variable": "economic conditions",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda investment_decision, current_savings, market_risk, economic_conditions: {1:0.0, 0:0.95, -1:0.05} if investment_decision == 'do not invest' else {1:0.3, 0:0.5, -1:0.2}",
+        "variable": "wealth",
+        "evidence": [
+            "investment decision",
+            "current savings",
+            "market risk",
+            "economic conditions"
+        ]
+    }
+]

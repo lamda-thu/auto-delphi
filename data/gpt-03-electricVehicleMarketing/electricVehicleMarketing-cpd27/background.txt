@@ -1,0 +1,6 @@
+Background:
+The decision-making problem described involves determining whether to launch a product or not. The profitability of launching the product is influenced by several factors. Firstly, the decision to launch itself directly impacts potential profit. Additionally, the level of market demand, competitor pricing, and production difficulty also affect profitability. However, they are unknown when making the launch decision, so the decision should not depend on these factors.
+
+
+Decision:'launch decision'
+Alternatives:['launch', 'not launch']

@@ -1,0 +1,62 @@
+[
+    {
+        "cause": "screening decision",
+        "effect": "alarm"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "deterrence effect"
+    },
+    {
+        "cause": "alarm",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "inspection result",
+        "effect": "cost of radiological disposal"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "alarm"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "inspection result"
+    },
+    {
+        "cause": "smuggled nuclear threat",
+        "effect": "cost of terrorist attack"
+    },
+    {
+        "cause": "screening decision",
+        "effect": "cost of screening"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of inspection"
+    },
+    {
+        "cause": "deterrence effect",
+        "effect": "safety level"
+    },
+    {
+        "cause": "cost of screening",
+        "effect": "safety level"
+    },
+    {
+        "cause": "cost of inspection",
+        "effect": "safety level"
+    },
+    {
+        "cause": "cost of radiological disposal",
+        "effect": "safety level"
+    },
+    {
+        "cause": "cost of terrorist attack",
+        "effect": "safety level"
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "stochastic_function": "lambda screening_decision: {0: 1.0} if screening_decision == 'not screen' else {6: 1.0}",
+        "variable": "cost of screening",
+        "evidence": [
+            "screening decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda screening_decision: {'exist':5e-10,'not exist':1-5e-10} if screening_decision == 'screen' else {'exist':2.5e-09,'not exist':1-2.5e-09}",
+        "variable": "smuggled nuclear threat",
+        "evidence": [
+            "screening decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda screening_decision, smuggled_nuclear_threat: {'signal':0.0,'no signal':1.0} if screening_decision == 'not screen' else {'signal':0.8,'no signal':0.2} if smuggled_nuclear_threat == 'exist' else {'signal':0.025,'no signal':0.975}",
+        "variable": "alarm",
+        "evidence": [
+            "screening decision",
+            "smuggled nuclear threat"
+        ]
+    },
+    {
+        "stochastic_function": "lambda smuggled_nuclear_threat, inspection_decision: {'find threat':0.0,'no threat found':1.0} if inspection_decision == 'not inspect' or smuggled_nuclear_threat == 'not exist' else {'find threat':0.9,'no threat found':0.1}",
+        "variable": "inspection result",
+        "evidence": [
+            "smuggled nuclear threat",
+            "inspection decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda inspection_decision: {1: 1.0} if inspection_decision == 'inspect' else {0: 1.0}",
+        "variable": "cost of inspection",
+        "evidence": [
+            "inspection decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda smuggled_nuclear_threat, inspection_result: {0:1.0,40000000000.0:0.0} if smuggled_nuclear_threat == 'not exist' else ({0:1.0,40000000000.0:0.0} if inspection_result == 'find threat' else {0:0.1,40000000000.0:0.9})",
+        "variable": "cost of terrorist attack",
+        "evidence": [
+            "smuggled nuclear threat",
+            "inspection result"
+        ]
+    },
+    {
+        "stochastic_function": "lambda inspection_result: {100000: 1.0, 0: 0.0} if inspection_result == 'find threat' else {0: 1.0, 100000: 0.0}",
+        "variable": "cost of radiological disposal",
+        "evidence": [
+            "inspection result"
+        ]
+    }
+]

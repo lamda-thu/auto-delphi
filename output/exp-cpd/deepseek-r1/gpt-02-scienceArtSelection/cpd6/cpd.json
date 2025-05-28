@@ -1,0 +1,24 @@
+[
+    {
+        "stochastic_function": "lambda field_choice: {'excellent':0.4,'good':0.4,'average':0.2} if field_choice == 'science' else {'excellent':0.3,'good':0.5,'average':0.2}",
+        "variable": "exam performance",
+        "evidence": [
+            "field choice"
+        ]
+    },
+    {
+        "stochastic_function": "lambda field_choice, exam_performance: {1:0.8,0:0.2,-1:0.0} if field_choice=='science' and exam_performance=='excellent' else {1:0.5,0:0.4,-1:0.1} if field_choice=='science' and exam_performance=='good' else {1:0.3,0:0.5,-1:0.2} if field_choice=='science' and exam_performance=='average' else {1:0.6,0:0.3,-1:0.1} if field_choice=='arts' and exam_performance=='excellent' else {1:0.4,0:0.4,-1:0.2} if field_choice=='arts' and exam_performance=='good' else {1:0.2,0:0.5,-1:0.3}",
+        "variable": "job prospects",
+        "evidence": [
+            "field choice",
+            "exam performance"
+        ]
+    },
+    {
+        "stochastic_function": "lambda job_prospects: {1:0.8,0:0.2,-1:0.0} if job_prospects == 1 else ({1:0.4,0:0.5,-1:0.1} if job_prospects == 0 else {1:0.1,0:0.4,-1:0.5})",
+        "variable": "future income",
+        "evidence": [
+            "job prospects"
+        ]
+    }
+]

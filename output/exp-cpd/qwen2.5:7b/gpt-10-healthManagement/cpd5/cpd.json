@@ -1,0 +1,23 @@
+[
+    {
+        "stochastic_function": "lambda: {'good': 0.5, 'average': 0.3, 'poor': 0.2}",
+        "variable": "diet quality",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda exercise_time: {'normal': 0.7 + 2 * 0.05 if exercise_time == 1 else (0.5 + 2 * 0.05 if exercise_time == 0 else 0.3 + 2 * 0.05), 'overweight': 0.2 - 0.05 if exercise_time == 1 else (0.3 - 0.05 if exercise_time == 0 else 0.4 - 0.05), 'obese': 0.1 - 0.05 if exercise_time == 1 else (0.2 - 0.05 if exercise_time == 0 else 0.3 - 0.05)}",
+        "variable": "weight",
+        "evidence": [
+            "exercise time"
+        ]
+    },
+    {
+        "stochastic_function": "lambda exercise_time, diet_quality, weight: {1: 0.8, 0: 0.15, -1: 0.05} if exercise_time == 1 and diet_quality == 'good' and weight == 'normal' else \\\n{1: 0.7, 0: 0.2, -1: 0.1} if exercise_time == 1 and diet_quality == 'average' and weight == 'normal' else \\\n{1: 0.6, 0: 0.3, -1: 0.1} if exercise_time == 1 and diet_quality == 'poor' and weight == 'normal' else \\\n{1: 0.5, 0: 0.4, -1: 0.1} if exercise_time == 1 and diet_quality == 'good' and weight == 'overweight' else \\\n{1: 0.4, 0: 0.3, -1: 0.3} if exercise_time == 1 and diet_quality == 'average' and weight == 'overweight' else \\\n{1: 0.3, 0: 0.2, -1: 0.5} if exercise_time == 1 and diet_quality == 'poor' and weight == 'overweight' else \\\n{1: 0.9, 0: 0.08, -1: 0.02} if exercise_time == 1 and diet_quality == 'good' and weight == 'obese' else \\\n{1: 0.8, 0: 0.1, -1: 0.1} if exercise_time == 1 and diet_quality == 'average' and weight == 'obese' else \\\n{1: 0.7, 0: 0.2, -1: 0.1} if exercise_time == 1 and diet_quality == 'poor' and weight == 'obese' else \\\n{1: 0.95, 0: 0.04, -1: 0.01} if exercise_time == 0 and diet_quality == 'good' and weight == 'normal' else \\\n{1: 0.85, 0: 0.1, -1: 0.05} if exercise_time == 0 and diet_quality == 'average' and weight == 'normal' else \\\n{1: 0.75, 0: 0.2, -1: 0.05} if exercise_time == 0 and diet_quality == 'poor' and weight == 'normal' else \\\n{1: 0.8, 0: 0.15, -1: 0.05} if exercise_time == 0 and diet_quality == 'good' and weight == 'overweight' else \\\n{1: 0.7, 0: 0.25, -1: 0.05} if exercise_time == 0 and diet_quality == 'average' and weight == 'overweight' else \\\n{1: 0.6, 0: 0.3, -1: 0.1} if exercise_time == 0 and diet_quality == 'poor' and weight == 'overweight' else \\\n{1: 0.95, 0: 0.04, -1: 0.01} if exercise_time == 0 and diet_quality == 'good' and weight == 'obese' else \\\n{1: 0.85, 0: 0.1, -1: 0.05} if exercise_time == 0 and diet_quality == 'average' and weight == 'obese' else \\\n{1: 0.75, 0: 0.2, -1: 0.05} if exercise_time == 0 and diet_quality == 'poor' and weight == 'obese' else \\\n{1: 0.9, 0: 0.08, -1: 0.02} if exercise_time == -1 and diet_quality == 'good' and weight == 'normal' else \\\n{1: 0.85, 0: 0.1, -1: 0.05} if exercise_time == -1 and diet_quality == 'average' and weight == 'normal' else \\\n{1: 0.75, 0: 0.2, -1: 0.05} if exercise_time == -1 and diet_quality == 'poor' and weight == 'normal' else \\\n{1: 0.8, 0: 0.15, -1: 0.05} if exercise_time == -1 and diet_quality == 'good' and weight == 'overweight' else \\\n{1: 0.75, 0: 0.2, -1: 0.05} if exercise_time == -1 and diet_quality == 'average' and weight == 'overweight' else \\\n{1: 0.65, 0: 0.3, -1: 0.05} if exercise_time == -1 and diet_quality == 'poor' and weight == 'overweight' else \\\n{1: 0.9, 0: 0.08, -1: 0.02} if exercise_time == -1 and diet_quality == 'good' and weight == 'obese' else \\\n{1: 0.85, 0: 0.1, -1: 0.05} if exercise_time == -1 and diet_quality == 'average' and weight == 'obese' else \\\n{1: 0.75, 0: 0.2, -1: 0.05}",
+        "variable": "health status",
+        "evidence": [
+            "exercise time",
+            "diet quality",
+            "weight"
+        ]
+    }
+]

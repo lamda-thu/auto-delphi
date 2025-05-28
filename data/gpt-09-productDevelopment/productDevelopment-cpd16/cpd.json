@@ -1,0 +1,104 @@
+[
+    {
+        "variable": "team productivity",
+        "variable_card": 3,
+        "state_names": {
+            "team productivity": [
+                "high",
+                "neutral",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.4+2*0.1, 'neutral': 0.4-0.1, 'low': 0.2-0.1}"
+    },
+    {
+        "variable": "development challenge",
+        "variable_card": 3,
+        "state_names": {
+            "development challenge": [
+                "high",
+                "medium",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.3+2*0.2, 'medium': 0.4-0.2, 'low': 0.3-0.2}"
+    },
+    {
+        "variable": "market demand",
+        "variable_card": 3,
+        "state_names": {
+            "market demand": [
+                "high",
+                "moderate",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda: {'high': 0.4+2*0, 'moderate': 0.4-0, 'low': 0.2-0}"
+    },
+    {
+        "variable": "product success",
+        "variable_card": 3,
+        "evidence": [
+            "team productivity"
+        ],
+        "evidence_card": [
+            3
+        ],
+        "state_names": {
+            "product success": [
+                "huge success",
+                "moderate success",
+                "small success"
+            ],
+            "team productivity": [
+                "high",
+                "neutral",
+                "low"
+            ]
+        },
+        "stochastic_function": "lambda team_productivity: {'huge success': 0.7, 'moderate success': 0.3, 'small success': 0.0} if team_productivity == 'high' else {'huge success': 0.4, 'moderate success': 0.4, 'small success': 0.2} if team_productivity == 'neutral' else {'huge success': 0.1, 'moderate success': 0.5, 'small success': 0.4}"
+    },
+    {
+        "variable": "market sales",
+        "variable_card": 3,
+        "evidence": [
+            "investment decision",
+            "development challenge",
+            "market demand",
+            "product success"
+        ],
+        "evidence_card": [
+            2,
+            3,
+            3,
+            3
+        ],
+        "state_names": {
+            "market sales": [
+                1,
+                0,
+                -1
+            ],
+            "investment decision": [
+                "invest",
+                "do not invest"
+            ],
+            "development challenge": [
+                "high",
+                "medium",
+                "low"
+            ],
+            "market demand": [
+                "high",
+                "moderate",
+                "low"
+            ],
+            "product success": [
+                "huge success",
+                "moderate success",
+                "small success"
+            ]
+        },
+        "stochastic_function": "lambda investment_decision, development_challenge, market_demand, product_success: {1: 0, 0: 1, -1: 0.0} if investment_decision == 'do not invest' else {1: 0.7, 0: 0.2, -1: 0.1} if development_challenge == 'low' and market_demand == 'high' and product_success == 'huge success' else {1: 0.5, 0: 0.3, -1: 0.2} if development_challenge == 'low' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.3, 0: 0.4, -1: 0.3} if development_challenge == 'low' and market_demand == 'high' and product_success == 'small success' else {1: 0.6, 0: 0.3, -1: 0.1} if development_challenge == 'low' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.4, 0: 0.4, -1: 0.2} if development_challenge == 'low' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.2, 0: 0.5, -1: 0.3} if development_challenge == 'low' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.5, 0: 0.3, -1: 0.2} if development_challenge == 'low' and market_demand == 'low' and product_success == 'huge success' else {1: 0.3, 0: 0.4, -1: 0.3} if development_challenge == 'low' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.1, 0: 0.5, -1: 0.4} if development_challenge == 'low' and market_demand == 'low' and product_success == 'small success' else {1: 0.4, 0: 0.4, -1: 0.2} if development_challenge == 'medium' and market_demand == 'high' and product_success == 'huge success' else {1: 0.2, 0: 0.5, -1: 0.3} if development_challenge == 'medium' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if development_challenge == 'medium' and market_demand == 'high' and product_success == 'small success' else {1: 0.3, 0: 0.4, -1: 0.3} if development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.1, 0: 0.5, -1: 0.4} if development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if development_challenge == 'medium' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.1, 0: 0.5, -1: 0.4} if development_challenge == 'medium' and market_demand == 'low' and product_success == 'huge success' else {1: 0.0, 0: 0.6, -1: 0.4} if development_challenge == 'medium' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.0, 0: 0.7, -1: 0.3} if development_challenge == 'medium' and market_demand == 'low' and product_success == 'small success' else {1: 0.2, 0: 0.5, -1: 0.3} if development_challenge == 'high' and market_demand == 'high' and product_success == 'huge success' else {1: 0.0, 0: 0.8, -1: 0.2} if development_challenge == 'high' and market_demand == 'high' and product_success == 'moderate success' else {1: 0.0, 0: 0.7, -1: 0.3} if development_challenge == 'high' and market_demand == 'high' and product_success == 'small success' else {1: 0.0, 0: 0.8, -1: 0.2} if development_challenge == 'high' and market_demand == 'moderate' and product_success == 'huge success' else {1: 0.0, 0: 0.7, -1: 0.3} if development_challenge == 'high' and market_demand == 'moderate' and product_success == 'moderate success' else {1: 0.0, 0: 0.6, -1: 0.4} if development_challenge == 'high' and market_demand == 'moderate' and product_success == 'small success' else {1: 0.0, 0: 0.7, -1: 0.3} if development_challenge == 'high' and market_demand == 'low' and product_success == 'huge success' else {1: 0.0, 0: 0.6, -1: 0.4} if development_challenge == 'high' and market_demand == 'low' and product_success == 'moderate success' else {1: 0.0, 0: 0.5, -1: 0.5}"
+    }
+]

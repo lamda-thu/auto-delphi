@@ -1,0 +1,82 @@
+[
+    {
+        "cause": "age",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "stay at home decision"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "number of people one contacts"
+    },
+    {
+        "cause": "number of people one contacts",
+        "effect": "exposure"
+    },
+    {
+        "cause": "population infection density",
+        "effect": "exposure"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "exposure"
+    },
+    {
+        "cause": "exposure",
+        "effect": "infection"
+    },
+    {
+        "cause": "infection",
+        "effect": "hospitalization likelihood"
+    },
+    {
+        "cause": "infection",
+        "effect": "health outcome severity"
+    },
+    {
+        "cause": "hospitalization likelihood",
+        "effect": "hospital stays in days"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "prolonged treatment likelihood"
+    },
+    {
+        "cause": "hospital stays in days",
+        "effect": "medical expenses in usd"
+    },
+    {
+        "cause": "prolonged treatment likelihood",
+        "effect": "treatment time expenses in usd"
+    },
+    {
+        "cause": "age",
+        "effect": "death cost"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "death cost"
+    },
+    {
+        "cause": "income in usd",
+        "effect": "ability to cover costs"
+    },
+    {
+        "cause": "stay at home decision",
+        "effect": "cost of staying at home in usd"
+    },
+    {
+        "cause": "stay at home duration in days",
+        "effect": "cost of staying at home in usd"
+    }
+]

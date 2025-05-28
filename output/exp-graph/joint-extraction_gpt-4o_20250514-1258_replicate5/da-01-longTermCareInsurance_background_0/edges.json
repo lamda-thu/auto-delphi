@@ -1,0 +1,38 @@
+[
+    {
+        "cause": "maximum coverage per day",
+        "effect": "total cost"
+    },
+    {
+        "cause": "insurance premium",
+        "effect": "total cost"
+    },
+    {
+        "cause": "long-term care expenses",
+        "effect": "total cost"
+    },
+    {
+        "cause": "age",
+        "effect": "insurance premium"
+    },
+    {
+        "cause": "gender",
+        "effect": "insurance premium"
+    },
+    {
+        "cause": "age",
+        "effect": "long-term care expenses"
+    },
+    {
+        "cause": "gender",
+        "effect": "long-term care expenses"
+    },
+    {
+        "cause": "gender",
+        "effect": "life expectancy"
+    },
+    {
+        "cause": "age",
+        "effect": "life expectancy"
+    }
+]

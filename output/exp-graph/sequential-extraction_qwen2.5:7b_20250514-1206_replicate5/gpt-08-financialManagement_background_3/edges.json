@@ -1,0 +1,14 @@
+[
+    {
+        "cause": "current_savings",
+        "effect": "investment_decision"
+    },
+    {
+        "cause": "market_risks",
+        "effect": "investment_decision"
+    },
+    {
+        "cause": "economic_conditions",
+        "effect": "investment_decision"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "variable_name": "land_expansion_decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "expand",
+            "do not expand"
+        ]
+    },
+    {
+        "variable_name": "weather_conditions",
+        "variable_type": "chance",
+        "variable_values": [
+            "favorable",
+            "unfavorable"
+        ]
+    },
+    {
+        "variable_name": "crop_yield",
+        "variable_type": "chance",
+        "variable_values": [
+            50,
+            100
+        ]
+    },
+    {
+        "variable_name": "market_price_of_crops",
+        "variable_type": "chance",
+        "variable_values": [
+            2,
+            4
+        ]
+    },
+    {
+        "variable_name": "cost_of_planting",
+        "variable_type": "chance",
+        "variable_values": [
+            1.5,
+            3
+        ]
+    },
+    {
+        "variable_name": "profit",
+        "variable_type": "utility",
+        "variable_values": [
+            -200,
+            400
+        ]
+    }
+]

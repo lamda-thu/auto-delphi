@@ -1,0 +1,27 @@
+[
+    {
+        "stochastic_function": "lambda: {'high': 1, 'medium': 0, 'low': 0}",
+        "variable": "current savings",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'low': 0.3 + 2 * 0.1, 'medium': 0.4 - 0.1, 'high': 0.3 - 0.1}",
+        "variable": "market risk",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {'favorable': 0.4 + 2 * 0.1, 'neutral': 0.4 - 0.1, 'unfavorable': 0.2 - 0.1}",
+        "variable": "economic conditions",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda investment_decision, current_savings, market_risk, economic_conditions: {1: 0.6 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'favorable') else 0.2 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'neutral') else 0.3 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'medium' and economic_conditions == 'favorable') else 0.1, 0: 0.2 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'favorable') else 0.6 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'neutral') else 0.4 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'medium' and economic_conditions == 'favorable') else 0.2, -1: 0.2 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'favorable') else 0.2 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'low' and economic_conditions == 'neutral') else 0.3 if (investment_decision == 'invest' and current_savings == 'high' and market_risk == 'medium' and economic_conditions == 'favorable') else 0.7}",
+        "variable": "wealth",
+        "evidence": [
+            "investment decision",
+            "current savings",
+            "market risk",
+            "economic conditions"
+        ]
+    }
+]

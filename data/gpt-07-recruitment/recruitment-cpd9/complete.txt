@@ -1,0 +1,54 @@
+Background:
+The decision-making problem revolves around recruiting new team members and its effect on overall team efficiency. This decision is influenced by the current workload and the productivity of existing employees. The productivity of employees is further affected by the prevailing market salaries and the company culture. The goal is to understand how these factors collectively impact the efficiency of the team when making recruitment decisions.
+
+
+Factors to be considered:
+In the decision-making problem, the following factors are to be considered:
+
+1. Recruitment Decision: This is a choice that needs to be made regarding hiring employees. It's a pivotal decision that influences the output of the team.
+
+2. Workload: This factor represents the amount of work assigned to a team. It naturally affects how efficiently the team can operate.
+
+3. Employee Productivity: This factor gauges the effectiveness of the employees in accomplishing tasks. It's a measure of how productive the workforce is.
+
+4. Market Salary: This refers to the prevailing salary trends in the job market. It influences how productive employees are, possibly affecting their motivation and efficiency.
+
+5. Company Culture: This includes the values, behaviors, and the overall environment within the company. It has an impact on employee productivity by affecting morale and work attitudes.
+
+6. Team Efficiency: This is a measure of how effectively a team meets its goals and objectives. It's influenced by the decision to recruit, along with workload, employee productivity, and other factors.
+
+These are essential considerations that collectively shape the outcome of the decision-making process regarding team performance and efficiency.
+
+
+Factors to be considered and their relations:
+When making a decision about recruiting, one should consider various factors that influence the outcome in terms of team efficiency. Firstly, one's recruitment decision directly impacts the team's overall efficiency. This efficiency is also affected by the existing workload on the team—the more the workload, the more careful one needs to be about how many and which type of roles are recruited to balance the load effectively.
+
+Another significant consideration is the productivity of the employees, which plays a crucial role in team efficiency. Employee productivity itself is influenced by the ongoing market salary rates; competitive salaries can help in improving productivity by attracting and retaining the best talents. Additionally, the company’s culture significantly impacts employee productivity. A positive and supportive culture can enhance productivity, whereas rigid or negative environments might dampen it.
+
+In summary, when making recruitment decisions, it's essential to have a good understanding of the existing workload, how market salaries and company culture influence your current team’s productivity, and how these factors collectively impact the overall efficiency of your team. This holistic consideration will guide you to make more informed, strategically sound recruitment decisions.
+
+
+Conditional probability distributions:
+The conditional probability list provides interrelations between various variables in an organization setting influenced by recruitment decisions, market factors, and organizational culture. Here are the quantitative relationships:
+
+1. **Team Efficiency**: 
+   Team efficiency is a probabilistic outcome influenced by three key factors: recruitment decision ("hire" or "do not hire"), workload level (1 = high, 0 = medium, -1 = low), and employee productivity (1 = high, 0 = medium, -1 = low). The model defines the probabilities of team efficiency being high (1), normal (0), or low (-1) for each scenario as follows:
+   if you **bring someone on board** when work is **piled high** and the team is **already humming**, you’ve got a **0.80** chance of stellar efficiency, **0.15** it just feels normal, and **0.05** it drags; keep the workload high but the crew only **so‑so**, and those odds fall to **0.30 great, 0.50 fine, 0.20 sluggish**; if productivity is low you’re looking at **0.20 great, 0.60 fine, 0.20 slow**. Drop the workload to **normal** and still hire: with a top‑notch team you bounce to **0.70 great, 0.20 fine, 0.10 slow**; with average talent it’s **0.40 / 0.40 / 0.20**; with low talent **0.30 / 0.50 / 0.20**. When workload is actually **light**, hiring a high performer still gives **0.50 / 0.40 / 0.10**, an average performer **0.20 / 0.50 / 0.30**, and a low performer **0.10 / 0.60 / 0.30**. Now flip to the **“don’t hire”** call: under a **heavy workload** with high performers you surprisingly still see **0.70 stellar, 0.20 fine, 0.10 slow**; with average folks it’s **0.40 / 0.40 / 0.20**, and with low‑skill **0.30 / 0.50 / 0.20**. At a **normal workload**, skipping a hire but keeping high performers nets **0.70 / 0.20 / 0.10**, average talent **0.40 / 0.40 / 0.20**, low talent **0.30 / 0.50 / 0.20**. Finally, if the workload is **light** and you still pass on hiring, a high‑skill crew gives **0.60 great, 0.30 fine, 0.10 slow**; an average crew **0.40 / 0.40 / 0.20**; and a low‑skill crew **0.30 / 0.40 / 0.30**.
+
+2. **Employee Productivity**:
+   The probability distribution of employee retention outcomes—coded as high (1), normal (0), or low (‑1)—is jointly shaped by market salary and company culture. When both salary and culture are favorable (1, 1), high retention is most likely (0.7), with normal and low outcomes at 0.2 and 0.1. If salary remains high but culture slips to neutral (1, 0), the chance of high retention drops to 0.5 (normal 0.3, low 0.2); a negative culture (1, ‑1) reduces it further to 0.3 (normal 0.4, low 0.3). With an average market salary (0, ·), a supportive culture (0, 1) still yields a 0.6 probability of high retention (normal 0.3, low 0.1), whereas a neutral culture (0, 0) splits outcomes more evenly at 0.4, 0.4, 0.2, and a negative culture (0, ‑1) lowers high retention to 0.2 (normal 0.5, low 0.3). Finally, when salary lags the market (‑1, ·), a positive culture (‑1, 1) partly compensates with 0.5 high retention (normal 0.3, low 0.2); a neutral culture (‑1, 0) keeps high retention at 0.3 (normal 0.4, low 0.3); and the combination of low salary and poor culture (‑1, ‑1) makes high retention least likely at 0.1, with normal and low outcomes at 0.5 and 0.4, respectively.
+
+3. **Workload**: 
+   - Determined by an expression involving a placeholder 0.199999, adjusting the base probabilities for high (1), normal (0), low (-1) workload as 0.4 + 2*0.199999, 0.4 - 0.199999, and 0.2 - 0.199999 respectively.
+
+4. **Market Salary**:
+   - Functionality dependent on environmental factors (0.199999), adjusting the probabilities accordingly:
+     - 0.3 + 2*0.199999 for high market salary (1), 0.4 - 0.199999 for normal salary (0), and 0.3 - 0.199999 for low salary (-1).
+
+5. **Company Culture**:
+   - Also conditioned by 0.199999, influencing the probabilities as follows:
+     - 0.4 + 2*0.199999 for positive culture (1), 0.4 - 0.199999 for neutral culture (0), and 0.2 - 0.199999 for negative culture (-1).
+
+
+Decision:'recruitment decision'
+Alternatives:['hire', 'do not hire']

@@ -1,0 +1,85 @@
+Background:
+The decision-making problem involves choosing the best traffic control strategy to enhance traffic efficiency. The success of the decision is influenced by changes in traffic volume, which depends on the control decision made, current weather conditions and public transportation efficiency. The ultimate goal of the decision is to ensure smooth traffic flow and reduce congestion.
+
+
+Factors to be considered:
+When faced with a decision-making problem regarding traffic, several factors need to be considered to understand the potential outcomes:
+
+1. **Traffic Control Decision**: This refers to the strategies or measures that can be implemented to manage the flow of vehicles. This could include adjusting traffic signal timings, setting rules for lane usage, or introducing carpool requirements.
+
+2. **Traffic Volume**: This is the number of vehicles present on the road at any given time. It's influenced by various other factors including traffic control decisions, weather conditions, and the efficiency of public transport.
+
+3. **Weather Conditions**: Weather can significantly impact road conditions and traffic flow. For example, rain, snow, or fog can decrease visibility and make roads slippery, often leading to slower traffic movement.
+
+4. **Public Transport Efficiency**: The effectiveness and reliability of public transport services can influence how many people choose to use personal vehicles versus public transport options. Higher efficiency and reliability in public transport can potentially reduce the number of private vehicles on the roads.
+
+5. **Traffic Efficiency**: This indicates how smoothly traffic is flowing. Higher traffic efficiency typically means that vehicles are moving at a steady pace without frequent stops and starts, leading to less congestion and quicker travel times.
+
+These factors combine to culminate in the overall traffic efficiency experienced on the roads, making it crucial to consider each aspect when coming to a decision about traffic control measures.
+
+
+Factors to be considered and their relations:
+When making a decision about traffic control, several factors and their relationships should be considered to understand how the decision will impact traffic efficiency. 
+
+Firstly, the decision regarding traffic control directly influences the overall traffic volume. This means that actions taken to regulate traffic flow, such as changing signal timings or opening additional lanes, will affect the quantity of vehicles on the roads.
+
+Next, the traffic volume itself is also affected by weather conditions. For example, rainy or snowy weather might cause slower traffic, potentially leading to more congestion. Additionally, the efficiency of public transport plays a role in traffic volume. If public transport is running smoothly and efficiently, fewer people may choose to drive, leading to reduced traffic volume.
+
+Lastly, the traffic volume, influenced by both the traffic control decisions and current weather conditions as well as public transport efficiency, determines traffic efficiency. Higher traffic volumes might result in delays and decreased traffic efficiency, whereas lower volumes can lead to smoother traffic flow and increased efficiency.
+
+Understanding these relationships is crucial in making an informed decision on traffic control that aims at optimizing traffic efficiency.
+
+
+Conditional probability distributions:
+1. **Variable: Traffic Volume**
+   - **Dependency**: Conditional on the variables traffic control decision, weather conditions, and public transport efficiency.
+   - **Conditional Probability Distribution**:
+     - If restrictions are applied and weather is good:
+       - High (1): 0.7, Moderate (0): 0.2, Low (-1): 0.1 if public transport efficiency is high (1).
+       - High (1): 0.6, Moderate (0): 0.3, Low (-1): 0.1 if public transport efficiency is moderate (0).
+       - High (1): 0.5, Moderate (0): 0.4, Low (-1): 0.1 if public transport efficiency is low (-1).
+     - If restrictions are applied and weather is average:
+       - High (1): 0.6, Moderate (0): 0.3, Low (-1): 0.1 if public transport efficiency is high (1).
+       - High (1): 0.5, Moderate (0): 0.4, Low (-1): 0.1 if public transport efficiency is moderate (0).
+       - High (1): 0.4, Moderate (0): 0.5, Low (-1): 0.1 if public transport efficiency is low (-1).
+     - If restrictions are applied and weather is bad:
+       - High (1): 0.5, Moderate (0): 0.4, Low (-1): 0.1 if public transport efficiency is high (1).
+       - High (1): 0.4, Moderate (0): 0.5, Low (-1): 0.1 if public transport efficiency is moderate (0).
+       - High (1): 0.3, Moderate (0): 0.6, Low (-1): 0.1 if public transport efficiency is low (-1).
+     - If no restrictions are applied and weather is good:
+       - High (1): 0.9, Moderate (0): 0.05, Low (-1): 0.05 if public transport efficiency is high (1).
+       - High (1): 0.8, Moderate (0): 0.1, Low (-1): 0.1 if public transport efficiency is moderate (0).
+       - High (1): 0.7, Moderate (0): 0.2, Low (-1): 0.1 if public transport efficiency is low (-1).
+     - If no restrictions are applied and weather is average:
+       - High (1): 0.6, Moderate (0): 0.2, Low (-1): 0.2 if public transport efficiency is high (1).
+       - High (1): 0.5, Moderate (0): 0.3, Low (-1): 0.2 if public transport efficiency is moderate (0).
+       - High (1): 0.4, Moderate (0): 0.4, Low (-1): 0.2 if public transport efficiency is low (-1).
+     - If no restrictions are applied and weather is bad:
+       - High (1): 0.3, Moderate (0): 0.3, Low (-1): 0.4 if public transport efficiency is high (1).
+       - High (1): 0.2, Moderate (0): 0.4, Low (-1): 0.4 if public transport efficiency is moderate (0).
+       - High (1): 0.2, Moderate (0): 0.5, Low (-1): 0.3 if public transport efficiency is low (-1).
+
+2. **Variable: Traffic Efficiency**
+   - **Dependency**: Conditional on the traffic volume.
+   - **Conditional Probability Distribution**:
+     - High (1): 0.8, Moderate (0): 0.15, Low (-1): 0.05 with high traffic volume (1).
+     - High (1): 0.5, Moderate (0): 0.4, Low (-1): 0.1 with moderate traffic volume (0).
+     - High (1): 0.2, Moderate (0): 0.5, Low (-1): 0.3 with low traffic volume (-1).
+
+3. **Variable: Weather Conditions**
+   - **Dependency**: Unconditional.
+   - **Stochastic Function**:
+     - Good : \( 2 \times 0 + 0.1 \)
+     - Average : \( 0 + 0.3 \)
+     - Poor : \( 0.6 - 3 \times 0 \)
+
+4. **Variable: Public Transport Efficiency**
+   - **Dependency**: Unconditional.
+   - **Stochastic Function**:
+     - High (1): \( 2 \times 0.1 + 0.1 \)
+     - Moderate (0): \( 0.1 + 0.3 \)
+     - Low (-1): \( 0.6 - 3 \times 0.1 \)
+
+
+Decision:'traffic control decision'
+Alternatives:['apply restrictions', 'do not apply restrictions']

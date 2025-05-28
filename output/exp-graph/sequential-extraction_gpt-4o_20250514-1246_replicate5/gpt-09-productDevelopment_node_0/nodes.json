@@ -1,0 +1,55 @@
+[
+    {
+        "variable_name": "investment decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "invest",
+            "do not invest"
+        ]
+    },
+    {
+        "variable_name": "development cost",
+        "variable_type": "utility",
+        "variable_values": [
+            -1000,
+            -500,
+            -200
+        ]
+    },
+    {
+        "variable_name": "market demand",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "team productivity",
+        "variable_type": "chance",
+        "variable_values": [
+            "poor",
+            "average",
+            "excellent"
+        ]
+    },
+    {
+        "variable_name": "product success probability",
+        "variable_type": "chance",
+        "variable_values": [
+            0.1,
+            0.5,
+            0.9
+        ]
+    },
+    {
+        "variable_name": "market sales",
+        "variable_type": "utility",
+        "variable_values": [
+            10000,
+            50000,
+            100000
+        ]
+    }
+]

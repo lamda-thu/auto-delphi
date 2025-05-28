@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "recruitment decision",
+        "effect": "productivity of existing employees"
+    },
+    {
+        "cause": "market salaries",
+        "effect": "productivity of existing employees"
+    },
+    {
+        "cause": "company culture",
+        "effect": "productivity of existing employees"
+    },
+    {
+        "cause": "current workload",
+        "effect": "recruitment decision"
+    },
+    {
+        "cause": "productivity of existing employees",
+        "effect": "team efficiency"
+    }
+]

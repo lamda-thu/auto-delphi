@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "field choice",
+        "effect": "exam performance"
+    },
+    {
+        "cause": "difficulty of field",
+        "effect": "exam performance"
+    },
+    {
+        "cause": "field choice",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "exam performance",
+        "effect": "job prospects"
+    },
+    {
+        "cause": "job prospects",
+        "effect": "future income"
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "stochastic_function": "lambda: {38: 0.0, 58: 1.0}",
+        "variable": "age",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {20000: 0.33, 40000: 0.34, 60000: 0.33}",
+        "variable": "income in usd",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1.7e-05: 0.0, 0.0153: 1.0}",
+        "variable": "population infection density",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {7: 1.0, 28: 0.0}",
+        "variable": "stay at home duration in days",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_decision: {1: 0.0, 5: 0.0, 9: 1.0, 42: 0.0, 52: 0.0, 62: 0.0} if stay_at_home_decision == 'stay at home' else {1: 0.0, 5: 0.0, 9: 0.0, 42: 0.0, 52: 1.0, 62: 0.0}",
+        "variable": "number of people one contacts",
+        "evidence": [
+            "stay at home decision"
+        ]
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_decision, income_in_usd, stay_at_home_duration_in_days: {-767.12: 1.0} if stay_at_home_decision == 'stay at home' and income_in_usd == 40000 and stay_at_home_duration_in_days == 7 else {0: 1.0}",
+        "variable": "cost of staying at home in usd",
+        "evidence": [
+            "stay at home decision",
+            "income in usd",
+            "stay at home duration in days"
+        ]
+    },
+    {
+        "stochastic_function": "lambda stay_at_home_duration_in_days, population_infection_density, number_of_people_one_contacts: {0: (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts), 1: 1 - (1 - population_infection_density) ** (stay_at_home_duration_in_days * number_of_people_one_contacts)}",
+        "variable": "exposure",
+        "evidence": [
+            "stay at home duration in days",
+            "population infection density",
+            "number of people one contacts"
+        ]
+    },
+    {
+        "stochastic_function": "lambda exposure: {'not infected': 1.0 - 0.055, 'mild': 0.055 * 0.8, 'severe': 0.055 * (1 - 0.8) * (1 - 0.305), 'critical': 0.055 * (1 - 0.8) * 0.305 * (1 - 0.557), 'dead': 0.055 * (1 - 0.8) * 0.305 * 0.557} if exposure == 'exposed' else {'not infected': 1.0, 'mild': 0.0, 'severe': 0.0, 'critical': 0.0, 'dead': 0.0}",
+        "variable": "infection",
+        "evidence": [
+            "exposure"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection: {0: 1.0, 14: 0.0, 31.5: 0.0, 35: 0.0} if infection == 'not infected' else {0: 0.0, 14: 1.0, 31.5: 0.0, 35: 0.0} if infection == 'mild' else {0: 0.0, 14: 0.0, 31.5: 1.0, 35: 0.0} if infection in ['severe', 'critical'] else {0: 0.0, 14: 0.0, 31.5: 0.0, 35: 1.0}",
+        "variable": "hospital stays in days",
+        "evidence": [
+            "infection"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection: {-88134: 1.0} if infection == 'dead' else {-34223: 1.0} if infection == 'critical' else {-12692: 1.0} if infection == 'severe' else {0: 1.0}",
+        "variable": "medical expenses in usd",
+        "evidence": [
+            "infection"
+        ]
+    },
+    {
+        "stochastic_function": "lambda infection, age, income_in_usd: {-1640000: 1.0, -840000: 0.0, 0: 0.0} if infection == 'dead' and age == 38 and income_in_usd == 40000 else {-1640000: 0.0, -840000: 1.0, 0: 0.0} if infection == 'dead' and age == 58 and income_in_usd == 40000 else {0: 1.0, -1640000: 0.0, -840000: 0.0}",
+        "variable": "death cost",
+        "evidence": [
+            "infection",
+            "age",
+            "income in usd"
+        ]
+    },
+    {
+        "stochastic_function": "lambda hospital_stays_in_days, income_in_usd: {-3835.62: 1.0} if hospital_stays_in_days == 35 and income_in_usd == 40000 else {-3452.05: 1.0} if hospital_stays_in_days == 31.5 and income_in_usd == 40000 else {-1534.25: 1.0} if hospital_stays_in_days == 14 and income_in_usd == 40000 else {0.0: 1.0}",
+        "variable": "treatment time expenses in usd",
+        "evidence": [
+            "hospital stays in days",
+            "income in usd"
+        ]
+    }
+]

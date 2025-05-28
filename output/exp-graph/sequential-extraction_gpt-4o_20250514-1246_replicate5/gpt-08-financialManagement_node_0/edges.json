@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "current savings",
+        "effect": "investment decision"
+    },
+    {
+        "cause": "investment decision",
+        "effect": "future wealth"
+    },
+    {
+        "cause": "current savings",
+        "effect": "future wealth"
+    },
+    {
+        "cause": "market risk",
+        "effect": "future wealth"
+    },
+    {
+        "cause": "economic conditions",
+        "effect": "future wealth"
+    }
+]

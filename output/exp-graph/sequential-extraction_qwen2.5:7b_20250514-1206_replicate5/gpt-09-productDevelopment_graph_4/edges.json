@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "investment_decision",
+        "effect": "market_sales"
+    },
+    {
+        "cause": "development_cost",
+        "effect": "market_sales"
+    },
+    {
+        "cause": "market_demand",
+        "effect": "market_sales"
+    },
+    {
+        "cause": "team_productivity",
+        "effect": "product_success_probability"
+    },
+    {
+        "cause": "product_success_probability",
+        "effect": "market_sales"
+    }
+]

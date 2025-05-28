@@ -1,0 +1,22 @@
+[
+    {
+        "cause": "land_expansion_decision",
+        "effect": "crop_yield"
+    },
+    {
+        "cause": "weather_conditions",
+        "effect": "crop_yield"
+    },
+    {
+        "cause": "market_price",
+        "effect": "profit"
+    },
+    {
+        "cause": "planting_cost",
+        "effect": "profit"
+    },
+    {
+        "cause": "crop_yield",
+        "effect": "profit"
+    }
+]

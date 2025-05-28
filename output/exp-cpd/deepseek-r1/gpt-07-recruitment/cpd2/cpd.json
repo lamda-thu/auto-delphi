@@ -1,0 +1,34 @@
+[
+    {
+        "stochastic_function": "lambda: {1: 0.4, 0: 0.4, -1: 0.2}",
+        "variable": "workload",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.5,0:0.3,-1:0.2}",
+        "variable": "market salary",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda: {1:0.4,0:0.4,-1:0.2}",
+        "variable": "company culture",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda market_salary, company_culture: {1:0.7,0:0.2,-1:0.1} if market_salary ==1 and company_culture ==1 else {1:0.3,0:0.4,-1:0.3} if (market_salary ==1 and company_culture ==-1) or (market_salary ==-1 and company_culture ==1) else {1:0.3,0:0.3,-1:0.4} if (market_salary ==1 or company_culture ==1) else {1:0.1,0:0.2,-1:0.7} if market_salary ==-1 and company_culture ==-1 else {1:0.5,0:0.3,-1:0.2}",
+        "variable": "employee productivity",
+        "evidence": [
+            "market salary",
+            "company culture"
+        ]
+    },
+    {
+        "stochastic_function": "lambda recruitment_decision, workload, employee_productivity: {1:0.8,0:0.15,-1:0.05} if recruitment_decision=='hire' and workload==1 and employee_productivity==1 else {1:0.3,0:0.5,-1:0.2} if recruitment_decision=='do not hire' and workload==0 and employee_productivity==-1 else {1:0.33,0:0.34,-1:0.33}",
+        "variable": "team efficiency",
+        "evidence": [
+            "recruitment decision",
+            "workload",
+            "employee productivity"
+        ]
+    }
+]

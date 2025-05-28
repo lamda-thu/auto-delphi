@@ -1,0 +1,99 @@
+[
+    {
+        "variable_name": "screening decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "screen",
+            "not screen"
+        ]
+    },
+    {
+        "variable_name": "inspection decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "inspect",
+            "not inspect"
+        ]
+    },
+    {
+        "variable_name": "smuggled nuclear threat",
+        "variable_type": "chance",
+        "variable_values": [
+            "threat present",
+            "no threat"
+        ]
+    },
+    {
+        "variable_name": "alarm",
+        "variable_type": "chance",
+        "variable_values": [
+            "alarm triggered",
+            "no alarm"
+        ]
+    },
+    {
+        "variable_name": "inspection result",
+        "variable_type": "chance",
+        "variable_values": [
+            "threat found",
+            "no threat found"
+        ]
+    },
+    {
+        "variable_name": "cost of screening",
+        "variable_type": "utility",
+        "variable_values": [
+            -1000,
+            -5000
+        ]
+    },
+    {
+        "variable_name": "cost of inspection",
+        "variable_type": "utility",
+        "variable_values": [
+            -2000,
+            -10000
+        ]
+    },
+    {
+        "variable_name": "cost of radiological disposal",
+        "variable_type": "utility",
+        "variable_values": [
+            -5000,
+            -20000
+        ]
+    },
+    {
+        "variable_name": "cost of terrorist attack",
+        "variable_type": "utility",
+        "variable_values": [
+            -1000000,
+            -5000000
+        ]
+    },
+    {
+        "variable_name": "deterrence effect of screening",
+        "variable_type": "chance",
+        "variable_values": [
+            "deterrence occurs",
+            "deterrence does not occur"
+        ]
+    },
+    {
+        "variable_name": "risk of false alarm",
+        "variable_type": "chance",
+        "variable_values": [
+            "false alarm occurs",
+            "false alarm does not occur"
+        ]
+    },
+    {
+        "variable_name": "financial impact of safety decisions",
+        "variable_type": "utility",
+        "variable_values": [
+            -10000,
+            -50000,
+            -100000
+        ]
+    }
+]

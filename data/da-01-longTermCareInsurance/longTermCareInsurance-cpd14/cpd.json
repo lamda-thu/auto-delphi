@@ -1,0 +1,158 @@
+[
+    {
+        "variable": "age",
+        "variable_card": 2,
+        "stochastic_function": "lambda: {65: 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "age": [
+                65,
+                75
+            ]
+        }
+    },
+    {
+        "variable": "gender",
+        "variable_card": 2,
+        "stochastic_function": "lambda: {'female': 1.0}",
+        "evidence": null,
+        "evidence_card": null,
+        "state_names": {
+            "gender": [
+                "male",
+                "female"
+            ]
+        }
+    },
+    {
+        "variable": "life expectancy",
+        "variable_card": 2,
+        "stochastic_function": "lambda gender: {82.5: 1.0} if gender=='male' else {85.2: 1.0}",
+        "evidence": [
+            "gender"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "life expectancy": [
+                82.5,
+                85.2
+            ],
+            "gender": [
+                "male",
+                "female"
+            ]
+        }
+    },
+    {
+        "variable": "long term care expense per day",
+        "variable_card": 2,
+        "stochastic_function": "lambda age, gender: {226: 0.0005 * 9, 0:None} if age==65 and gender=='male' else {226: 0.0005 * 9 ** 2, 0: None} if age==75 and gender=='male' else {226 * 1.25: 0.0005 * 9, 0: None} if age==65 and gender=='female' else {226 * 1.25: 0.0005 * 9 ** 2, 0: None}",
+        "evidence": [
+            "age",
+            "gender"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "long term care expense per day": [
+                0,
+                "226",
+                "226 * #gender_factor#"
+            ],
+            "age": [
+                65,
+                75
+            ],
+            "gender": [
+                "male",
+                "female"
+            ]
+        }
+    },
+    {
+        "variable": "insurance premium per year",
+        "variable_card": 2,
+        "stochastic_function": "lambda age, gender, maximum_coverage_per_day: {2669.68: 1.0} if maximum_coverage_per_day==100 and age==65 and gender=='male' else {3764.89: 1.0} if maximum_coverage_per_day==100 and age==75 and gender=='male' else {3981.47: 1.0} if maximum_coverage_per_day==150 and age==65 and gender=='male' else {5647.33: 1.0} if maximum_coverage_per_day==150 and age==75 and gender=='male' else {5339.36: 1.0} if maximum_coverage_per_day==200 and age==65 and gender=='male' else {7529.77: 1.0} if maximum_coverage_per_day==200 and age==75 and gender=='male' else {6674.20: 1.0} if maximum_coverage_per_day==250 and age==65 and gender=='male' else {9412.22: 1.0} if maximum_coverage_per_day==250 and age==75 and gender=='male' else {2959.19: 1.0} if maximum_coverage_per_day==100 and age==65 and gender=='female' else {4959.45: 1.0} if maximum_coverage_per_day==100 and age==75 and gender=='female' else {4438.79: 1.0} if maximum_coverage_per_day==150 and age==65 and gender=='female' else {7439.18: 1.0} if maximum_coverage_per_day==150 and age==75 and gender=='female' else {5918.38: 1.0} if maximum_coverage_per_day==200 and age==65 and gender=='female' else {9918.90: 1.0} if maximum_coverage_per_day==200 and age==75 and gender=='female' else {7397.98: 1.0} if maximum_coverage_per_day==250 and age==65 and gender=='female' else {12398.63: 1.0} if maximum_coverage_per_day==250 and age==75 and gender=='female' else {0: 1.0}",
+        "evidence": [
+            "age",
+            "gender",
+            "maximum coverage per day"
+        ],
+        "evidence_card": [
+            2,
+            2,
+            5
+        ],
+        "state_names": {
+            "insurance premium per year": [
+                0,
+                1
+            ],
+            "age": [
+                65,
+                75
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "maximum coverage per day": [
+                0,
+                100,
+                150,
+                200,
+                250
+            ]
+        }
+    },
+    {
+        "variable": "total cost",
+        "variable_card": 2,
+        "stochastic_function": "lambda age, maximum_coverage_per_day, insurance_premium_per_year, long_term_care_expense_per_day, life_expectancy: {(life_expectancy - age) * (- 365 * long_term_care_expense_per_day - insurance_premium_per_year + 365 * maximum_coverage_per_day): 1.0} if long_term_care_expense_per_day > maximum_coverage_per_day else {(life_expectancy - age) * (-insurance_premium_per_year): 1.0}",
+        "evidence": [
+            "age",
+            "maximum coverage per day",
+            "insurance premium per year",
+            "long term care expense per day",
+            "life expectancy"
+        ],
+        "evidence_card": [
+            2,
+            2
+        ],
+        "state_names": {
+            "total cost": [
+                0,
+                1
+            ],
+            "age": [
+                65,
+                75
+            ],
+            "insurance premium per year": [
+                0,
+                1
+            ],
+            "maximum coverage per day": [
+                0,
+                100,
+                150,
+                200,
+                250
+            ],
+            "long term care expense per day": [
+                0,
+                226
+            ],
+            "life expectancy": [
+                82.5,
+                85.2
+            ]
+        }
+    }
+]

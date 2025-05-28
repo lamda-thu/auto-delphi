@@ -1,0 +1,22 @@
+[
+    {
+        "stochastic_function": "lambda: {'rain':0.4,'no rain':0.6}",
+        "variable": "weather outcome",
+        "evidence": []
+    },
+    {
+        "stochastic_function": "lambda weather_outcome: {'rain':0.5,'no rain':0.5} if weather_outcome == 'rain' else {'rain':0.1,'no rain':0.9}",
+        "variable": "weather forecast",
+        "evidence": [
+            "weather outcome"
+        ]
+    },
+    {
+        "stochastic_function": "lambda carry_umbrella_decision, weather_outcome: {0:1.0,-2:0.0,-10:0.0} if weather_outcome == 'no rain' and carry_umbrella_decision == 'not carry' else {0:0.01,-2:0.0,-10:0.99} if weather_outcome == 'rain' and carry_umbrella_decision == 'not carry' else {0:0.0,-2:0.99,-10:0.01} if weather_outcome == 'rain' and carry_umbrella_decision == 'carry' else {0:0.0,-2:1.0,-10:0.0}",
+        "variable": "cost",
+        "evidence": [
+            "carry umbrella decision",
+            "weather outcome"
+        ]
+    }
+]

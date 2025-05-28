@@ -1,0 +1,115 @@
+[
+    {
+        "variable_name": "stay at home decision",
+        "variable_type": "decision",
+        "variable_values": [
+            "stay at home",
+            "not stay at home"
+        ]
+    },
+    {
+        "variable_name": "age",
+        "variable_type": "chance",
+        "variable_values": [
+            "young",
+            "middle-aged",
+            "elderly"
+        ]
+    },
+    {
+        "variable_name": "income in usd",
+        "variable_type": "chance",
+        "variable_values": [
+            "low income",
+            "middle income",
+            "high income"
+        ]
+    },
+    {
+        "variable_name": "population infection density",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "stay at home duration in days",
+        "variable_type": "chance",
+        "variable_values": [
+            "short",
+            "medium",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "number of people one contacts",
+        "variable_type": "chance",
+        "variable_values": [
+            "low",
+            "medium",
+            "high"
+        ]
+    },
+    {
+        "variable_name": "exposure",
+        "variable_type": "chance",
+        "variable_values": [
+            "exposed",
+            "not exposed"
+        ]
+    },
+    {
+        "variable_name": "infection",
+        "variable_type": "chance",
+        "variable_values": [
+            "infected",
+            "not infected"
+        ]
+    },
+    {
+        "variable_name": "hospital stays in days",
+        "variable_type": "chance",
+        "variable_values": [
+            "short",
+            "medium",
+            "long"
+        ]
+    },
+    {
+        "variable_name": "medical expenses in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -5000,
+            -1000,
+            0
+        ]
+    },
+    {
+        "variable_name": "death cost",
+        "variable_type": "utility",
+        "variable_values": [
+            -100000,
+            0
+        ]
+    },
+    {
+        "variable_name": "treatment time expenses in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -5000,
+            -1000,
+            0
+        ]
+    },
+    {
+        "variable_name": "cost of staying at home in usd",
+        "variable_type": "utility",
+        "variable_values": [
+            -3000,
+            -1000,
+            0
+        ]
+    }
+]

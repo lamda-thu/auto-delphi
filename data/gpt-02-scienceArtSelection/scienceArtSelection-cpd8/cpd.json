@@ -1,0 +1,76 @@
+[
+    {
+        "variable": "exam performance",
+        "variable_card": 3,
+        "evidence": [
+            "field choice"
+        ],
+        "evidence_card": [
+            2
+        ],
+        "state_names": {
+            "exam performance": [
+                "excellent",
+                "good",
+                "average"
+            ],
+            "field choice": [
+                "science",
+                "arts"
+            ]
+        },
+        "stochastic_function": "lambda field_choice: {'excellent': 0.2+2*0.2, 'good': 0.4, 'average': 0.4-2*0.2} if field_choice == 'science' else {'excellent': 0.2+0.2, 'good': 0.5, 'average': 0.3-0.2}"
+    },
+    {
+        "variable": "job prospects",
+        "variable_card": 3,
+        "evidence": [
+            "field choice",
+            "exam performance"
+        ],
+        "evidence_card": [
+            2,
+            3
+        ],
+        "state_names": {
+            "job prospects": [
+                "positive",
+                "neutral",
+                "negative"
+            ],
+            "field choice": [
+                "science",
+                "arts"
+            ],
+            "exam performance": [
+                "excellent",
+                "good",
+                "average"
+            ]
+        },
+        "stochastic_function": "lambda field_choice, exam_performance:{'positive': 0.6+0.1, 'neutral': 0.2, 'negative': 0.2-0.1} if field_choice == 'science' and exam_performance == 'excellent' else {'positive': 0.3+0.1, 'neutral': 0.4, 'negative': 0.3-0.1} if field_choice == 'science' and exam_performance == 'good' else {'positive': 0.1+0.1, 'neutral': 0.5, 'negative': 0.4-0.1} if field_choice == 'science' and exam_performance == 'average' else {'positive': 0.5+0.1/2, 'neutral': 0.3, 'negative': 0.2-0.1/2} if field_choice == 'arts' and exam_performance == 'excellent' else {'positive': 0.3+0.1/2, 'neutral': 0.4, 'negative': 0.3-0.1/2} if field_choice == 'arts' and exam_performance == 'good' else {'positive': 0.1+0.1/2, 'neutral': 0.5, 'negative': 0.4-0.1/2}"
+    },
+    {
+        "variable": "future income",
+        "variable_card": 3,
+        "evidence": [
+            "job prospects"
+        ],
+        "evidence_card": [
+            3
+        ],
+        "state_names": {
+            "future income": [
+                1,
+                0,
+                -1
+            ],
+            "job prospects": [
+                "positive",
+                "neutral",
+                "negative"
+            ]
+        },
+        "stochastic_function": "lambda job_prospects: {1: 0.8, 0: 0.2, -1: 0.0} if job_prospects == 'positive' else {1: 0.4, 0: 0.5, -1: 0.1} if job_prospects == 'neutral' else {1: 0.1, 0: 0.4, -1: 0.5}"
+    }
+]

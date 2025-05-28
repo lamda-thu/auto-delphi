@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "alarm",
+        "effect": "inspection decision"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of inspection"
+    },
+    {
+        "cause": "inspection decision",
+        "effect": "cost of radiological disposal"
+    },
+    {
+        "cause": "alarm",
+        "effect": "cost of terrorist attack"
+    }
+]

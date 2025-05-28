@@ -1,0 +1,18 @@
+[
+    {
+        "cause": "screening_decision",
+        "effect": "alarm_status"
+    },
+    {
+        "cause": "alarm_status",
+        "effect": "inspection_decision"
+    },
+    {
+        "cause": "inspection_decision",
+        "effect": "radiological_disposal_cost"
+    },
+    {
+        "cause": "screening_decision",
+        "effect": "screening_cost"
+    }
+]

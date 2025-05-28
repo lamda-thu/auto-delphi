@@ -1,0 +1,6 @@
+Background:
+The decision-making problem revolves around how much studying to do for an exam. Several factors influence the final exam score, which is the ultimate outcome of interest. Firstly, the decision on how much to study will affect a person's current knowledge and health status. Naturally, more studying can increase knowledge but might affect health due to stress or reduced rest. Both the current knowledge and health status directly influence the exam score. Furthermore, the difficulty level of the exam, which is determined separately, also impacts the exam score. A tougher exam could lead to a lower score. Therefore, the decision on how much to study must consider these factors to optimize the exam score while maintaining a balance with health.
+
+
+Decision:'study decision'
+Alternatives:['study more', 'study less']
