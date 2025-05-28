@@ -5,8 +5,9 @@ LAMDA employs large language models (LLMs) to generate influence diagrams.
 This repository contains
 - the implementation of LAMDA (in `src/`)
 - the data used in the experiments (in `data/`)
-- the code for the experiments (in `experiments/`) and analysis of results (in `analysis/`)
 - the scripts of minimal examples (in `scripts/`)
+- the code for the experiments (in `experiments/`) and analysis of results (in `analysis/`)
+- the experiments outputs (in `output/`) and results
 
 ## Setup the environment
 
