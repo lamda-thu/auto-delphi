@@ -1,13 +1,12 @@
-# LAMDA: Large Language Model as Decision Analyst
+# AutoDelphi
 
-LAMDA employs large language models (LLMs) to generate influence diagrams.
+AutoDelphi employs large language models (LLMs) to empower Delphi-style construction of influence diagrams.
+It builds upon the `lamda` library (https://github.com/lamda-thu/LAMDA) to provide a more flexible and powerful way to construct influence diagrams, especially for the quantitative components.
 
 This repository contains
-- the implementation of LAMDA (in `src/`)
-- the data used in the experiments (in `data/`)
-- the scripts of minimal examples (in `scripts/`)
-- the code for the experiments (in `experiments/`) and analysis of results (in `analysis/`)
-- the experiments outputs (in `output/`) and results
+- the implementation of LAMDA (in `lamda/`)
+- the implementation of AutoDelphi (in `delphi/`)
+- the data used in the LAMDA experiments (in `data/`)
 
 ## Setup the environment
 
@@ -26,19 +25,38 @@ To run the experiments, you need to set the API keys in `APIKEYS/apiKeys.py`. Fo
 ```python
 openaiKey = "yourOpenaiApiKey"
 ```
+## Delphi Module
 
-Then you can run the experiments by running the following scripts:
-- `experiment/graphExtractExperiment.py`: the influence diagram graph geration experiment
-- `experiment/probabilityExtractExperiment.py`: the conditional probability distribution assignment experiment
-- `experiment/decisionExperiment.py`: the decision-making experiment
+### `ProbabilityDelphi`
 
-## Run the minimal examples
+The main class that implements the Delphi process at the variable level, independent of any influence diagram.
 
-To get familiar with the functionality of LAMDA, you can run the following scripts:
-- `createInfluenceDiagram.py`: create an influence diagram from JSON files
-- `extractGraph.py`: extract the graph from the text
-- `extractProbability.py`: load existing graph, extract the probability from the text, and solve the influence diagram for optimal policy
-- `testDecisionMaker.py`: test the decision makers used in the experiments (`Vanilla`, `Cot`, `Sc`, `Dellma`, `Aid`)
+#### Usage
+
+```python
+from delphi import ProbabilityDelphi
+from lamda.models import Gpt4o
+
+# Initialize with a language model
+delphi = ProbabilityDelphi(
+    language_model=Gpt4o(),
+    max_retries=5  # Number of retry attempts for validation
+)
+
+# Run the Delphi process for a variable
+variable = "Traffic"
+parent_variables = ["Weather", "Time_of_Day"]
+
+cpd = delphi.run(variable, parent_variables)
+```
+
+#### Methods
+
+- `run(variable: str, parent_variables: List[str])`: Main method that orchestrates the entire Delphi process
+- `_elicit_cpd_description(variable: str, parent_variables: List[str])`: Prompts the user for a description
+- `_generate_cpd_params(variable: str, parent_variables: List[str], description: str, feedback: str)`: Uses LLM to generate CPD parameters
+- `_validate_cpd_params(cpd_params: str)`: Validates the generated CPD parameters
+- `_construct_cpd(cpd_params: str)`: Constructs the final CPD object
 
 ## Cite this work
 
